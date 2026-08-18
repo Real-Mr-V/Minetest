@@ -1,0 +1,156 @@
+# ============================================================
+# SORA / LUANTI / VOXELIBRE PROJECT GITIGNORE
+# ============================================================
+
+# ------------------------------------------------------------
+# OS / IDE / editor noise
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Local secrets / environment files
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+
+# ------------------------------------------------------------
+# Luanti / Minetest runtime-generated state
+# ------------------------------------------------------------
+/cache/
+/client/
+/mod_data/
+
+# ------------------------------------------------------------
+# Runtime logs / diagnostics / generated output
+# ------------------------------------------------------------
+*.log
+*.log.*
+debug.txt
+crash.txt
+
+# ------------------------------------------------------------
+# Runtime databases and binary persistence
+# Do NOT merge these as source code.
+# ------------------------------------------------------------
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.db-journal
+**/*.sqlite-journal
+**/*.sqlite-shm
+**/*.sqlite-wal
+
+# ------------------------------------------------------------
+# Live / mutable world runtime state
+# ------------------------------------------------------------
+# Elementary_1 is protected operational state. Development should
+# use a disposable test-world copy instead of versioning its runtime DB.
+/worlds/Elementary_1/
+
+# Other generated worlds should normally remain local as well.
+/worlds/*/
+!/worlds/.gitkeep
+
+# ------------------------------------------------------------
+# Luanti engine build/runtime artifacts
+# ------------------------------------------------------------
+# The repository contains the engine source/runtime tree, but generated
+# binaries and build outputs must never become source-controlled assets.
+/luanti/*/bin/
+/luanti/*/build/
+/luanti/*/build-*/
+/luanti/*/CMakeFiles/
+/luanti/*/CMakeCache.txt
+/luanti/*/cmake_install.cmake
+/luanti/*/Makefile
+/luanti/*/compile_commands.json
+
+# Common C/C++ build artifacts anywhere under the engine tree
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.pdb
+*.ilk
+
+# ------------------------------------------------------------
+# Temporary / generated archives and packages
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# ------------------------------------------------------------
+# Sora-owned generated artifacts
+# ------------------------------------------------------------
+/build/
+/dist/
+/artifacts/
+/test-results/
+/coverage/
+
+# ------------------------------------------------------------
+# Keep repository documentation and source-controlled Sora mods
+# ------------------------------------------------------------
+# IMPORTANT: Do not add broad patterns such as */mods/ here.
+# VoxeLibre's upstream mods are source and must remain available.
+# Sora-owned source belongs under the explicitly governed mods/ tree.
+
+# ------------------------------------------------------------
+# Explicitly ignore common generated content inside Sora modules
+# ------------------------------------------------------------
+/mods/**/build/
+/mods/**/dist/
+/mods/**/coverage/
+/mods/**/test-results/
+
+# ------------------------------------------------------------
+# Python tooling artifacts, if used by development utilities
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------
+# Node/tooling artifacts, if used by development utilities
+# ------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+
+# ============================================================
+# IMPORTANT
+# ============================================================
+# This file deliberately does NOT ignore luanti/ or
+# games/mineclone2/ wholesale. Those directories contain the
+# pinned platform/base-game source that is part of the repository
+# baseline. Only generated artifacts are ignored above.
+#
+# It also deliberately ignores the live Elementary_1 world and
+# runtime databases. If a world template must be versioned, create
+# an explicit source-controlled template outside the live world path.
