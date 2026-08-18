@@ -3,201 +3,106 @@
 **Project:** Sora  
 **Repository:** `Real-Mr-V/Minetest`  
 **Status:** Foundational governance document  
-**Version:** 1.0  
+**Version:** 2.0  
 **Date:** 2026-08-18  
-
----
 
 ## 1. Purpose
 
-This document defines the permanent product-level identity, scope, principles, boundaries, and non-negotiable constraints of Sora.
+This Constitution defines what Sora is, what it is not, its permanent product principles, technical boundaries, educational authority, and the authority of its human and AI team.
 
-The constitution answers **what Sora is, what it is not, and what principles govern every future technical, educational, gameplay, and narrative decision**.
+It is the highest project-level specification below the explicit authority of the Project Owner. The Team Operating System defines how those rules are executed in practice.
 
-The Team Operating System governs how the team works. This constitution governs what the team is building.
-
-No implementation task should override this document unless the Project Owner explicitly approves a constitutional change.
-
----
+No agent may silently override this document.
 
 ## 2. Product Identity
 
-**Sora is a voxel-based educational game built on Luanti, using VoxeLibre (formerly MineClone2) as its base game, whose primary purpose is to teach the official Iranian elementary-school Mathematics and Experimental Sciences curriculum through interactive gameplay.**
+**Sora is a voxel-based educational game built on Luanti, using VoxeLibre (formerly MineClone2) as its base game, whose formal educational purpose is to teach the official Iranian elementary-school Mathematics and Experimental Sciences curriculum through interactive gameplay.**
 
-Sora also contains an independent overarching narrative. The narrative is a product-level layer and must support, not replace, the educational mission.
+Sora also contains an independent overarching narrative created by the Project Owner and planned across six years and six major versions.
 
-Sora is intended to evolve across **six years and six major versions**, corresponding to the planned long-term progression of the project.
+The narrative supports the game identity and motivation; it does not redefine curriculum facts.
 
-The project name is **Sora**.
+## 3. Mission and Scope
 
----
+Sora exists to make elementary Mathematics and Experimental Sciences interactive, understandable, memorable, and engaging while preserving curricular correctness.
 
-## 3. Product Mission
+### Included
+- Iranian elementary Mathematics.
+- Iranian elementary Experimental Sciences.
+- Gameplay and assessment systems required to teach, practice, reinforce, or assess those subjects.
+- Supporting systems required to deliver those experiences.
+- The approved Sora narrative and world-building.
 
-Sora exists to make formal elementary education interactive, understandable, memorable, and engaging without abandoning curricular correctness.
+### Excluded unless the Project Owner changes this Constitution
+- Other school subjects as formal curriculum domains.
+- General-purpose educational-platform functionality unrelated to Sora's mission.
+- Unrelated Luanti/VoxeLibre enhancements.
+- Features added solely because they are technically interesting.
 
-The core mission is:
+Supporting skills such as reading, navigation, interaction, and communication may be necessary for gameplay but do not become separate formal curriculum domains.
 
-> **Teach Mathematics and Experimental Sciences through a coherent voxel game world while preserving the correctness, sequence, and educational intent of the official Iranian elementary curriculum.**
+## 4. Curriculum Authority
 
-Entertainment is important, but educational integrity is a higher-order product constraint.
+For formal educational claims, authority is ordered as follows:
 
----
+1. Official Iranian Ministry / Organization for Educational Research and Planning curriculum and textbooks.
+2. Official teacher guides and official educational documents.
+3. High-quality secondary educational sources for discovery and cross-checking.
+4. General web sources only as supplementary evidence.
 
-## 4. Absolute Product Scope
+Secondary sources cannot silently override official material.
 
-### 4.1 Included
+If the authoritative source cannot be verified, the claim must be marked **unverified** or treated as a proposal rather than curriculum fact.
 
-Sora's formal educational content is limited to:
+## 5. Educational Principles
 
-- Mathematics for Iranian elementary education.
-- Experimental Sciences for Iranian elementary education.
-- Interactive activities required to teach, practice, assess, or reinforce those subjects.
-- Supporting game systems required to deliver those educational experiences.
-- The independent Sora narrative and world-building required by the game's story.
+1. Curriculum correctness outranks entertainment value.
+2. Conceptual understanding precedes unnecessary abstraction.
+3. Where appropriate, move from concrete experience to visual representation to symbolic representation.
+4. Prefer active learner interaction over passive exposition.
+5. Explain important errors instead of merely saying "wrong".
+6. Difficulty should reflect conceptual complexity, representation, sequencing, and problem structure—not merely speed or larger numbers.
+7. The game must not reward a method that contradicts the intended learning objective.
+8. Language, interface, pacing, and failure states must be appropriate for elementary learners.
+9. Every educational mechanic must have an identifiable learning purpose.
 
-### 4.2 Excluded
+## 6. Game Design Principles
 
-Sora must not silently expand into a general-purpose educational platform.
+Sora is a game, not a textbook with voxel graphics.
 
-Unless the Project Owner explicitly changes the constitution, Sora does not formally teach:
+Every substantial educational activity should make clear:
+- What the learner should understand or practice.
+- What the player actually does.
+- Why the player action reinforces the learning objective.
 
-- Persian language/literature as a curriculum subject.
-- Social studies.
-- Religious studies.
-- English or other foreign languages.
-- Arts as a curriculum subject.
-- Physical education as a curriculum subject.
-- General-purpose programming education.
-- Unrelated vocational or university subjects.
+Voxel space should be used as a genuine learning medium where practical: objects, grouping, movement, construction, transformation, observation, spatial relationships, exploration, and cause-and-effect can represent concepts.
 
-Game mechanics may incidentally require reading, navigation, communication, or other supporting skills, but these are not separate Sora curriculum domains.
+Mini-games that merely decorate conventional quizzes are discouraged unless they have a defensible learning purpose.
 
----
+## 7. Narrative Principle
 
-## 5. Curriculum Authority
+The Project Owner's independent Sora story is a first-class product element, but educational correctness remains non-negotiable.
 
-The official Iranian school curriculum is the authoritative source for formal educational content.
+Narrative may provide motivation, context, exploration, characters, mystery, progression, and emotional continuity. It must not intentionally redefine established mathematical or scientific facts.
 
-The hierarchy of evidence is:
+## 8. Technical Foundation
 
-1. Official Ministry/Organization for Educational Research and Planning textbook and curriculum material.
-2. Official teacher guides and other official educational documents.
-3. High-quality secondary educational sources used for cross-checking and discovery.
-4. General web material, blogs, videos, and informal explanations only as supplementary research.
-
-Secondary sources must never silently override an official curricular source.
-
-When the official source cannot be verified, the team must label the requirement as **unverified** rather than presenting an assumption as curriculum fact.
-
----
-
-## 6. Educational Design Principles
-
-### 6.1 Curriculum first
-
-Gameplay must serve the learning objective. A visually impressive mechanic that teaches the wrong concept is a defect, not a feature.
-
-### 6.2 Concept before abstraction
-
-Where appropriate, learning should progress from concrete experience to visual representation and then to symbolic representation.
-
-### 6.3 Active learning
-
-The learner should perform meaningful actions rather than merely read explanations or watch passive demonstrations.
-
-### 6.4 Explain errors
-
-Feedback should help the learner understand why an answer or method is incorrect. Correct/incorrect indicators alone are insufficient for important learning objectives.
-
-### 6.5 Progressive difficulty
-
-Difficulty should be controlled through educational variables such as concept complexity, representation, number range, sequencing, and problem structure—not merely larger numbers or faster timers.
-
-### 6.6 No educational deception
-
-The game must not reward a player for producing an answer through a method that contradicts the intended learning objective.
-
-### 6.7 Age-appropriate interaction
-
-User interfaces, language, task length, visual complexity, and failure states must be appropriate for the target elementary-school learner.
-
----
-
-## 7. Game Design Principles
-
-Sora is a game, not a textbook rendered in voxel graphics.
-
-Educational objectives should therefore be translated into meaningful gameplay wherever practical.
-
-A good Sora activity should answer three questions:
-
-1. **What is the learner supposed to understand or practice?**
-2. **What does the player actually do?**
-3. **Why does that action reinforce the learning objective?**
-
-Game mechanics must not become arbitrary mini-games attached to unrelated questions merely to make the product look educational.
-
-The voxel environment should be used as a genuine learning medium whenever possible: objects, space, movement, construction, grouping, transformation, exploration, observation, and cause-and-effect can all become educational representations.
-
----
-
-## 8. Narrative Principle
-
-Sora has an independent overarching story created by the Project Owner.
-
-The story is important to the identity of Sora, but it must not corrupt curriculum accuracy.
-
-The narrative may provide:
-
-- Motivation.
-- Context.
-- Exploration.
-- Characters.
-- Mysteries.
-- Long-term progression.
-- Emotional continuity between lessons.
-
-The narrative must not redefine established mathematical or scientific facts merely for dramatic effect.
-
-Where narrative and curriculum appear to conflict, factual educational correctness takes precedence.
-
----
-
-## 9. Technical Foundation
-
-Sora is built as an additive application layer over an existing game stack:
+Sora is an additive layer over a governed game stack:
 
 ```text
-Sora educational/gameplay layer
+Sora educational + gameplay systems
             ↓
-Sora-owned mods and content
+Sora-owned mods / content / configuration
             ↓
 VoxeLibre / MineClone2
             ↓
 Luanti
 ```
 
-### 9.1 Luanti
+Sora should extend rather than unnecessarily fork or modify the engine or upstream base game.
 
-Luanti is the game engine/runtime foundation.
-
-### 9.2 VoxeLibre / MineClone2
-
-VoxeLibre, historically known as MineClone2, is the base game on which Sora builds.
-
-### 9.3 Sora layer
-
-Sora-specific functionality should live in clearly owned Sora namespaces, modules, content, configuration, documentation, and tests rather than unnecessarily modifying upstream code.
-
----
-
-## 10. Repository Boundaries
-
-The repository contains assets with fundamentally different ownership and risk levels.
-
-### Protected by default
-
+### Repository boundary
+Protected by default:
 ```text
 luanti/
 games/mineclone2/
@@ -205,34 +110,21 @@ worlds/Elementary_1/
 mod_data/
 ```
 
-These are not ordinary feature-development directories.
+The root `mods/` area is the designated Sora extension location, currently marked by `mods/Sora mods location.txt`. New Sora modules should use explicit `sora_*` names and ownership.
 
-### Sora-owned development area
+Runtime databases, authentication data, player state, map state, and generated data are operational state, not ordinary source code.
 
-The preferred home for new Sora implementation is the repository's Sora-owned extension area, currently represented by the root `mods/` location and future explicitly named Sora modules.
+## 9. Source-of-Truth Hierarchy
 
-Sora code should use explicit names such as `sora_*` to reduce collisions and clarify ownership.
-
-### Runtime data
-
-World databases, authentication data, player state, map state, and generated runtime data must not be treated as ordinary source code.
-
-Agents must not inspect, copy, modify, or expose sensitive player/authentication data unless an explicitly authorized task requires it.
-
----
-
-## 11. Source of Truth Hierarchy
-
-When two sources disagree, the following order governs:
-
+When sources disagree:
 ```text
 Project Owner decision
         ↓
-This Constitution
+Sora Project Constitution
         ↓
-Approved architecture/contracts
+Approved architecture / contracts
         ↓
-Official curriculum sources
+Verified official curriculum evidence
         ↓
 Approved technical specifications
         ↓
@@ -241,454 +133,138 @@ Implementation
 Agent assumptions
 ```
 
-An agent assumption can never override an explicit higher-level decision.
+An assumption can never override a higher-level decision.
 
----
+## 10. Team and Authority
 
-## 12. Team Structure
+The current Sora 2.0 team consists of the human Project Owner plus six active AI roles.
 
-The current Sora team is intentionally small.
+### Project Owner / Executive Director — Human
+Final authority over product scope, priorities, architecture disputes, curriculum disputes, team structure, releases, protected-path exceptions, production-world changes, and constitutional changes. The human currently performs the Executive Director / Executive Manager function.
 
-### 12.1 Project Owner / Executive Director — User
+### Chief Architect / Technical Director — ChatGPT Desktop
+Owns technical architecture and long-term engineering direction: system and repository architecture, module boundaries, interfaces and data contracts, dependency strategy, integration strategy, technical risk analysis, architecture decisions and reviews, and protection of the Luanti/VoxeLibre/Sora boundary.
 
-The Project Owner has final authority over:
+ChatGPT Desktop does not become the implementation bottleneck; it defines and protects the architecture and resolves architectural ambiguity.
 
-- Product scope.
-- Major architecture decisions.
-- Team structure.
-- Priorities.
-- Acceptance/rejection of major features.
-- Constitutional changes.
-- Release decisions.
-- Access and operational policy.
+### Education Researcher — ChatGPT Web
+Owns curriculum evidence and educational research: official textbook/curriculum research, teacher-guide research, learning-objective extraction, prerequisites and sequencing, source tracking, uncertainty classification, and educational correctness review.
 
-The Project Owner is also currently acting as the **Executive Director / Executive Manager** of the project.
+### Game Design & Educational Gameplay — Perplexity
+Owns translation of approved learning objectives into gameplay: gameplay loops, educational mechanics, player actions, challenges, feedback, rewards, motivation, pacing, progression, age-appropriate interaction, and comparative gameplay research.
 
-### 12.2 Chief Architect / Technical Director — ChatGPT Desktop
+It consumes verified educational requirements rather than redefining them.
 
-Responsibilities:
+### Technical Lead / Senior Software Engineer — Claude
+Owns implementation-level engineering design and technical review: converting architecture into implementable specifications, defining interfaces/modules/data structures/edge cases, reviewing implementation plans and code, debugging reasoning and integration problems, enforcing maintainability, preparing work for implementation, and reviewing OpenCode/Qwen Code changes.
 
-- System architecture.
-- Technical direction.
-- Repository architecture.
-- Cross-module contracts.
-- Technical risk analysis.
-- Architectural review.
-- Long-term maintainability.
-- Protection of the Luanti/VoxeLibre/Sora boundaries.
+Claude may reject technically unsafe implementation, but cannot silently change product scope or architecture.
 
-It must not casually implement large features merely because implementation is technically possible.
+### Implementation Engineer — OpenCode
+Owns hands-on repository implementation within authorized paths: inspecting repository state, implementing approved specifications, editing Sora-owned source, running permitted Git operations, building/executing development tooling, running available checks, inspecting logs, debugging defects, and producing precise change reports.
 
-### 12.3 Education Researcher — ChatGPT Web
+OpenCode is an implementation agent, not the architecture, curriculum, or product authority.
+
+### Implementation Engineer / Coding Agent — Qwen Code
+Qwen Code is restored as an active member. Its role is **parallel engineering capacity under the same technical authority**, not a second independent technical lead.
 
 Responsibilities:
-
-- Official curriculum research.
-- Textbook and teacher-guide analysis.
-- Learning-objective extraction.
-- Educational correctness.
-- Curriculum sequencing.
-- Identification of uncertainty and unsupported claims.
-
-The Education Researcher does not independently redefine gameplay architecture.
-
-### 12.4 Technical Lead / Senior Software Engineer — Claude
-
-Responsibilities:
-
-- Convert approved architecture into implementable technical specifications.
-- Review implementation quality.
-- Identify engineering defects and integration risks.
-- Maintain technical consistency across Sora modules.
-- Perform code-review and implementation guidance.
-- Coordinate technical handoff to OpenCode.
-
-### 12.5 Game Design & Educational Gameplay — Perplexity
-
-Responsibilities:
-
-- Translate approved learning objectives into gameplay concepts.
-- Design educational interaction loops.
-- Propose mechanics that exploit the voxel environment.
-- Evaluate engagement, clarity, pacing, and learner experience.
-- Research comparable educational/gameplay patterns where useful.
-
-Gameplay proposals remain subordinate to verified curriculum requirements and approved architecture.
-
-### 12.6 Implementation Engineer — OpenCode
-
-Responsibilities:
-
-- Implement approved technical specifications.
-- Modify only authorized repository paths.
-- Follow existing contracts and coding conventions.
-- Report blockers rather than inventing architectural decisions.
-- Keep changes focused and reviewable.
-
-OpenCode is an implementation authority, not the final product or architecture authority.
-
----
-
-## 13. Authority and Escalation
-
-The team follows this authority chain:
-
-```text
-Project Owner
-      ↓
-Chief Architect / Technical Director
-      ↓
-Technical Lead
-      ↓
-Implementation Engineer
-```
-
-Educational questions follow:
-
-```text
-Project Owner
-      ↓
-Education Researcher
-```
-
-Gameplay questions follow:
-
-```text
-Project Owner
-      ↓
-Education Researcher + Game Design
-      ↓
-Chief Architect
-      ↓
-Technical Lead
-```
-
-When responsibilities overlap, the agents must collaborate rather than silently override one another.
-
-The Project Owner resolves unresolved cross-domain disputes.
-
----
-
-## 14. The Fundamental Development Pipeline
-
-Every significant feature should pass through these stages:
-
-```text
-IDEA
-  ↓
-EDUCATIONAL RESEARCH
-  ↓
-GAMEPLAY DESIGN
-  ↓
-ARCHITECTURE
-  ↓
-TECHNICAL SPECIFICATION
-  ↓
-IMPLEMENTATION
-  ↓
-VERIFICATION
-  ↓
-REVIEW
-  ↓
-HUMAN ACCEPTANCE
-  ↓
-RELEASE
-```
-
-A stage may be skipped only when the task is genuinely trivial and the responsible authority explicitly determines that the omitted stage adds no value.
-
----
-
-## 15. Required Feature Contract
-
-Before implementation of a non-trivial feature, the feature must have:
-
-- A unique identifier.
-- A clear educational objective, if educational.
-- A defined gameplay objective, if gameplay-facing.
-- Acceptance criteria.
-- Known dependencies.
-- A defined Sora-owned implementation location.
-- Explicit out-of-scope items.
-- A verification strategy.
-- An owner.
-
-A feature without a clear objective is not ready for implementation.
-
----
-
-## 16. Change Management
-
-Every meaningful change must answer:
-
-1. Why is this change needed?
-2. Which requirement authorizes it?
-3. Which files/modules does it affect?
-4. What could it break?
-5. How will it be verified?
-6. Who reviews it?
-
-Large architectural or educational changes require explicit Project Owner approval.
-
----
-
-## 17. Git and Repository Discipline
-
-The repository is the shared development memory of Sora.
-
-Rules:
-
-- Do not overwrite another agent's work without understanding it.
-- Do not make unrelated changes in a feature task.
-- Keep commits focused and explain intent.
-- Do not commit secrets, credentials, authentication data, or sensitive learner data.
-- Do not commit generated runtime state merely because it exists locally.
-- Do not rewrite history to hide mistakes.
-- Do not alter protected upstream components for convenience.
-- Prefer small, reviewable changes.
-
-When the working tree or remote state is uncertain, stop and inspect before editing.
-
----
-
-## 18. Protected World Policy
-
-`worlds/Elementary_1/` is a runtime world, not a disposable coding workspace.
-
-Development and experimentation should occur against a disposable test-world copy or controlled test environment.
-
-The live/primary `Elementary_1` world must not be casually modified by agents.
-
-Before any intentional deployment to the primary world:
-
-1. The change must be reviewed.
-2. A backup must exist.
-3. The deployment scope must be known.
-4. Recovery must be possible.
-5. The Project Owner must authorize the deployment.
-
----
-
-## 19. Testing and Verification Philosophy
-
-Sora must distinguish between:
-
-- Static/code verification.
-- Automated tests.
-- Scenario tests.
-- Educational review.
-- Gameplay review.
-- Actual game execution.
-- Human acceptance testing.
-
-No agent may claim that a feature was successfully play-tested merely because its source code looks correct.
-
-If an agent cannot actually execute or observe the game, it must explicitly report that limitation.
-
-Human verification remains authoritative for behavior that the available tooling cannot reliably execute or observe.
-
----
-
-## 20. Definition of Done
-
-A non-trivial feature is not Done merely because code exists.
-
-It is Done when:
-
-- The intended requirement is documented.
-- Educational claims are verified where applicable.
-- Architecture is consistent with Sora boundaries.
-- Implementation is complete.
-- Relevant static/automated checks pass where available.
-- Known limitations are documented.
-- Code has received the appropriate technical review.
-- Educational/gameplay review has occurred when applicable.
-- The Project Owner accepts the result for release.
-
----
-
-## 21. Uncertainty Rule
+- implement well-scoped tasks from approved specifications;
+- inspect repository code and dependencies;
+- create or modify Sora-owned files within authorized paths;
+- write tests and technical tooling when specified;
+- perform focused debugging/refactoring;
+- perform focused implementation review when explicitly assigned by Claude;
+- report exact files, commands, results, assumptions, and blockers.
+
+Qwen Code must not independently redefine architecture, curriculum, product scope, or protected-path policy.
+
+### No dedicated QA Engineer
+There is still no dedicated AI QA role. Verification is distributed across OpenCode/Qwen Code for executable technical checks, Claude for engineering review, ChatGPT Desktop for architecture review, ChatGPT Web for educational verification, Perplexity for gameplay review, and the human for final gameplay, visual, acceptance, and release decisions.
+
+No agent may claim full QA or successful play-testing unless it actually performed the relevant verification.
+
+## 11. Authority Model
+
+| Domain | Primary authority | Final authority |
+|---|---|---|
+| Product scope | Human | Human |
+| Priority | Human | Human |
+| Curriculum evidence | ChatGPT Web | Human |
+| Educational design | ChatGPT Web + Perplexity | Human |
+| Game design | Perplexity | Human |
+| Architecture | ChatGPT Desktop | Human for major decisions |
+| Technical implementation design | Claude | Human for major decisions |
+| Code implementation | OpenCode / Qwen Code | Claude review + Human acceptance |
+| Production world | Human | Human |
+| Release | Human | Human |
+
+Cross-domain disagreements are escalated rather than silently resolved by a lower-level role.
+
+## 12. Engineering Non-Negotiables
+
+- Sora is an additive layer over Luanti + VoxeLibre.
+- Do not modify protected upstream components for convenience.
+- Prefer configuration, extension, clean APIs, or upstream contribution before maintaining a fork/patch.
+- Educational content should be data-driven where practical.
+- Important logic must have testable interfaces.
+- Dependencies must be explicit.
+- Sora data must be namespaced.
+- Runtime state must be separated from source.
+- No sensitive player/authentication data may be exposed to external services merely for convenience.
+
+## 13. Uncertainty Rule
 
 **When evidence is insufficient, stop rather than guess.**
 
-Agents must clearly distinguish:
+Every important claim must be distinguishable as verified fact, strong inference, design proposal, assumption, or unknown.
 
-- Confirmed fact.
-- Strong inference.
-- Design proposal.
-- Assumption.
-- Unknown.
+This applies to curriculum, repository state, engine behavior, upstream behavior, and agent capabilities.
 
-This rule applies especially to curriculum requirements, engine behavior, upstream VoxeLibre behavior, repository state, and claims about what a tool or agent can actually do.
+## 14. Testing and Verification
 
----
+Testing is multi-layered: static/code verification, unit and logic tests, integration tests, runtime/startup checks, scenario tests, educational review, gameplay review, and human visual/play testing.
 
-## 22. AI Autonomy Limits
+A successful build is not proof of correct gameplay. A launched executable is not proof of educational correctness. If tooling cannot execute or observe the game reliably, the limitation must be stated and human verification used where necessary.
 
-AI agents may accelerate analysis, design, coding, documentation, and review, but they do not possess independent authority over the project's goals.
+## 15. Feature Definition of Done
 
-An AI agent must not:
+A non-trivial feature is complete only when applicable requirements, educational evidence, gameplay design, architecture, implementation, tests, technical review, educational/gameplay review, limitations, and human acceptance are satisfied.
 
-- Change Sora's scope on its own.
-- Replace the official curriculum with an unofficial interpretation without disclosure.
-- Rewrite architecture to make its own task easier.
-- Modify protected infrastructure merely to bypass a problem.
-- Claim execution/testing that it did not perform.
-- Conceal uncertainty or failure.
-- Expose sensitive operational/player data.
-- Introduce a major dependency without review.
+## 16. Protected World
 
----
+`worlds/Elementary_1/` is protected runtime state. Development should use disposable test-world copies whenever practical.
 
-## 23. Dependency and Upstream Policy
+Before deployment to the primary world: review the change; create and validate a backup; record deployment scope/version; deploy; verify startup/data integrity; record the result; obtain Project Owner authorization.
 
-Luanti and VoxeLibre/MineClone2 are foundational dependencies.
+## 17. Six-Version Principle
 
-Sora should prefer extension over unnecessary modification.
+Sora is intended to evolve through six major versions/years. Architecture should preserve deliberate extension points without introducing premature complexity.
 
-If an upstream change appears necessary, the team must first determine whether the problem can be solved through:
+> Build the smallest safe architecture that solves today's requirement and preserves the extension points needed tomorrow.
 
-1. Sora-owned extension.
-2. Configuration.
-3. A clean interface/API.
-4. An upstream contribution.
-5. A deliberately maintained patch, only when justified.
+## 18. Anti-Scope-Creep
 
-Direct upstream modification is the last resort, not the default workflow.
+Do not expand Sora merely because an agent can implement something. No unrelated school subjects, general Minecraft features, engine rewrites, premature infrastructure, or technically interesting but educationally irrelevant systems should enter the roadmap without explicit approval.
 
----
+## 19. Constitutional Change
 
-## 24. Data and Privacy Principles
+Only the Project Owner may approve changes to this Constitution. Every amendment must record reason, affected rules, impact on workflow/architecture, new version/date, and communication to active agents.
 
-Sora must minimize collection and exposure of learner data.
+## 20. Permanent Principles
 
-The team must treat authentication databases, player databases, inventories, progress records, and other runtime state as potentially sensitive.
-
-Educational analytics should collect only data that serves a defined product or educational purpose.
-
-No agent may copy sensitive runtime databases into external services merely for convenience.
-
----
-
-## 25. Six-Version Product Principle
-
-Sora is designed as a long-term project with six major versions/years of progression.
-
-The architecture must therefore avoid assumptions that make the first version impossible to extend.
-
-However, long-term extensibility must not be used as an excuse for premature complexity.
-
-The rule is:
-
-> **Build the smallest architecture that safely supports the current educational requirement while preserving deliberate extension points for future versions.**
-
----
-
-## 26. Anti-Scope-Creep Rules
-
-The following are explicitly discouraged:
-
-- Adding features because they are technically interesting but educationally irrelevant.
-- Turning Sora into a general Minecraft/VoxeLibre enhancement project.
-- Rebuilding Luanti unnecessarily.
-- Rewriting VoxeLibre unnecessarily.
-- Adding unrelated school subjects.
-- Adding monetization systems before core learning quality is proven.
-- Creating complex online infrastructure before the single-player educational loop works.
-- Building analytics that do not serve a defined learning/product decision.
-
----
-
-## 27. Decision Record Principle
-
-Important decisions must be recorded rather than existing only in chat history.
-
-A future team member or AI agent should be able to understand:
-
-- What was decided.
-- Why it was decided.
-- Who approved it.
-- What alternatives were rejected.
-- What consequences were accepted.
-
-The repository is the durable memory of the project; chat is an interface to that memory, not its sole source.
-
----
-
-## 28. Constitutional Change Procedure
-
-This constitution is intentionally difficult to change.
-
-A proposed constitutional change must include:
-
-1. The exact section being changed.
-2. The proposed new rule.
-3. The reason for the change.
-4. The expected impact.
-5. Compatibility implications.
-6. Project Owner approval.
-
-A constitutional change must be explicitly identified in its commit message and documented in the project's decision history.
-
----
-
-## 29. Current Non-Negotiable Principles
-
-For practical use, the following rules have the highest operational importance:
-
-1. **Sora teaches only Mathematics and Experimental Sciences as formal curriculum subjects.**
-2. **Official Iranian curriculum sources outrank secondary educational sources.**
-3. **The independent Sora story must not compromise educational correctness.**
-4. **Sora is an additive layer over Luanti and VoxeLibre whenever practical.**
-5. **Protected infrastructure and the primary school world are not ordinary agent workspaces.**
-6. **No agent may claim a test it did not actually perform.**
-7. **No agent may silently invent requirements when evidence is missing.**
-8. **The Project Owner has final authority.**
-9. **Major work moves through research → design → architecture → specification → implementation → verification → review → acceptance.**
-10. **When in doubt, stop rather than guess.**
-
----
-
-## 30. Relationship to Other Sora Documents
-
-This constitution is part of a hierarchy of project documentation:
-
-```text
-SORA_PROJECT_CONSTITUTION.md
-        │
-        ├── Defines what Sora is
-        │
-        ▼
-SORA_TEAM_OPERATING_SYSTEM.md
-        │
-        ├── Defines how the team works
-        │
-        ▼
-Architecture Documents
-        │
-        ▼
-Development Contracts
-        │
-        ▼
-Feature Specifications
-        │
-        ▼
-Implementation
-        │
-        ▼
-Verification / Review / Release Records
-```
-
-Lower-level documents must not contradict higher-level rules without an explicitly approved change.
-
----
-
-## 31. Constitutional Statement
-
-Sora will be developed as a serious educational game rather than as a collection of disconnected mini-games.
-
-Its technology, curriculum, gameplay, and narrative must converge toward one coherent product.
-
-The project will favor correctness over speed when the two conflict, clarity over unnecessary complexity, evidence over assumption, and controlled iteration over uncontrolled expansion.
-
-**This is the constitutional foundation of Sora.**
+1. Human owns the project.
+2. One primary responsibility per agent.
+3. Specifications precede implementation.
+4. Evidence precedes educational claims.
+5. Architecture precedes substantial code.
+6. OpenCode and Qwen Code are implementation agents, not competing architects.
+7. No uncontrolled parallel editing of the same files.
+8. Production world is protected.
+9. Luanti/VoxeLibre are governed dependencies.
+10. Every handoff is explicit.
+11. Important decisions are traceable.
+12. Tests prove only what they actually test.
+13. No false claims of execution or play-testing.
+14. Uncertainty is reported, not hidden.
+15. Human acceptance is the final gate.
