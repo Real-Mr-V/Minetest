@@ -3,16 +3,14 @@
 **Project:** Sora  
 **Repository:** `Real-Mr-V/Minetest`  
 **Status:** Foundational governance document  
-**Version:** 3.0  
-**Date:** 2026-08-18  
+**Version:** 4.0  
+**Date:** 2026-08-19  
 
 ## 1. Purpose
 
-This Constitution defines what Sora is, what it is not, its permanent product principles, technical boundaries, educational authority, and the authority of its human and AI team.
+This Constitution defines what Sora is, its permanent product principles, technical boundaries, educational authority, and the authority of its human and AI team.
 
-It is the highest project-level specification below the explicit authority of the Project Owner. The Team Operating System defines how those rules are executed in practice.
-
-No agent may silently override this document.
+It is the highest project-level specification below the explicit authority of the Project Owner. The Team Operating System defines how these rules are executed.
 
 ## 2. Product Identity
 
@@ -20,26 +18,21 @@ No agent may silently override this document.
 
 Sora also contains an independent overarching narrative created by the Project Owner and planned across six years and six major versions.
 
-The narrative supports the game identity and motivation; it does not redefine curriculum facts.
-
 ## 3. Mission and Scope
 
 Sora exists to make elementary Mathematics and Experimental Sciences interactive, understandable, memorable, and engaging while preserving curricular correctness.
 
-### Included
+Included:
 - Iranian elementary Mathematics.
 - Iranian elementary Experimental Sciences.
 - Gameplay and assessment systems required to teach, practice, reinforce, or assess those subjects.
 - Supporting systems required to deliver those experiences.
 - The approved Sora narrative and world-building.
 
-### Excluded unless the Project Owner changes this Constitution
+Excluded unless the Project Owner changes this Constitution:
 - Other school subjects as formal curriculum domains.
-- General-purpose educational-platform functionality unrelated to Sora's mission.
 - Unrelated Luanti/VoxeLibre enhancements.
 - Features added solely because they are technically interesting.
-
-Supporting skills such as reading, navigation, interaction, and communication may be necessary for gameplay but do not become separate formal curriculum domains.
 
 ## 4. Curriculum Authority
 
@@ -50,9 +43,7 @@ For formal educational claims, authority is ordered as follows:
 3. High-quality secondary educational sources for discovery and cross-checking.
 4. General web sources only as supplementary evidence.
 
-Secondary sources cannot silently override official material.
-
-If the authoritative source cannot be verified, the claim must be marked **unverified** or treated as a proposal rather than curriculum fact.
+If authoritative evidence cannot be verified, the claim must be marked unverified or treated as a proposal rather than curriculum fact.
 
 ## 5. Educational Principles
 
@@ -61,29 +52,16 @@ If the authoritative source cannot be verified, the claim must be marked **unver
 3. Where appropriate, move from concrete experience to visual representation to symbolic representation.
 4. Prefer active learner interaction over passive exposition.
 5. Explain important errors instead of merely saying "wrong".
-6. Difficulty should reflect conceptual complexity, representation, sequencing, and problem structure—not merely speed or larger numbers.
-7. The game must not reward a method that contradicts the intended learning objective.
-8. Language, interface, pacing, and failure states must be appropriate for elementary learners.
-9. Every educational mechanic must have an identifiable learning purpose.
+6. Difficulty should reflect conceptual complexity, representation, sequencing, and problem structure—not merely speed.
+7. Every educational mechanic must have an identifiable learning purpose.
 
 ## 6. Game Design Principles
 
-Sora is a game, not a textbook with voxel graphics.
-
-Every substantial educational activity should make clear:
-- What the learner should understand or practice.
-- What the player actually does.
-- Why the player action reinforces the learning objective.
-
-Voxel space should be used as a genuine learning medium where practical: objects, grouping, movement, construction, transformation, observation, spatial relationships, exploration, and cause-and-effect can represent concepts.
-
-Mini-games that merely decorate conventional quizzes are discouraged unless they have a defensible learning purpose.
+Sora is a game, not a textbook with voxel graphics. Voxel space should be used as a genuine learning medium where practical: objects, grouping, movement, construction, transformation, observation, spatial relationships, exploration, and cause-and-effect.
 
 ## 7. Narrative Principle
 
-The Project Owner's independent Sora story is a first-class product element, but educational correctness remains non-negotiable.
-
-Narrative may provide motivation, context, exploration, characters, mystery, progression, and emotional continuity. It must not intentionally redefine established mathematical or scientific facts.
+The Project Owner's independent Sora story is a first-class product element. Narrative may provide motivation, context, exploration, mystery, characters, progression, and emotional continuity, but must not intentionally redefine established mathematical or scientific facts.
 
 ## 8. Technical Foundation
 
@@ -101,7 +79,6 @@ Luanti
 
 Sora should extend rather than unnecessarily fork or modify the engine or upstream base game.
 
-### Repository boundary
 Protected by default:
 ```text
 luanti/
@@ -110,13 +87,10 @@ worlds/Elementary_1/
 mod_data/
 ```
 
-The root `mods/` area is the designated Sora extension location, currently marked by `mods/Sora mods location.txt`. New Sora modules should use explicit `sora_*` names and ownership.
-
-Runtime databases, authentication data, player state, map state, and generated data are operational state, not ordinary source code.
+The root `mods/` area is the designated Sora extension location, currently marked by `mods/Sora mods location.txt`.
 
 ## 9. Source-of-Truth Hierarchy
 
-When sources disagree:
 ```text
 Project Owner decision
         ↓
@@ -133,255 +107,185 @@ Implementation
 Agent assumptions
 ```
 
-An assumption can never override a higher-level decision.
-
 ## 10. Team Structure and Authority
 
-The Sora 2.0 team consists of the human Project Owner plus seven active AI roles. **The hierarchy is intentional: there is one technical authority and one implementation chain. OpenCode and Qwen Code are not two competing programmers at the same level.**
+The Sora 2.0 team consists of the human Project Owner plus seven active AI roles.
 
-### 10.1 Project Owner / Executive Director — Human
+### 10.1 Human — Project Owner / Executive Director
 
-The Project Owner is the final authority over product scope, priorities, architecture disputes, curriculum disputes, team structure, releases, protected-path exceptions, production-world changes, and constitutional changes.
+The Project Owner is the final authority over product scope, priorities, architecture disputes, curriculum disputes, team structure, releases, protected-path exceptions, production-world changes, and constitutional changes. The human performs the executive management function.
 
-The human currently performs the Executive Director / Executive Manager function. Agents do not replace this authority.
+### 10.2 ChatGPT Desktop — Chief Architect / Technical Director
 
-### 10.2 Chief Architect / Technical Director — ChatGPT Desktop
+The highest technical authority beneath the Project Owner. Owns system and repository architecture, module boundaries, dependency direction, interfaces, data contracts, integration strategy, architectural risk, and architecture decisions. It does not routinely implement feature code.
 
-ChatGPT Desktop is the highest technical authority beneath the Project Owner.
+### 10.3 ChatGPT Web — Education Researcher
 
-Owns:
-- system and repository architecture;
-- module boundaries and dependency direction;
-- interfaces and data contracts;
-- integration strategy;
-- long-term technical direction;
-- architectural risk analysis;
-- architecture decisions and reviews;
-- protection of the Luanti/VoxeLibre/Sora boundary;
-- technical arbitration when lower engineering roles disagree.
+Owns official curriculum research, teacher-guide research, learning-objective extraction, prerequisites, sequencing, evidence tracking, uncertainty classification, and educational correctness review. It does not define software architecture.
 
-ChatGPT Desktop does **not** directly own routine implementation. Its purpose is to keep the system coherent and prevent local coding decisions from damaging the architecture.
+### 10.4 Perplexity — Game Design & Educational Gameplay Director
 
-### 10.3 Education Researcher — ChatGPT Web
+Owns translation of approved learning objectives into gameplay loops, educational mechanics, player actions, challenges, feedback, rewards, pacing, progression, age-appropriate interaction, and comparative game-design research. It cannot override curriculum authority or technical architecture.
 
-Owns curriculum evidence and educational research:
-- official textbook and curriculum research;
-- teacher-guide research;
-- learning-objective extraction;
-- prerequisites and sequencing;
-- source tracking;
-- uncertainty classification;
-- educational correctness review.
+### 10.5 Claude — Technical Lead / Senior Software Engineer
 
-ChatGPT Web may propose educational requirements but cannot redefine product scope or technical architecture.
+Claude is the **single Technical Lead** and the direct engineering authority below ChatGPT Desktop.
 
-### 10.4 Game Design & Educational Gameplay Director — Perplexity
+Claude owns implementation-ready technical specifications, module-level interfaces and data structures, edge cases, task decomposition, work assignment, engineering review, integration strategy, debugging strategy, and acceptance/rejection of implementation against the specification.
 
-Owns translation of approved learning objectives into playable experiences:
-- gameplay loops;
-- educational mechanics;
-- player actions;
-- challenges and feedback;
-- rewards and motivation;
-- pacing and progression;
-- age-appropriate interaction;
-- comparative gameplay research.
+Only Claude assigns the two engineering execution lanes during normal work.
 
-Perplexity consumes verified educational requirements. It cannot override curriculum authority or technical architecture.
+### 10.6 Qwen Code — Implementation Preparation Engineer
 
-### 10.5 Technical Lead / Senior Software Engineer — Claude
+Qwen Code is **not a second implementation programmer alongside OpenCode**. Its permanent role is to prepare the implementation environment so that OpenCode can implement the feature without architectural, dependency, scaffolding, or tooling obstacles.
 
-Claude is the **single Technical Lead** and the direct engineering authority for implementation.
+Qwen Code owns:
+- translating Claude's technical specification into an implementation package;
+- preparing directory/module scaffolding;
+- creating interfaces, contracts, schemas, configuration structures, and extension points;
+- preparing dependency declarations and integration points;
+- creating fixtures, test harnesses, mocks, stubs, seed data, and development tooling when required;
+- identifying missing prerequisites and resolving them before implementation;
+- validating that the implementation surface is ready;
+- documenting exact files, APIs, inputs, outputs, constraints, and acceptance conditions for OpenCode;
+- performing technical reconnaissance and feasibility experiments requested by Claude;
+- preparing a clean handoff package for the implementation phase.
 
-Claude owns:
-- turning architecture into implementation-ready technical specifications;
-- defining module-level interfaces, data structures, APIs, edge cases, and acceptance criteria;
-- decomposing approved features into implementation tasks;
-- assigning implementation work to Qwen Code and OpenCode;
-- reviewing their technical plans and code;
-- integration strategy at implementation level;
-- debugging and maintainability decisions;
-- rejecting technically unsafe or non-conforming implementations;
-- escalating architecture-level disputes to ChatGPT Desktop.
+Qwen Code may write code during preparation, but such code is **preparatory infrastructure**, not ownership of the feature's final production implementation. If a preparation change would itself constitute the feature implementation, Qwen Code must stop and escalate to Claude.
 
-**No coding agent may bypass Claude for implementation decisions unless the Project Owner or ChatGPT Desktop explicitly changes the chain of command.**
+Qwen Code does not independently assign work to OpenCode and does not become Technical Lead.
 
-Claude may not silently change product scope, curriculum requirements, or the constitutional architecture.
+### 10.7 OpenCode — Primary Implementation Engineer
 
-### 10.6 Senior Implementation Engineer — Qwen Code
+OpenCode is the **primary production implementation owner** for the prepared feature.
 
-Qwen Code returns to Sora as the **Senior Implementation Engineer**.
-
-Qwen Code is the primary hands-on engineering capacity under Claude. It is deliberately above OpenCode in implementation seniority but below Claude in technical authority.
-
-Owns:
-- implementing medium-to-large approved engineering tasks;
-- creating and modifying Sora-owned source within assigned paths;
-- writing unit/integration tests and development tooling when specified;
-- focused debugging and refactoring;
-- repository inspection and dependency analysis;
-- preparing implementation branches/commits;
-- performing technical experiments requested by Claude;
-- mentoring or providing implementation guidance to OpenCode when Claude delegates it;
-- producing exact change, test, assumption, and blocker reports.
-
-Qwen Code **cannot** independently change architecture, curriculum, product scope, protected-path policy, or the implementation hierarchy.
-
-### 10.7 Implementation Engineer — OpenCode
-
-OpenCode is the **Implementation Engineer**, operating below Qwen Code in the engineering execution hierarchy.
-
-Owns:
-- implementing well-scoped tasks assigned by Claude, or tasks delegated through Qwen Code;
-- editing authorized Sora-owned files;
-- writing focused tests and tooling;
-- running available checks and development commands;
-- focused bug fixing;
-- repository inspection required for assigned tasks;
+OpenCode owns:
+- implementing the feature's production logic;
+- completing authorized Lua/code changes against the prepared implementation surface;
+- integrating the prepared interfaces and dependencies;
+- implementing focused tests required by the technical specification;
+- running available checks and debugging its implementation;
 - reporting exact files changed, commands run, results, assumptions, and blockers.
 
-OpenCode does not independently design major architecture, redefine interfaces, assign work to Qwen Code, or change project scope.
+OpenCode should receive a complete implementation package from Qwen Code before starting whenever the task is non-trivial.
 
-If OpenCode identifies a problem requiring broader engineering judgment, it escalates to Qwen Code or Claude rather than solving around the governance boundary.
+OpenCode does not redesign the prepared architecture. If the preparation is insufficient or a technical contradiction is discovered, OpenCode stops and escalates to Claude rather than inventing a parallel design.
 
-### 10.8 No Dedicated QA Engineer
+### 10.8 No Dedicated AI QA Engineer
 
-There is no dedicated AI QA role.
+There is no dedicated AI QA role. Verification is distributed across implementation, technical review, architecture review, educational review, gameplay review, and human acceptance. No agent may claim full play-testing unless it actually performed the relevant runtime interaction.
 
-Verification responsibilities are distributed according to authority:
-- OpenCode: focused executable checks for assigned implementation;
-- Qwen Code: broader implementation verification and technical test work;
-- Claude: engineering review and integration correctness;
-- ChatGPT Desktop: architectural verification;
-- ChatGPT Web: educational verification;
-- Perplexity: gameplay and educational-gameplay review;
-- Human Project Owner: final gameplay, visual, acceptance, and release verification.
+## 11. Non-Overlapping Engineering Model
 
-No agent may claim full play-testing unless it actually performed the relevant runtime interaction.
-
-## 11. Single-Chain Engineering Model
-
-The engineering chain is:
+The engineering chain is deliberately sequential:
 
 ```text
-                 PROJECT OWNER
-                       │
-                       ▼
-        ChatGPT Desktop — Chief Architect
-                       │
-                       ▼
-             Claude — Technical Lead
-                       │
-              ┌────────┴────────┐
-              ▼                 ▼
-     Qwen Code — Senior     OpenCode —
-     Implementation         Implementation
-        Engineer               Engineer
-              │
-              └──── delegated implementation / guidance ────┘
+PROJECT OWNER
+      ↓
+ChatGPT Desktop — Architecture
+      ↓
+Claude — Technical Specification + Assignment
+      ↓
+Qwen Code — IMPLEMENTATION PREPARATION
+      ↓
+Preparation Gate
+      ↓
+OpenCode — PRODUCTION IMPLEMENTATION
+      ↓
+Claude — Engineering Review
+      ↓
+Specialist Reviews as needed
+      ↓
+Human Acceptance
 ```
 
-This diagram does **not** mean every task must pass through every person. It means there is exactly one technical escalation path and exactly one implementation authority: Claude.
+This is the default model for substantial features.
 
-### Mandatory rule
-**Qwen Code and OpenCode may work in parallel only on separate, explicitly scoped tasks or disjoint files. They may not independently modify the same files or architectural contract at the same time.**
+### Fundamental separation
 
-### Conflict rule
-If Qwen Code and OpenCode disagree:
-1. They stop the disputed work.
-2. They record the disagreement.
-3. Claude decides implementation-level questions.
-4. ChatGPT Desktop decides architecture-level questions.
-5. The Project Owner decides matters affecting product scope, priorities, or constitutional policy.
+**Qwen Code prepares. OpenCode implements.**
 
-No coding agent resolves a peer conflict by silently overwriting the other agent's work.
+They are not parallel substitutes for the same job.
+
+Qwen Code's output is an **Implementation Package**. OpenCode's output is the **Implemented Feature**.
+
+Qwen Code must not simultaneously implement the same production feature while OpenCode is implementing it. OpenCode must not redesign the implementation package unless Claude changes the assignment.
+
+### Exception
+
+For a small task where no meaningful preparation is required, Claude may assign OpenCode directly. For a specialized preparatory task, Claude may assign Qwen Code without a subsequent OpenCode implementation. These are explicit exceptions, not the normal workflow.
 
 ## 12. Authority Matrix
 
-| Domain | Primary authority | Implementation authority | Final authority |
-|---|---|---|---|
-| Product scope | Human | — | Human |
-| Priority | Human | — | Human |
-| Curriculum evidence | ChatGPT Web | — | Human |
-| Educational design | ChatGPT Web + Perplexity | — | Human |
-| Game design | Perplexity | — | Human |
-| Architecture | ChatGPT Desktop | — | Human for major decisions |
-| Technical specifications | Claude | — | ChatGPT Desktop / Human |
-| Implementation planning | Claude | Qwen Code / OpenCode input | Claude |
-| Code implementation | Claude assigns | Qwen Code / OpenCode | Claude review + Human acceptance |
-| Engineering conflict | Claude | — | ChatGPT Desktop if architectural; Human if project-level |
-| Production world | Human | Authorized engineering support only | Human |
-| Release | Human | Engineering prepares | Human |
+| Domain | Primary authority |
+|---|---|
+| Product scope / priorities | Human |
+| Curriculum evidence | ChatGPT Web |
+| Educational gameplay | Perplexity + ChatGPT Web |
+| Architecture | ChatGPT Desktop |
+| Technical specification | Claude |
+| Implementation preparation | Qwen Code |
+| Production implementation | OpenCode |
+| Engineering review | Claude |
+| Architecture review | ChatGPT Desktop |
+| Educational review | ChatGPT Web |
+| Gameplay review | Perplexity |
+| Production deployment | Human |
 
 ## 13. Engineering Non-Negotiables
 
-- Sora is an additive layer over Luanti + VoxeLibre.
-- Do not modify protected upstream components for convenience.
-- Prefer configuration, extension, clean APIs, or upstream contribution before maintaining a fork/patch.
-- Educational content should be data-driven where practical.
-- Important logic must have testable interfaces.
-- Dependencies must be explicit.
-- Sora data must be namespaced.
-- Runtime state must be separated from source.
-- No sensitive player/authentication data may be exposed to external services merely for convenience.
-- Only Claude may authorize implementation-level deviation from an approved technical specification.
+- One Technical Lead: Claude.
+- One architecture authority: ChatGPT Desktop.
+- Qwen Code prepares; OpenCode implements.
+- No two agents simultaneously own the same production implementation slice.
+- Production implementation begins only after its implementation package passes the preparation gate.
 - Architecture deviations require ChatGPT Desktop approval.
+- Implementation-level deviations require Claude approval.
+- Protected upstream and runtime paths are not normal feature-development surfaces.
+- Runtime state is separated from source.
+- Sora data is namespaced.
+- Important logic has testable interfaces.
 
 ## 14. Uncertainty Rule
 
-**When evidence is insufficient, stop rather than guess.**
-
-Every important claim must be distinguishable as verified fact, strong inference, design proposal, assumption, or unknown.
-
-This applies to curriculum, repository state, engine behavior, upstream behavior, and agent capabilities.
+When evidence is insufficient, stop rather than guess. Important claims must be distinguishable as verified fact, inference, proposal, assumption, or unknown.
 
 ## 15. Testing and Verification
 
-Testing is multi-layered: static/code verification, unit and logic tests, integration tests, runtime/startup checks, scenario tests, educational review, gameplay review, and human visual/play testing.
-
-A successful build is not proof of correct gameplay. A launched executable is not proof of educational correctness. If tooling cannot execute or observe the game reliably, the limitation must be stated and human verification used where necessary.
+Testing may include static checks, unit tests, integration tests, runtime/startup checks, scenario tests, educational review, gameplay review, and human visual/play testing. A successful build is not proof of correct gameplay or educational correctness.
 
 ## 16. Feature Definition of Done
 
-A non-trivial feature is complete only when applicable requirements, educational evidence, gameplay design, architecture, implementation, tests, technical review, educational/gameplay review, limitations, and human acceptance are satisfied.
+A non-trivial feature is complete only when applicable educational requirements, gameplay design, architecture, implementation package, production implementation, tests, technical review, specialist review, limitations, and human acceptance are satisfied.
 
 ## 17. Protected World
 
-`worlds/Elementary_1/` is protected runtime state. Development should use disposable test-world copies whenever practical.
-
-Before deployment to the primary world: review the change; create and validate a backup; record deployment scope/version; deploy; verify startup/data integrity; record the result; obtain Project Owner authorization.
+`worlds/Elementary_1/` is protected runtime state. Development should use disposable test-world copies whenever practical. Production deployment requires human authorization, backup, recorded scope/version, and post-deployment verification.
 
 ## 18. Six-Version Principle
 
-Sora is intended to evolve through six major versions/years. Architecture should preserve deliberate extension points without introducing premature complexity.
-
-> Build the smallest safe architecture that solves today's requirement and preserves the extension points needed tomorrow.
+Sora is intended to evolve through six major versions/years. Architecture should preserve deliberate extension points without premature complexity.
 
 ## 19. Anti-Scope-Creep
 
-Do not expand Sora merely because an agent can implement something. No unrelated school subjects, general Minecraft features, engine rewrites, premature infrastructure, or technically interesting but educationally irrelevant systems should enter the roadmap without explicit approval.
+Do not expand Sora merely because an agent can implement something. Unrelated school subjects, engine rewrites, premature infrastructure, and technically interesting but educationally irrelevant systems require explicit approval.
 
 ## 20. Constitutional Change
 
-Only the Project Owner may approve changes to this Constitution. Every amendment must record reason, affected rules, impact on workflow/architecture, new version/date, and communication to active agents.
+Only the Project Owner may approve changes to this Constitution. Every amendment must record reason, affected rules, impact, new version/date, and communication to active agents.
 
 ## 21. Permanent Principles
 
 1. Human owns the project.
-2. One primary responsibility per agent.
-3. There is one Technical Lead: Claude.
-4. There is one architecture authority: ChatGPT Desktop.
-5. Qwen Code is Senior Implementation Engineer; OpenCode is Implementation Engineer.
-6. Specifications precede implementation.
-7. Evidence precedes educational claims.
-8. Architecture precedes substantial code.
-9. Coding agents do not compete for technical authority.
-10. No uncontrolled parallel editing of the same files.
-11. Production world is protected.
-12. Luanti/VoxeLibre are governed dependencies.
-13. Every handoff is explicit.
-14. Important decisions are traceable.
-15. Tests prove only what they actually test.
-16. No false claims of execution or play-testing.
-17. Uncertainty is reported, not hidden.
-18. Human acceptance is the final gate.
+2. One architecture authority: ChatGPT Desktop.
+3. One Technical Lead: Claude.
+4. Qwen Code prepares implementation; OpenCode performs primary production implementation.
+5. Specifications precede implementation.
+6. Evidence precedes educational claims.
+7. No competing coding authority.
+8. No uncontrolled parallel editing.
+9. Protected world and upstream code remain governed assets.
+10. Every handoff is explicit and traceable.
+11. Tests prove only what they actually test.
+12. Uncertainty is reported, not hidden.
+13. Human acceptance is the final gate.
