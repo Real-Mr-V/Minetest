@@ -13,12 +13,9 @@ HUMAN PROJECT OWNER / EXECUTIVE MANAGER
                     ▼
       ChatGPT Desktop — Chief Architect
                     │
-          ┌─────────┴─────────┐
-          ▼                   ▼
-ChatGPT Web              Perplexity
-Education Research       Game Design
-          │                   │
-          └─────────┬─────────┘
+                    ▼
+      ChatGPT Web — Education + Gameplay
+                    │
                     ▼
           Hermes — Technical Lead
                     │
@@ -35,33 +32,50 @@ Education Research       Game Design
           HUMAN — Final Acceptance
 ```
 
-## 2. Roles
+ChatGPT Web now combines the former Education Researcher and Game Design & Educational Gameplay responsibilities previously split between ChatGPT Web and Perplexity.
+
+## 2. Current roles
 
 ### Human Project Owner / Executive Manager
 
-Final authority over project scope, priorities, architecture exceptions, protected-path changes, phase activation, and product acceptance.
+Final authority over scope, priorities, phase activation, architecture exceptions, protected-path changes, and product acceptance.
 
 ### ChatGPT Desktop — Chief Architect / Technical Director
 
 Owns system architecture, technical boundaries, integration strategy, architecture decisions, and project-wide technical governance.
 
-### ChatGPT Web — Education Researcher
+### ChatGPT Web — Education Researcher + Game Design & Educational Gameplay
 
-Owns official curriculum research, textbook/teacher-guide analysis, learning objectives, educational constraints, and curriculum traceability.
+Owns:
 
-### Perplexity — Game Design & Educational Gameplay
+- official curriculum research;
+- textbook and teacher-guide analysis;
+- learning objectives;
+- educational constraints and traceability;
+- game mechanics;
+- educational gameplay loops;
+- player interaction;
+- progression and feedback;
+- mapping approved learning objectives into gameplay.
 
-Owns game mechanics, educational gameplay loops, player interaction, progression, feedback, and the translation of approved learning objectives into gameplay.
+ChatGPT Web must distinguish official educational facts from design inference. It does not own production code or technical architecture.
 
 ### Hermes — Technical Lead / Senior Software Engineer
 
 Hermes replaces Claude in the engineering leadership position.
 
-Owns technical specifications, engineering design, dependency analysis, implementation constraints, technical risk analysis, engineering standards, and review of implementation.
+Owns:
 
-Hermes is the technical gate between architecture and production implementation.
+- technical specifications;
+- engineering design;
+- dependency and integration analysis;
+- implementation constraints;
+- technical risk analysis;
+- engineering standards;
+- implementation gate;
+- engineering review.
 
-Hermes does not replace the Chief Architect and does not have final project authority.
+Hermes is the technical gate between architecture and production implementation. Hermes does not replace ChatGPT Desktop as Chief Architect and does not possess final project authority.
 
 ### Qwen Code — Implementation Preparation Engineer
 
@@ -69,14 +83,14 @@ Qwen Code prepares implementation work rather than acting as a second production
 
 Responsibilities:
 
-- inspect the relevant repository code;
+- inspect relevant repository code;
 - identify exact files and integration points;
 - convert approved specifications into implementation-ready tasks;
 - identify dependencies and risks;
 - prepare implementation sequence;
 - prepare validation checklist.
 
-Qwen Code must not independently redesign the architecture.
+Qwen Code must remain inside the approved architecture and technical specification.
 
 ### OpenCode — Production Implementation Engineer
 
@@ -112,11 +126,15 @@ OpenCode  → Hermes
 
 The implementing agent must not resolve an architectural ambiguity by inventing a new design.
 
-## 4. Removed member
+## 4. Removed members
 
-**Claude — REMOVED**
+### Claude — REMOVED
 
-Claude no longer holds any Sora team responsibility. Existing documents and workflow references to Claude as an active team member must be treated as obsolete and replaced by Hermes where the former role was technical leadership/specification/review.
+Claude no longer holds any Sora team responsibility. References to Claude as an active team member are obsolete.
+
+### Perplexity — REMOVED
+
+Perplexity no longer holds any Sora team responsibility. Its Game Design & Educational Gameplay responsibilities are now owned by ChatGPT Web.
 
 ## 5. No-authority-by-default rule
 
