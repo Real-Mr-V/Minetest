@@ -6,207 +6,88 @@
 **Status:** PRE-DEVELOPMENT / DEVELOPMENT NOT AUTHORIZED  
 **Last updated:** 2026-08-19
 
----
-
 ## 1. Authoritative current state
 
-Sora remains in the **pre-development preparation phase**.
+Sora is still in pre-development preparation. The current team is:
 
-The team has been reorganized:
+- Human — Project Owner / Executive Manager
+- ChatGPT Desktop — Chief Architect / Technical Director
+- ChatGPT Web — Education Researcher + Game Design & Educational Gameplay
+- Hermes — Technical Lead / Senior Software Engineer
+- Qwen Code — Implementation Preparation Engineer
+- OpenCode — Production Implementation Engineer
 
-- **Claude — REMOVED**
-- **Hermes — ACTIVE, replacing Claude as Technical Lead / Senior Software Engineer**
-- **Perplexity — REMOVED**
-- **ChatGPT Web — expanded to Education Researcher + Game Design & Educational Gameplay**
+Claude and Perplexity are removed and must not receive assignments.
 
-These changes do **not** constitute a development order.
+No development order has been issued. Team reorganization and document maintenance do not authorize development.
 
-**No development order has been issued to the Sora team.**
-
-No AI member currently has authorization to implement a Sora feature, create production Sora code, modify the live `Elementary_1` world, modify `luanti/`, modify `games/mineclone2/`, begin the first Vertical Slice, or interpret previous discussions as a development assignment.
-
----
-
-## 2. Current workflow state
+## 2. Current workflow
 
 ```text
-PROJECT PREPARATION
+Human Authorization
         ↓
-TEAM / ROLE DEFINITION
+ChatGPT Web — Education + Gameplay
         ↓
-REPOSITORY GOVERNANCE
+ChatGPT Desktop — Architecture
         ↓
-WORKFLOW DOCUMENTATION
+Hermes — Technical Specification
         ↓
-[CURRENT STATE]
-READY FOR DEVELOPMENT ORDER
+Qwen Code — Implementation Preparation
         ↓
-HUMAN AUTHORIZATION REQUIRED
+Hermes — Technical Gate
         ↓
-EDUCATION RESEARCH + GAMEPLAY DESIGN
+OpenCode — Production Implementation
         ↓
-ARCHITECTURE
+Hermes — Engineering Review
         ↓
-TECHNICAL SPECIFICATION
-        ↓
-IMPLEMENTATION PREPARATION
-        ↓
-TECHNICAL GATE
-        ↓
-PRODUCTION IMPLEMENTATION
-        ↓
-ENGINEERING REVIEW
-        ↓
-HUMAN ACCEPTANCE
+Human — Final Acceptance
 ```
 
-No transition is automatic. Every transition requires an explicit handoff.
+No phase transition is automatic.
 
----
+## 3. Responsibility boundaries
 
-## 3. Current team
+### Human
+Final authority, authorization, scope, priority, protected-path exceptions, and acceptance.
 
-| Member | Role | Primary responsibility |
-|---|---|---|
-| Human | Project Owner / Executive Manager | Executive authority, authorization, final acceptance |
-| ChatGPT Desktop | Chief Architect / Technical Director | Architecture and technical direction |
-| ChatGPT Web | Education Researcher + Game Design & Educational Gameplay | Curriculum research, educational design, gameplay design |
-| Hermes | Technical Lead / Senior Software Engineer | Technical specification, engineering gate, code review |
-| Qwen Code | Implementation Preparation Engineer | Prepare implementation-ready work |
-| OpenCode | Production Implementation Engineer | Implement approved production code |
+### ChatGPT Web
+Owns curriculum research and educational gameplay design. This role combines the responsibilities previously split between ChatGPT Web and Perplexity.
 
-### Removed members
+### ChatGPT Desktop
+Owns architecture, technical direction, system boundaries, integration strategy, and architecture decisions.
 
-- Claude — no longer a Sora team member.
-- Perplexity — no longer a Sora team member.
+### Hermes
+Owns technical specifications, engineering constraints, dependency analysis, technical gate, and engineering review. Hermes replaced Claude in the technical-lead position.
 
-No workflow instruction should assign work to either removed member.
+### Qwen Code
+Prepares implementation-ready work from an approved specification. It does not own production implementation.
 
----
+### OpenCode
+Performs the authorized production implementation. It does not redesign architecture or educational/gameplay requirements independently.
 
-## 4. Critical responsibility boundaries
+## 4. Qwen Code / OpenCode separation
 
 ```text
-ChatGPT Web
-Education + Gameplay Design
-        ↓
-ChatGPT Desktop
-Architecture
-        ↓
-Hermes
-Technical Specification / Engineering Gate
-        ↓
-Qwen Code
-Implementation Preparation
-        ↓
-Hermes
-Technical Gate
-        ↓
-OpenCode
-Production Implementation
-        ↓
-Hermes
-Engineering Review
-        ↓
-Human
-Acceptance
+Qwen Code = PREPARE
+OpenCode  = IMPLEMENT
+Hermes    = GOVERN + REVIEW
 ```
 
-### Qwen Code vs OpenCode
+They are not parallel programmers. Qwen Code prepares; OpenCode implements.
 
-They are **not parallel programmers**.
-
-- Qwen Code prepares the implementation.
-- OpenCode performs the production implementation.
-- Hermes owns the technical gate and engineering review.
-
-If Qwen Code discovers an architectural ambiguity, it escalates to Hermes and/or ChatGPT Desktop.
-
-If OpenCode discovers an ambiguity that cannot be resolved from the approved specification, it stops and escalates rather than making an unapproved design decision.
-
----
+Ambiguity in preparation → Hermes, with architectural questions escalated to ChatGPT Desktop.  
+Ambiguity during implementation → Hermes.  
+No agent may silently invent an architectural exception.
 
 ## 5. First planned feature
 
-The first planned Sora Vertical Slice remains:
+**Elementary Grade 1 Mathematics — Addition and Subtraction**
 
-> **Elementary Grade 1 Mathematics — Addition and Subtraction**
+Status: `PLANNED` only.
 
-This remains **PLANNED**, not active.
+## 6. Handoff protocol
 
----
-
-## 6. Standard feature workflow
-
-### Phase 0 — Human Authorization
-
-The human project owner explicitly activates a feature. Until this occurs, the feature remains `PLANNED`.
-
-### Phase 1 — Education Research & Gameplay Design
-
-**Owner: ChatGPT Web**
-
-Because Perplexity has been removed, ChatGPT Web now owns both responsibilities.
-
-Deliverables:
-
-- official curriculum research;
-- learning objectives;
-- textbook/teacher-guide traceability;
-- educational boundaries;
-- gameplay concept;
-- gameplay loop;
-- mechanics;
-- progression and feedback;
-- educational-to-gameplay mapping.
-
-ChatGPT Web must clearly distinguish official facts from design inference.
-
-### Phase 2 — Architecture
-
-**Owner: ChatGPT Desktop**
-
-Produces architecture decisions, module boundaries, data flow, integration points, repository paths, and technical constraints.
-
-### Phase 3 — Technical Specification
-
-**Owner: Hermes**
-
-Produces implementation specifications, interfaces where needed, file-level change plans, dependencies, edge cases, acceptance criteria, and engineering risks.
-
-Hermes may return an architectural problem to ChatGPT Desktop rather than inventing an architectural exception.
-
-### Phase 4 — Implementation Preparation
-
-**Owner: Qwen Code**
-
-Produces implementation-ready tasks, exact relevant files, existing-code analysis, dependency checks, implementation sequence, and validation checklist.
-
-### Phase 5 — Production Implementation
-
-**Owner: OpenCode**
-
-Produces authorized production changes and reports modified files and validation results.
-
-### Phase 6 — Engineering Review
-
-**Owner: Hermes**
-
-Checks specification compliance, architecture compliance, code quality, scope discipline, dependency correctness, maintainability, and identifiable regressions.
-
-Hermes may reject the implementation and return actionable corrections to OpenCode.
-
-### Phase 7 — Human Acceptance
-
-**Owner: Human Project Owner**
-
-Only the human project owner can declare the feature accepted for Sora.
-
----
-
-## 7. Handoff protocol
-
-Every formal handoff must state:
+Every formal handoff must contain:
 
 ```text
 FROM:
@@ -222,13 +103,11 @@ BLOCKERS:
 NEXT OWNER:
 ```
 
-An agent must not infer a new assignment merely from a previous conversation, document, commit, research result, or capability test.
+A document, conversation, research result, commit, or previous task does not create an implicit assignment.
 
----
+## 7. Protected repository boundaries
 
-## 8. Protected repository boundaries
-
-Unless explicitly authorized by the human project owner:
+Unless explicitly authorized by the Human Project Owner:
 
 ```text
 luanti/
@@ -237,13 +116,9 @@ worlds/Elementary_1/
 mod_data/
 ```
 
-remain protected.
+remain protected. `Elementary_1` is live/runtime world state and is not the normal development workspace.
 
-The live `Elementary_1` world is runtime state, not the normal development workspace.
-
----
-
-## 9. Current handoff record
+## 8. Current handoff record
 
 ```text
 CURRENT PHASE:       PRE-DEVELOPMENT
@@ -253,26 +128,8 @@ ACTIVE OWNER:        NONE
 AUTHORIZATION:       NOT GRANTED
 ```
 
-### Next required action
+The next transition requires an explicit development order from the Human Project Owner.
 
-**Human Project Owner must explicitly issue the first development order.**
+## 9. Governing rule
 
-### First planned feature after authorization
-
-`Elementary Grade 1 Mathematics — Addition and Subtraction`
-
-Until that order is issued, all AI team members remain on standby for feature development.
-
----
-
-## 10. Historical clarification
-
-Previous repository inspections, capability tests, architecture discussions, `.gitignore` creation, workflow-document creation, and team reorganization are preparation activities only.
-
-They do not constitute a feature-development order.
-
----
-
-## 11. Governing principle
-
-> **No implicit orders. No autonomous phase transitions. No parallel ownership of the same responsibility. No production implementation without an approved specification and explicit authorization.**
+> **No implicit orders. No autonomous phase transitions. One clear owner per responsibility. No parallel production programmers. No production implementation without an approved specification and explicit authorization.**
