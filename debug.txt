@@ -3095,3 +3095,126 @@
 2026-08-15 04:44:09: ACTION[ServerStop]: Server: Shutting down
 2026-08-15 04:44:09: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
 2026-08-15 04:44:09: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-20 08:17:32: [Main]: Automatically selecting world at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-20 08:17:36: ERROR[CurlFetch]: HTTPFetch for https://www.luanti.org/release_info.json failed: Could not resolve hostname
+2026-08-20 08:17:36: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 08:17:36: ERROR[Main]: Failed to read JSON output from https://www.luanti.org/release_info.json, status code = 0
+2026-08-20 08:17:38: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 08:17:39: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-20 08:17:39: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-20 08:17:39: ACTION[ServerStart]: World seed = 1000000000
+2026-08-20 08:17:39: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-20 08:17:39: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-20 08:17:39: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-20 08:17:39: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-20 08:17:39: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-20 08:17:39: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-20 08:17:39: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-20 08:17:44: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-20 08:17:49: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-20 08:17:49: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:53438.
+2026-08-20 08:18:00: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-08-20 08:18:04: ACTION[Server]: [mcl_music] Playing track: DarkReaven-sweet_piano_8bit, for scenario: overworld
+2026-08-20 08:18:24: ACTION[Emerge-0]: [mcl_structures] mineshaft placed at (723,7,-315)
+2026-08-20 08:18:24: ACTION[Server]: [mcl_music] Stopping music
+2026-08-20 08:18:52: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-20 08:18:52: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-08-20 08:18:53: ACTION[ServerStop]: Server: Shutting down
+2026-08-20 08:18:53: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-20 08:18:53: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-20 08:18:54: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 08:19:02: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+
+
+-------------
+  Separator
+-------------
+
+2026-08-20 08:39:25: [Main]: Automatically selecting world at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-20 08:39:29: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 08:42:28: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 08:43:55: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+
+
+-------------
+  Separator
+-------------
+
+2026-08-20 09:05:38: [Main]: Automatically selecting world at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-20 09:05:42: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 09:05:43: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 09:05:43: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-20 09:05:43: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-20 09:05:43: ACTION[ServerStart]: World seed = 1000000000
+2026-08-20 09:05:43: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-20 09:05:43: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-20 09:05:43: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-20 09:05:43: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-20 09:05:43: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-20 09:05:44: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-20 09:05:44: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-20 09:05:48: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-20 09:05:50: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-20 09:05:50: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:49448.
+2026-08-20 09:05:53: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-08-20 09:07:03: ACTION[Emerge-0]: [mcl_structures] mineshaft placed at (797,4,-272)
+2026-08-20 09:07:16: ACTION[Emerge-0]: Do not spawn village here as heightmap not good
+2026-08-20 09:07:57: ACTION[Emerge-0]: [mcl_structures] mineshaft placed at (793,6,126)
+2026-08-20 09:08:53: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-20 09:08:53: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-08-20 09:08:53: ACTION[ServerStop]: Server: Shutting down
+2026-08-20 09:08:53: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-20 09:08:53: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-20 09:08:55: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 09:09:00: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+
+
+-------------
+  Separator
+-------------
+
+2026-08-20 13:15:12: [Main]: Automatically selecting world at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-20 13:15:14: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 13:15:55: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-20 13:16:00: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+
+
+-------------
+  Separator
+-------------
+
+2026-08-25 02:26:20: [Main]: Automatically selecting world at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-25 02:26:21: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-25 02:26:21: ERROR[CurlFetch]: HTTPFetch for https://www.luanti.org/release_info.json failed: Could not resolve hostname
+2026-08-25 02:26:21: ERROR[Main]: Failed to read JSON output from https://www.luanti.org/release_info.json, status code = 0
+2026-08-25 02:26:23: ERROR[CurlFetch]: HTTPFetch for https://content.luanti.org/api/updates/?type=mod&type=game&type=txp&protocol_version=52&engine_version=5.16.1 failed: Could not resolve hostname
+2026-08-25 02:26:24: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-25 02:26:24: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-25 02:26:24: ACTION[ServerStart]: World seed = 1000000000
+2026-08-25 02:26:24: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-25 02:26:24: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-25 02:26:24: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-25 02:26:24: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-25 02:26:24: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-25 02:26:24: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-25 02:26:24: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-25 02:26:29: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-25 02:26:34: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-25 02:26:34: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:63998.
+2026-08-25 02:26:39: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-08-25 02:29:57: ACTION[Server]: singleplayer has gotten award mcl:sweetDreams
+2026-08-25 02:29:57: ACTION[Main]: CHAT: New respawn position set!
+2026-08-25 02:29:57: ACTION[Main]: CHAT: singleplayer has made the advancement [Sweet Dreams]
+2026-08-25 02:30:02: ACTION[Server]: [mcl_weather] sleep() changed the weather from clear to clear
+2026-08-25 02:30:04: ACTION[Server]: [mcl_music] Playing track: DarkReaven-cube_waltz_2, for scenario: overworld
+2026-08-25 02:38:20: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-25 02:38:20: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-08-25 02:38:20: ACTION[ServerStop]: Server: Shutting down
+2026-08-25 02:38:20: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-25 02:38:20: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
