@@ -2,11 +2,11 @@
 
 **Project:** Sora Educational Game  
 **Status:** Active workflow rule  
-**Last updated:** 2026-08-19
+**Last updated:** 2026-08-25
 
 ## Purpose
 
-This document defines how work moves between Sora team members without duplicated authority or parallel conflicting implementation.
+This document defines how work moves between Sora team members without duplicated authority or conflicting implementation.
 
 ## Mandatory sequence
 
@@ -15,9 +15,7 @@ For a normal feature:
 ```text
 Human Authorization
       ↓
-ChatGPT Web — Education Research
-      ↓
-Perplexity — Game Design
+ChatGPT Web — Education Research + Game Design
       ↓
 ChatGPT Desktop — Architecture
       ↓
@@ -34,44 +32,55 @@ Hermes — Engineering Review
 Human — Final Acceptance
 ```
 
-A stage may be skipped only when the human project owner explicitly approves the exception and the reason is recorded.
+ChatGPT Web owns both education research and educational gameplay design because Perplexity is no longer a team member. Claude is no longer a team member; Hermes owns the Technical Lead function.
+
+A stage may be skipped only when the Human Project Owner explicitly approves the exception and the reason is recorded.
 
 ## Handoff record
 
 Every formal handoff must contain:
 
 ```text
+TASK ID:
 FROM:
 TO:
 FEATURE:
 CURRENT PHASE:
 STATUS:
-INPUTS:
+AUTHORITATIVE INPUTS:
 DECISIONS ALREADY MADE:
 TASK:
+ALLOWED PATHS:
+FORBIDDEN PATHS:
 CONSTRAINTS:
 EXPECTED OUTPUT:
+ACCEPTANCE CRITERIA:
 BLOCKERS:
 NEXT OWNER:
+EXACT NEXT ACTION:
 ```
 
 ## Engineering separation
 
 ### Qwen Code
 
-Prepares. It investigates the repository and creates an implementation-ready plan based on an approved technical specification.
+Prepares. It investigates the repository and creates the implementation-ready surface and handoff package from an approved technical specification. It is not the production implementation owner.
 
 ### OpenCode
 
-Implements. It executes the approved implementation plan and does not act as an independent architect.
+Implements. It executes the approved implementation package in authorized source paths. It does not act as an independent architect.
 
 ### Hermes
 
-Governs engineering. It converts architecture into technical specifications, resolves engineering ambiguity, and reviews implementation.
+Governs engineering. It converts architecture into technical specifications, resolves engineering ambiguity, controls the preparation gate, and reviews implementation.
 
 ### ChatGPT Desktop
 
-Owns architecture. It resolves system-level architectural decisions and remains above implementation details unless intervention is required.
+Owns architecture. It resolves system-level architectural decisions and does not routinely implement production feature code.
+
+### ChatGPT Web
+
+Owns curriculum evidence and Game Design & Educational Gameplay. It does not own software architecture or production implementation.
 
 ## Escalation
 
@@ -80,7 +89,7 @@ Educational ambiguity
     → ChatGPT Web
 
 Gameplay ambiguity
-    → Perplexity
+    → ChatGPT Web
 
 Architectural ambiguity
     → ChatGPT Desktop
@@ -91,7 +100,7 @@ Technical specification ambiguity
 Implementation ambiguity
     → Hermes
 
-Project-scope conflict
+Project-scope / governance conflict
     → Human Project Owner
 ```
 
@@ -106,6 +115,6 @@ An agent must stop and escalate if:
 - the change would materially expand project scope;
 - the agent cannot determine whether a behavior is intentional.
 
-## Current state
+## Current execution rule
 
-No feature is currently active and no development order has been issued. This protocol is therefore currently a governance rule, not an active task assignment.
+Issue #1 is the first active development order. Its scope is **main Sora story first**, beginning with the required first-entry spawn for `Elementary_1`. Educational lesson implementation must not begin before the story phase is addressed.
