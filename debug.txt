@@ -3218,3 +3218,590 @@
 2026-08-25 02:38:20: ACTION[ServerStop]: Server: Shutting down
 2026-08-25 02:38:20: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
 2026-08-25 02:38:20: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-25 23:40:31: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-25 23:40:31: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-25 23:40:31: ACTION[ServerStart]: World seed = 1000000000
+2026-08-25 23:40:31: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-25 23:40:31: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-25 23:40:31: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-25 23:40:31: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-25 23:40:31: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-25 23:40:31: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-25 23:40:31: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-25 23:40:36: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-25 23:40:38: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-25 23:40:38: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-25 23:40:43: ACTION[Server]: [sora_story] first-entry spawn completed for testplayer at 541,17,-98
+2026-08-25 23:40:43: ACTION[Server]: testplayer [::ffff:127.0.0.1] joins game. List of players: testplayer
+2026-08-25 23:40:43: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 5s | max lag: 0.109s | clients: testplayer
+2026-08-25 23:40:43: ACTION[Main]: CHAT: *** testplayer joined the game.
+2026-08-25 23:40:48: ACTION[Server]: [mcl_music] Playing track: exhale_and_tim_unwin-farmer, for scenario: overworld
+2026-08-25 23:40:58: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-25 23:40:58: ACTION[Server]: testplayer leaves game. List of players: 
+2026-08-25 23:40:58: ACTION[ServerStop]: Server: Shutting down
+2026-08-25 23:40:58: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-25 23:40:58: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-25 23:41:28: ACTION[Main]: [doc] doc.mt opened.
+2026-08-25 23:41:28: ACTION[Main]: [doc] doc.mt successfully read.
+2026-08-25 23:41:28: ACTION[Main]: World seed = 1000000000
+2026-08-25 23:41:28: ACTION[Main]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-25 23:41:28: ACTION[Main]: World created with Luanti version = 5.16.1
+2026-08-25 23:41:28: ACTION[Main]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-25 23:41:28: ACTION[Main]: [vl_cavesounds] Cave sounds are activated
+2026-08-25 23:41:28: ACTION[Main]: [mcl_music] In-game music is activated
+2026-08-25 23:41:28: ACTION[Main]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-25 23:41:28: ACTION[Main]: [mcl_weather] Weather restored.
+2026-08-25 23:41:33: WARNING[Main]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-25 23:41:35: ACTION[Main]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-25 23:41:35: ACTION[Main]: Server for gameid="mineclone2" listening on [::]:30001.
+
+
+-------------
+  Separator
+-------------
+
+======== Testing module TestVoxelManipulator
+[PASS] testBasic - 0ms
+[PASS] testEmerge - 0ms
+[PASS] testBlitBack - 1ms
+[PASS] testBlitBack2 - 0ms
+======== Module TestVoxelManipulator passed (0 failures / 4 tests) - 1ms
+======== Testing module TestVoxelArea
+[PASS] test_addarea - 0ms
+[PASS] test_pad - 0ms
+[PASS] test_extent - 0ms
+[PASS] test_volume - 0ms
+[PASS] test_contains_voxelarea - 0ms
+[PASS] test_contains_point - 0ms
+[PASS] test_contains_i - 0ms
+[PASS] test_equal - 0ms
+[PASS] test_plus - 0ms
+[PASS] test_minor - 0ms
+[PASS] test_diff - 0ms
+[PASS] test_intersect - 0ms
+[PASS] test_index_xyz_all_pos - 0ms
+[PASS] test_index_xyz_x_neg - 0ms
+[PASS] test_index_xyz_y_neg - 0ms
+[PASS] test_index_xyz_z_neg - 0ms
+[PASS] test_index_xyz_xy_neg - 0ms
+[PASS] test_index_xyz_xz_neg - 0ms
+[PASS] test_index_xyz_yz_neg - 0ms
+[PASS] test_index_xyz_all_neg - 0ms
+[PASS] test_index_v3s16_all_pos - 0ms
+[PASS] test_index_v3s16_x_neg - 0ms
+[PASS] test_index_v3s16_y_neg - 0ms
+[PASS] test_index_v3s16_z_neg - 0ms
+[PASS] test_index_v3s16_xy_neg - 0ms
+[PASS] test_index_v3s16_xz_neg - 0ms
+[PASS] test_index_v3s16_yz_neg - 0ms
+[PASS] test_index_v3s16_all_neg - 0ms
+[PASS] test_add_x - 0ms
+[PASS] test_add_y - 0ms
+[PASS] test_add_z - 0ms
+[PASS] test_add_p - 0ms
+======== Module TestVoxelArea passed (0 failures / 32 tests) - 0ms
+======== Testing module TestVoxelAlgorithms
+[PASS] testVoxelLineIterator - 2ms
+[PASS] testLighting - 41ms
+======== Module TestVoxelAlgorithms passed (0 failures / 2 tests) - 43ms
+======== Testing module TestUtilities
+[PASS] testAngleWrapAround - 1ms
+[PASS] testWrapDegrees_0_360_v3f - 3543ms
+[PASS] testLowercase - 0ms
+[PASS] testTrim - 0ms
+[PASS] testIsYes - 0ms
+[PASS] testRemoveStringEnd - 0ms
+[PASS] testUrlEncode - 0ms
+[PASS] testUrlDecode - 0ms
+[PASS] testPadString - 0ms
+[PASS] testStartsWith - 0ms
+[PASS] testStrEqual - 0ms
+[PASS] testStrToIntConversion - 0ms
+[PASS] testStringReplace - 0ms
+[PASS] testStringAllowed - 0ms
+[PASS] testAsciiPrintableHelper - 0ms
+[PASS] testUTF8 - 0ms
+[PASS] testRemoveEscapes - 0ms
+[PASS] testWrapRows - 0ms
+[PASS] testEnrichedString - 0ms
+[PASS] testIsNumber - 0ms
+[PASS] testIsPowerOfTwo - 0ms
+[PASS] testMyround - 0ms
+[PASS] testStringJoin - 0ms
+[PASS] testEulerConversion - 0ms
+[PASS] testBase64 - 0ms
+[PASS] testSanitizeDirName - 0ms
+[PASS] testIsBlockInSight - 0ms
+[PASS] testColorizeURL - 5ms
+[PASS] testSanitizeUntrusted - 0ms
+[PASS] testReadSeed - 0ms
+[PASS] testMyDoubleStringConversions - 0ms
+[PASS] testGetMemorySize - 0ms
+======== Module TestUtilities passed (0 failures / 32 tests) - 3549ms
+======== Testing module TestThreading
+[PASS] testStartStopWait - 393ms
+[PASS] testAtomicSemaphoreThread - 13ms
+[PASS] testTLS - 20ms
+======== Module TestThreading passed (0 failures / 3 tests) - 426ms
+======== Testing module TestSocket
+[PASS] testIPv4Socket - 52ms
+[PASS] testIPv6Socket - 52ms
+======== Module TestSocket passed (0 failures / 2 tests) - 104ms
+======== Testing module TestSettings
+2026-08-25 23:42:11: ERROR[Main]: Invalid setting name "Zoop = Poop
+2026-08-25 23:42:11: ERROR[Main]: some_other_setting"
+2026-08-25 23:42:11: ERROR[Main]: Invalid character sequence '"""' found in setting value!
+2026-08-25 23:42:11: ERROR[Main]: Invalid character sequence '"""' found in setting value!
+[PASS] testAllSettings - 5ms
+[PASS] testDefaults - 1ms
+[PASS] testFlagDesc - 0ms
+======== Module TestSettings passed (0 failures / 3 tests) - 6ms
+======== Testing module TestServerModManager
+2026-08-25 23:42:11: WARNING[Main]: Can't find game devtest, skipping this module.
+======== Module TestServerModManager passed (0 failures / 0 tests) - 0ms
+======== Testing module TestServerShutdownState
+[PASS] testInit - 0ms
+[PASS] testReset - 0ms
+[PASS] testTrigger - 0ms
+2026-08-25 23:42:11: ACTION[Main]: Server: Shutting down
+[PASS] testTick - 505ms
+======== Module TestServerShutdownState passed (0 failures / 4 tests) - 505ms
+======== Testing module TestSerialization
+[PASS] testSerializeString - 0ms
+[PASS] testDeSerializeString - 0ms
+[PASS] testSerializeLongString - 0ms
+[PASS] testDeSerializeLongString - 0ms
+[PASS] testSerializeJsonString - 0ms
+[PASS] testStreamRead - 0ms
+[PASS] testStreamWrite - 0ms
+[PASS] testFloatFormat - 0ms
+======== Module TestSerialization passed (0 failures / 8 tests) - 0ms
+======== Testing module TestScriptApi
+[PASS] testVectorMetatable - 0ms
+[PASS] testVectorRead - 0ms
+[PASS] testVectorReadErr - 0ms
+2026-08-25 23:42:11: WARNING[Main]: Invalid vector coordinate x (value is nil). (at ?:?)
+2026-08-25 23:42:11: WARNING[Main]: Invalid vector coordinate y (value is nil). (at ?:?)
+2026-08-25 23:42:11: WARNING[Main]: Invalid vector coordinate z (value is nil). (at ?:?)
+[PASS] testVectorReadMix - 0ms
+[PASS] testVectorReadFloat - 0ms
+[PASS] testReadParamFloat - 0ms
+======== Module TestScriptApi passed (0 failures / 6 tests) - 5ms
+======== Testing module TestSchematic
+[PASS] testMtsSerializeDeserialize - 1ms
+[PASS] testLuaTableSerialize - 0ms
+[PASS] testFileSerializeDeserialize - 7ms
+======== Module TestSchematic passed (0 failures / 3 tests) - 8ms
+======== Testing module TestSAO
+2026-08-25 23:42:11: ERROR[Main]: Failed to open "C:\Users\MR_V\AppData\Local\Temp\\MT_a09552\map_meta.txt": The system cannot find the file specified.
+[PASS] testStaticSave - 0ms
+[PASS] testNotSaved - 0ms
+[PASS] testActivate - 0ms
+[PASS] testStaticToFalse - 0ms
+[PASS] testStaticToTrue - 0ms
+2026-08-25 23:42:11: ACTION[Main]: Server: Shutting down
+======== Module TestSAO passed (0 failures / 5 tests) - 507ms
+======== Testing module TestRandom
+[PASS] testPseudoRandom - 0ms
+[PASS] testPseudoRandomRange - 0ms
+[PASS] testPcgRandom - 0ms
+[PASS] testPcgRandomRange - 1ms
+[PASS] testPcgRandomBytes - 0ms
+[PASS] testPcgRandomNormalDist - 5ms
+======== Module TestRandom passed (0 failures / 6 tests) - 6ms
+======== Testing module TestProfiler
+[PASS] testProfilerAverage - 0ms
+======== Module TestProfiler passed (0 failures / 1 tests) - 0ms
+======== Testing module TestObjDef
+[PASS] testHandles - 0ms
+[PASS] testAddGetSetClear - 0ms
+[PASS] testClone - 0ms
+======== Module TestObjDef passed (0 failures / 3 tests) - 0ms
+======== Testing module TestNoise
+[PASS] testNoise2dAtOriginWithZeroSeed - 0ms
+[PASS] testNoise2dWithMaxSeed - 0ms
+[PASS] testNoise2dWithFunPrimes - 0ms
+[PASS] testNoise2dPoint - 1ms
+[PASS] testNoise2dBulk - 0ms
+[PASS] testNoise3dAtOriginWithZeroSeed - 0ms
+[PASS] testNoise3dWithMaxSeed - 0ms
+[PASS] testNoise3dWithFunPrimes - 0ms
+[PASS] testNoise3dPoint - 0ms
+[PASS] testNoise3dBulk - 0ms
+[PASS] testNoiseInvalidParams - 0ms
+======== Module TestNoise passed (0 failures / 11 tests) - 1ms
+======== Testing module TestNodeResolver
+2026-08-25 23:42:12: ERROR[Main]: NodeResolver: failed to resolve node name 'default:warf'.
+2026-08-25 23:42:12: ERROR[Main]: NodeResolver: failed to resolve node name 'default:bloop'.
+2026-08-25 23:42:12: ERROR[Main]: NodeResolver: failed to resolve node name 'default:gobbledygook'.
+2026-08-25 23:42:12: ERROR[Main]: NodeResolver: no more nodes in list
+[PASS] testNodeResolving - 0ms
+2026-08-25 23:42:12: ERROR[Main]: NodeResolver: failed to resolve node name 'default:abloobloobloo'.
+[PASS] testPendingResolveCancellation - 0ms
+======== Module TestNodeResolver passed (0 failures / 2 tests) - 0ms
+======== Testing module TestMoveAction
+[PASS] testMove - 0ms
+[PASS] testMoveFillStack - 0ms
+[PASS] testMoveSomewhere - 0ms
+[PASS] testMoveSomewherePartial - 0ms
+[PASS] testMoveUnallowed - 0ms
+[PASS] testMovePartial - 0ms
+[PASS] testSwap - 0ms
+[PASS] testSwapFromUnallowed - 0ms
+[PASS] testSwapToUnallowed - 0ms
+[PASS] testCallbacks - 0ms
+[PASS] testCallbacksSwap - 0ms
+[PASS] testDrop - 0ms
+[PASS] testDropOne - 0ms
+[PASS] testDropUnallowed - 0ms
+2026-08-25 23:42:12: ACTION[Main]: Server: Shutting down
+======== Module TestMoveAction passed (0 failures / 14 tests) - 506ms
+======== Testing module TestModStorageDatabase
+-------- Dummy database (same object only)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 0ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 0ms
+[PASS] testRecallChanged - 0ms
+[PASS] testListMods - 0ms
+[PASS] testRemove - 0ms
+[PASS] testRecallFail - 0ms
+-------- Files database (same object)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 0ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 0ms
+[PASS] testRecallChanged - 0ms
+[PASS] testListMods - 0ms
+[PASS] testRemove - 0ms
+[PASS] testRecallFail - 0ms
+-------- Files database (new objects)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 0ms
+[PASS] testRecall - 6ms
+[PASS] testChange - 0ms
+[PASS] testRecallChanged - 4ms
+[PASS] testListMods - 0ms
+[PASS] testRemove - 4ms
+[PASS] testRecallFail - 7ms
+-------- SQLite3 database (same object)
+[PASS] testRecallFail - 8ms
+[PASS] testCreate - 5ms
+[PASS] testRecall - 1ms
+[PASS] testChange - 4ms
+[PASS] testRecallChanged - 0ms
+[PASS] testListMods - 9ms
+[PASS] testRemove - 12ms
+[PASS] testRecallFail - 0ms
+-------- SQLite3 database (new objects)
+[PASS] testRecallFail - 7ms
+[PASS] testCreate - 2ms
+[PASS] testRecall - 5ms
+[PASS] testChange - 2ms
+[PASS] testRecallChanged - 5ms
+[PASS] testListMods - 2ms
+[PASS] testRemove - 6ms
+[PASS] testRecallFail - 4ms
+======== Module TestModStorageDatabase passed (0 failures / 40 tests) - 96ms
+======== Testing module TestModChannels
+[PASS] testJoinChannel - 0ms
+[PASS] testLeaveChannel - 0ms
+[PASS] testSendMessageToChannel - 0ms
+======== Module TestModChannels passed (0 failures / 3 tests) - 1ms
+======== Testing module TestMeshCompare
+[PASS] testTriangle - 0ms
+[PASS] testQuad - 0ms
+======== Module TestMeshCompare passed (0 failures / 2 tests) - 0ms
+======== Testing module TestMapNode
+[PASS] testNodeProperties - 0ms
+======== Module TestMapNode passed (0 failures / 1 tests) - 0ms
+======== Testing module TestMapgen
+2026-08-25 23:42:12: ACTION[Main]: Server: Shutting down
+[PASS] testBiomeGen - 505ms
+[PASS] testMapgenEdges - 0ms
+======== Module TestMapgen passed (0 failures / 2 tests) - 505ms
+======== Testing module TestMapDatabase
+[PASS] testPositionEncoding - 0ms
+-------- Dummy
+[PASS] testSave - 0ms
+[PASS] testLoad - 0ms
+[PASS] testList - 0ms
+[PASS] testRemove - 0ms
+[PASS] testList - 0ms
+-------- SQLite3
+[PASS] testSave - 9ms
+[PASS] testLoad - 6ms
+[PASS] testList - 1ms
+[PASS] testRemove - 1ms
+[PASS] testList - 5ms
+-------- LevelDB
+[PASS] testSave - 22ms
+[PASS] testLoad - 14ms
+[PASS] testList - 14ms
+[PASS] testRemove - 13ms
+[PASS] testList - 15ms
+======== Module TestMapDatabase passed (0 failures / 16 tests) - 103ms
+======== Testing module TestMapBlock
+[PASS] testSaveLoad - 1ms
+[PASS] testSaveLoadLowest - 1ms
+[PASS] testSave29 - 1ms
+[PASS] testLoad29 - 0ms
+[PASS] testLoad20 - 1ms
+[PASS] testLoadNonStd - 0ms
+[PASS] testMonoblock - 0ms
+======== Module TestMapBlock passed (0 failures / 7 tests) - 4ms
+======== Testing module TestMapSettingsManager
+[PASS] testMapSettingsManager - 16ms
+[PASS] testMapMetaSaveLoad - 20ms
+2026-08-25 23:42:13: ERROR[Main]: Failed to open "woobawooba/fgdfg/map_meta.txt": The system cannot find the path specified.
+2026-08-25 23:42:13: ERROR[Main]: loadMapMeta: Format error. '[end_of_params]' missing?
+[PASS] testMapMetaFailures - 1ms
+[PASS] testChunks - 0ms
+======== Module TestMapSettingsManager passed (0 failures / 4 tests) - 37ms
+======== Testing module TestMap
+[PASS] testMaxMapgenLimit - 0ms
+[PASS] testForEachNodeInArea - 5ms
+[PASS] testForEachNodeInAreaBlank - 0ms
+[PASS] testForEachNodeInAreaEmpty - 0ms
+======== Module TestMap passed (0 failures / 4 tests) - 5ms
+======== Testing module TestLua
+Test assertion failed: did_destruct
+    at test_lua.cpp:85
+[FAIL] testLuaDestructors - 0ms
+[PASS] testCxxExceptions - 1ms
+======== Module TestLua failed (1 failures / 2 tests) - 1ms
+======== Testing module TestLogging
+[PASS] testNullChecks - 0ms
+[PASS] testBitCheck - 0ms
+======== Module TestLogging passed (0 failures / 2 tests) - 0ms
+======== Testing module TestLBMManager
+[PASS] testNew - 0ms
+[PASS] testExisting - 0ms
+[PASS] testDiscard - 0ms
+======== Module TestLBMManager passed (0 failures / 3 tests) - 0ms
+======== Testing module TestKeycode
+======== Module TestKeycode passed (0 failures / 0 tests) - 0ms
+======== Testing module TestIrrPtr
+[PASS] testRefCounting - 0ms
+[PASS] testSelfAssignment - 0ms
+[PASS] testNullHandling - 0ms
+======== Module TestIrrPtr passed (0 failures / 3 tests) - 0ms
+======== Testing module TestInventory
+[PASS] testSerializeDeserialize - 0ms
+======== Module TestInventory passed (0 failures / 1 tests) - 0ms
+======== Testing module TestGettext
+[PASS] testFmtgettext - 1ms
+======== Module TestGettext passed (0 failures / 1 tests) - 1ms
+======== Testing module TestGameUI
+[PASS] testInit - 0ms
+[PASS] testInfoText - 0ms
+[PASS] testStatusText - 0ms
+======== Module TestGameUI passed (0 failures / 3 tests) - 0ms
+======== Testing module TestFileSys
+[PASS] testIsDirDelimiter - 0ms
+[PASS] testPathStartsWith - 0ms
+[PASS] testRemoveLastPathComponent - 0ms
+[PASS] testRemoveLastPathComponentWithTrailingDelimiter - 0ms
+[PASS] testRemoveRelativePathComponent - 0ms
+[PASS] testAbsolutePath - 3ms
+[PASS] testSafeWriteToFile - 8ms
+2026-08-25 23:42:13: ERROR[Main]: copying C:\Users\MR_V\AppData\Local\Temp\\MT_a09552\src to somewhere failed: The system cannot find the file specified.
+[PASS] testCopyFileContents - 5ms
+2026-08-25 23:42:13: WARNING[Main]: Failed to open "C:\Users\MR_V\AppData\Local\Temp\\MT_a09552\5F68037E.tmp": The system cannot find the file specified.
+[PASS] testNonExist - 0ms
+[PASS] testRecursiveDelete - 5ms
+[PASS] testGetRecursiveSubPaths - 6ms
+======== Module TestFileSys passed (0 failures / 11 tests) - 27ms
+======== Testing module TestEventManager
+[PASS] testRegister - 0ms
+[PASS] testDeregister - 0ms
+[PASS] testRealEvent - 0ms
+[PASS] testRealEventAfterDereg - 0ms
+======== Module TestEventManager passed (0 failures / 4 tests) - 0ms
+======== Testing module TestDataStructures
+-------- ModifySafeMap
+[PASS] testMap1 - 0ms
+[PASS] testMap2 - 0ms
+[PASS] testMap3 - 0ms
+[PASS] testMap4 - 0ms
+[PASS] testMap5 - 0ms
+======== Module TestDataStructures passed (0 failures / 5 tests) - 0ms
+======== Testing module TestCraft
+[PASS] testShapeless - 1ms
+======== Module TestCraft passed (0 failures / 1 tests) - 1ms
+======== Testing module TestMapblockMeshGenerator
+[PASS] testSimpleNode - 1ms
+[PASS] testSurroundedNode - 0ms
+[PASS] testInterliquidSame - 0ms
+[PASS] testInterliquidDifferent - 0ms
+======== Module TestMapblockMeshGenerator passed (0 failures / 4 tests) - 1ms
+======== Testing module TestConnection
+2026-08-25 23:42:13: WARNING[Main]: testNetworkPacketSerialize may fail on this platform.
+[PASS] testNetworkPacketSerialize - 0ms
+[PASS] testHelpers - 0ms
+[PASS] testConnectSendReceive - 1617ms
+======== Module TestConnection passed (0 failures / 3 tests) - 1617ms
+======== Testing module TestCompression
+[PASS] testRLECompression - 0ms
+[PASS] testZlibCompression - 0ms
+[PASS] testZlibLargeData - 3ms
+[PASS] testZstdLargeData - 4ms
+[PASS] testZlibLimit - 3ms
+======== Module TestCompression passed (0 failures / 5 tests) - 10ms
+======== Testing module TestCollision
+[PASS] testAxisAlignedCollision - 1ms
+[PASS] testCollisionMoveSimple - 1ms
+======== Module TestCollision passed (0 failures / 2 tests) - 2ms
+======== Testing module TestClientActiveObjectMgr
+[PASS] testGetActiveSelectableObjects - 0ms
+======== Module TestClientActiveObjectMgr passed (0 failures / 1 tests) - 0ms
+======== Testing module TestBan
+[PASS] testCreate - 8ms
+[PASS] testAdd - 3ms
+[PASS] testRemove - 2ms
+[PASS] testModificationFlag - 4ms
+[PASS] testGetBanName - 3ms
+[PASS] testGetBanDescription - 3ms
+======== Module TestBan passed (0 failures / 6 tests) - 28ms
+======== Testing module TestAuthDatabase
+-------- Files database (same object)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 3ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 3ms
+[PASS] testRecallChanged - 0ms
+[PASS] testChangePrivileges - 3ms
+[PASS] testRecallChangedPrivileges - 0ms
+[PASS] testListNames - 3ms
+[PASS] testDelete - 4ms
+[PASS] testRecallFail - 0ms
+-------- Files database (new objects)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 3ms
+[PASS] testRecall - 1ms
+[PASS] testChange - 2ms
+[PASS] testRecallChanged - 0ms
+[PASS] testChangePrivileges - 3ms
+[PASS] testRecallChangedPrivileges - 1ms
+[PASS] testListNames - 2ms
+[PASS] testDelete - 3ms
+[PASS] testRecallFail - 0ms
+-------- SQLite3 database (same object)
+[PASS] testRecallFail - 11ms
+[PASS] testCreate - 5ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 5ms
+[PASS] testRecallChanged - 0ms
+[PASS] testChangePrivileges - 5ms
+[PASS] testRecallChangedPrivileges - 0ms
+[PASS] testListNames - 5ms
+[PASS] testDelete - 5ms
+[PASS] testRecallFail - 0ms
+-------- SQLite3 database (new objects)
+[PASS] testRecallFail - 10ms
+[PASS] testCreate - 6ms
+[PASS] testRecall - 1ms
+[PASS] testChange - 6ms
+[PASS] testRecallChanged - 2ms
+[PASS] testChangePrivileges - 5ms
+[PASS] testRecallChangedPrivileges - 2ms
+[PASS] testListNames - 5ms
+[PASS] testDelete - 6ms
+[PASS] testRecallFail - 1ms
+======== Module TestAuthDatabase passed (0 failures / 40 tests) - 117ms
+======== Testing module TestAreaStore
+[PASS] testVectorStore - 0ms
+[PASS] testSerialization - 0ms
+======== Module TestAreaStore passed (0 failures / 2 tests) - 0ms
+======== Testing module TestAddress
+[PASS] testBasic - 0ms
+[PASS] testIsLocalhost - 0ms
+[PASS] testResolve - 7ms
+[PASS] testSerializeString - 0ms
+======== Module TestAddress passed (0 failures / 4 tests) - 7ms
+======== Testing module TestActiveObject
+[PASS] testAOAttributes - 0ms
+======== Module TestActiveObject passed (0 failures / 1 tests) - 0ms
+Catch test results: 
+Randomness seeded to: 1110608136
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ is a Catch2 v3.6.0 host application.
+Run with -? for options
+-------------------------------------------------------------------------------
+test translations
+  PO file parser
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:85
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:18: SKIPPED:
+explicitly with message:
+  devtest not found
+-------------------------------------------------------------------------------
+test translations
+  MO file parser
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:103
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:18: SKIPPED:
+explicitly with message:
+  devtest not found
+-------------------------------------------------------------------------------
+x
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/client/test_irr_x_mesh_loader.cpp:21
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/client/test_irr_x_mesh_loader.cpp:26: SKIPPED:
+-------------------------------------------------------------------------------
+gltf
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/client/test_irr_gltf_mesh_loader.cpp:21
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/client/test_irr_gltf_mesh_loader.cpp:26: SKIPPED:
+===============================================================================
+test cases:      9 |      6 passed | 3 skipped
+assertions: 161152 | 161152 passed
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Unit Test Results: FAILED
+    1 / 50 failed modules (1 / 325 failed individual tests).
+    Testing took 8716ms total.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+-------------
+  Separator
+-------------
+
+2026-08-25 23:45:51: WARNING[CurlFetch]: CurlFetchThread blocked for 608ms
+2026-08-25 23:46:20: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-25 23:46:20: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-25 23:46:20: ACTION[ServerStart]: World seed = 1000000000
+2026-08-25 23:46:20: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-25 23:46:20: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-25 23:46:20: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-25 23:46:20: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-25 23:46:20: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-25 23:46:20: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-25 23:46:20: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-25 23:46:25: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-25 23:46:27: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-25 23:46:27: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:56926.
+2026-08-25 23:46:30: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-08-25 23:47:45: ACTION[Server]: [mcl_weather] sleep() changed the weather from clear to clear
+2026-08-25 23:47:47: ACTION[Server]: [mcl_music] Playing track: DarkReaven-starry_sky_at_winter, for scenario: overworld
+2026-08-25 23:48:08: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-25 23:48:08: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-08-25 23:48:08: ACTION[ServerStop]: Server: Shutting down
+2026-08-25 23:48:08: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-25 23:48:08: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
