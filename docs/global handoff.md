@@ -353,3 +353,54 @@ Perform Hermes's implementation-preparation phase for Issue #1, resolve the rema
 Sora's original story is stored in the `sora_story` folder.
 
 Previous entries in this document must remain intact. New events and decisions are appended chronologically below this line.
+
+---
+
+## 2026-08-26 — Hermes implementation preparation for Issue #1 (technical gate)
+
+**ACTOR:** Hermes — Technical Lead / Senior Software Engineer  
+**ACTION:** Completed the implementation-preparation phase for Issue #1 after Qwen Code removal, resolved the open technical decisions, and produced an implementation-ready package for OpenCode. Also updated the workflow-state document.
+
+**REASON / AUTHORITY:** Global handoff entry 2026-08-26 named Hermes as preparation owner. Issue #1 is the active development order. Per the constitution and handoff protocol, all work is recorded in `docs/global handoff.md`.
+
+### Inputs reviewed
+- `docs/SORA_PROJECT_CONSTITUTION.md` (updated, Qwen Code removed)
+- `docs/SORA_WORKFLOW_STATE.md` (updated — Hermes prepares; OpenCode implements)
+- `docs/SORA_ISSUE_1_TECHNICAL_SPEC.md` (updated — Hermes owns preparation)
+- `docs/SORA_HANDOFF_PROTOCOL.md`
+- GitHub Issue #1 via GitHub REST API (open, story-first, spawn at 541,17,-98)
+- Existing scaffolding `mods/sora_core/mod.conf` and `mods/sora_story/mod.conf`
+- Luanti 5.16.1 `doc/lua_api.md` (verified engine API)
+- MineClone2 mod API usage examples (`mcl_spawn/init.lua`, `mod_storage.lua`)
+
+### Technical decisions resolved
+1. **Target module/path:** `mods/sora_story/` (story init) + `mods/sora_core/` (shared storage helper). Scaffolding via `mod.conf` already exists; dependency `sora_story → sora_core`.
+2. **Question "does sora_story already exist":** yes as scaffolding (mod.conf), no production init.lua yet.
+3. **Luanti player-entry API:** use `core.register_on_newplayer(player)` — fires exactly once for a genuinely new player → clean first-entry/idempotent trigger. Verified in pinned 5.16.1 `lua_api.md`.
+4. **Positioning:** `player:set_pos({x=541, y=17, z=-98})`.
+5. **Persistent Sora state:** `core.get_mod_storage()` (StorageRef, survives world restart) with namespaced keys `sora_story.first.<player>`, `sora_story.version`, `sora_story.state.<player>`.
+6. **Disposable test world:** copy `worlds/Elementary_1` → `worlds/Elementary_1_test` (or a fresh menu-creatable world) for verification; never develop on the live protected `Elementary_1`.
+7. **DOCX → requirements:** story fully extracted to `story_output.txt` and understood (library, Dani, Silents); Issue #1 requires only first-entry spawn; story introduction content is future scope.
+8. **Story opening entities:** out of Issue #1 scope. Spawn-only vertical slice.
+
+### Result
+Created `docs/SORA_ISSUE_1_IMPLEMENTATION_PREPARATION.md` — a complete implementation-ready package containing: approved module, exact API calls, persistence schema, initialization/error-handling flow (with pcall), disposable test-world instructions, acceptance checks mapped to AC-1..AC-6, and explicit protected paths.
+
+Updated `docs/SORA_WORKFLOW_STATE.md` to `PREPARATION COMPLETE — TECHNICAL GATE` / `READY_FOR_IMPLEMENTATION`, NEXT HANDOFF: OpenCode.
+
+### Files affected
+- `docs/SORA_ISSUE_1_IMPLEMENTATION_PREPARATION.md` (new)
+- `docs/SORA_WORKFLOW_STATE.md` (edited)
+- `docs/global handoff.md` (this entry)
+
+### Protected paths
+No changes to `luanti/`, `games/mineclone2/`, `worlds/Elementary_1/`, `mod_data/`.
+
+### Blockers
+None. All open technical decisions resolved.
+
+### Next owner
+**OpenCode** — Production Implementation Engineer
+
+### Next action
+OpenCode implements `mods/sora_story/init.lua` (and optionally `mods/sora_core/init.lua`) per the preparation package, verifies in a disposable test world, then returns the result for Hermes engineering review. OpenCode must not begin until Hermes formally passes the technical gate and marks the package `READY`.

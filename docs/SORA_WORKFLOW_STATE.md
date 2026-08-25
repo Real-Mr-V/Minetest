@@ -56,14 +56,15 @@ No phase transition is automatic. Each transition requires a recorded handoff.
 ## 4. Current phase
 
 ```text
-CURRENT PHASE:    TECHNICAL WORKFLOW / STORY-FIRST
+CURRENT PHASE:    PREPARATION COMPLETE — TECHNICAL GATE
 CURRENT ISSUE:    #1
 ACTIVE FEATURE:   Initial first-entry spawn
-CURRENT OWNER:    Hermes — Technical Lead
+CURRENT OWNER:    Hermes — Technical Lead (preparation complete)
+PHASE STATUS:     READY_FOR_IMPLEMENTATION (subject to Hermes gate)
 NEXT HANDOFF:     OpenCode — Production Implementation
 ```
 
-Hermes must complete implementation preparation and the technical gate before OpenCode receives the production implementation handoff.
+Hermes completed implementation preparation (see `docs/SORA_ISSUE_1_IMPLEMENTATION_PREPARATION.md`) and must pass the technical gate before OpenCode receives the production implementation handoff.
 
 ## 5. Responsibility boundaries
 
