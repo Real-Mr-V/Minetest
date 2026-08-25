@@ -3,12 +3,14 @@
 **Project:** Sora Educational Game  
 **Repository:** `Real-Mr-V/Minetest`  
 **Branch:** `main`  
-**Status:** PRE-DEVELOPMENT / DEVELOPMENT NOT AUTHORIZED  
-**Last updated:** 2026-08-19
+**Status:** ACTIVE DEVELOPMENT — ISSUE #1  
+**Last updated:** 2026-08-25
 
 ## 1. Authoritative current state
 
-Sora is still in pre-development preparation. The current team is:
+Sora has entered development under GitHub Issue #1: **SORA: Initial spawn and story-first development handoff**.
+
+Current team:
 
 - Human — Project Owner / Executive Manager
 - ChatGPT Desktop — Chief Architect / Technical Director
@@ -19,14 +21,23 @@ Sora is still in pre-development preparation. The current team is:
 
 Claude and Perplexity are removed and must not receive assignments.
 
-No development order has been issued. Team reorganization and document maintenance do not authorize development.
+## 2. Active development order
 
-## 2. Current workflow
+**Issue:** #1  
+**Title:** SORA: Initial spawn and story-first development handoff  
+**Priority:** Main SORA story first  
+**First-entry requirement:** player must spawn at `541, 17, -98` on first entry.  
+**Story source:** `sora_story/main story_elementary_1.docx`  
+**Educational lessons:** blocked until the main story phase is addressed.
+
+Issue #1 explicitly authorizes development, overriding the previous pre-development standby state for this task only.
+
+## 3. Current workflow
 
 ```text
-Human Authorization
+Human Authorization / Issue #1
         ↓
-ChatGPT Web — Education + Gameplay
+ChatGPT Web — Education + Gameplay Context
         ↓
 ChatGPT Desktop — Architecture
         ↓
@@ -43,29 +54,39 @@ Hermes — Engineering Review
 Human — Final Acceptance
 ```
 
-No phase transition is automatic.
+No phase transition is automatic. Each transition requires a recorded handoff.
 
-## 3. Responsibility boundaries
+## 4. Current phase
+
+```text
+CURRENT PHASE:    TECHNICAL WORKFLOW / STORY-FIRST
+CURRENT ISSUE:    #1
+ACTIVE FEATURE:   Initial first-entry spawn
+CURRENT OWNER:    Hermes — Technical Lead
+NEXT HANDOFF:     Qwen Code — Implementation Preparation
+```
+
+## 5. Responsibility boundaries
 
 ### Human
-Final authority, authorization, scope, priority, protected-path exceptions, and acceptance.
+Final authority, scope, priority, protected-path exceptions, release and acceptance.
 
 ### ChatGPT Web
-Owns curriculum research and educational gameplay design. This role combines the responsibilities previously split between ChatGPT Web and Perplexity.
+Education research and educational gameplay design. For Issue #1 it supplies the existing story/game-design context and does not expand the educational scope.
 
 ### ChatGPT Desktop
-Owns architecture, technical direction, system boundaries, integration strategy, and architecture decisions.
+Architecture, technical direction, system boundaries, integration strategy, and architecture decisions.
 
 ### Hermes
-Owns technical specifications, engineering constraints, dependency analysis, technical gate, and engineering review. Hermes replaced Claude in the technical-lead position.
+Technical specification, engineering constraints, dependency analysis, preparation gate, and engineering review.
 
 ### Qwen Code
-Prepares implementation-ready work from an approved specification. It does not own production implementation.
+Implementation preparation only: repository inspection, exact file/integration mapping, prerequisites, scaffolding where explicitly authorized, and implementation handoff package.
 
 ### OpenCode
-Performs the authorized production implementation. It does not redesign architecture or educational/gameplay requirements independently.
+Production implementation only, after Hermes marks preparation `READY`.
 
-## 4. Qwen Code / OpenCode separation
+## 6. Qwen Code / OpenCode separation
 
 ```text
 Qwen Code = PREPARE
@@ -73,37 +94,7 @@ OpenCode  = IMPLEMENT
 Hermes    = GOVERN + REVIEW
 ```
 
-They are not parallel programmers. Qwen Code prepares; OpenCode implements.
-
-Ambiguity in preparation → Hermes, with architectural questions escalated to ChatGPT Desktop.  
-Ambiguity during implementation → Hermes.  
-No agent may silently invent an architectural exception.
-
-## 5. First planned feature
-
-**Elementary Grade 1 Mathematics — Addition and Subtraction**
-
-Status: `PLANNED` only.
-
-## 6. Handoff protocol
-
-Every formal handoff must contain:
-
-```text
-FROM:
-TO:
-FEATURE:
-PHASE:
-STATUS:
-INPUTS:
-TASK:
-CONSTRAINTS:
-EXPECTED OUTPUT:
-BLOCKERS:
-NEXT OWNER:
-```
-
-A document, conversation, research result, commit, or previous task does not create an implicit assignment.
+They are not parallel programmers.
 
 ## 7. Protected repository boundaries
 
@@ -116,20 +107,41 @@ worlds/Elementary_1/
 mod_data/
 ```
 
-remain protected. `Elementary_1` is live/runtime world state and is not the normal development workspace.
+remain protected. The issue does not authorize direct modification of protected upstream or live-world paths merely because they are related to spawn behavior.
 
-## 8. Current handoff record
+The designated Sora mod location remains `mods/`, marked by `mods/Sora mods location.txt`.
+
+## 8. Handoff protocol
+
+Every formal handoff must contain:
 
 ```text
-CURRENT PHASE:       PRE-DEVELOPMENT
-CURRENT STATUS:      READY_FOR_DEVELOPMENT_ORDER
-ACTIVE FEATURE:      NONE
-ACTIVE OWNER:        NONE
-AUTHORIZATION:       NOT GRANTED
+TASK ID:
+FROM:
+TO:
+FEATURE:
+PHASE:
+STATUS:
+INPUTS:
+TASK:
+ALLOWED PATHS:
+FORBIDDEN PATHS:
+EXPECTED OUTPUT:
+ACCEPTANCE CRITERIA:
+BLOCKERS:
+NEXT OWNER:
+EXACT NEXT ACTION:
 ```
 
-The next transition requires an explicit development order from the Human Project Owner.
+## 9. Definition of completion for Issue #1
 
-## 9. Governing rule
+The issue is not complete merely because code is written. Completion requires:
 
-> **No implicit orders. No autonomous phase transitions. One clear owner per responsibility. No parallel production programmers. No production implementation without an approved specification and explicit authorization.**
+- the first-entry spawn behavior is implemented according to the approved technical specification;
+- story-first ordering is preserved;
+- no educational lesson implementation is introduced prematurely;
+- applicable checks are actually run and reported;
+- Hermes completes engineering review;
+- human performs final acceptance.
+
+If actual visual/play testing is required and cannot be performed by an AI tool, it remains a Human verification responsibility.
