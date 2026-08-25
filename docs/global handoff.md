@@ -124,6 +124,59 @@ Produce the technical specification for Issue #1, including the approved mechani
 
 ---
 
+## 2026-08-25 — Issue #1 Technical Specification
+
+**ACTOR:** ChatGPT Desktop / Chief Architect & Technical Director  
+**ACTION:** Inspected the active Issue #1 and current Sora governance documents, then created the technical specification for the first-entry spawn/story-first implementation boundary.  
+**REASON / AUTHORITY:** Issue #1 is the active development order. The project constitution requires architecture before implementation and explicit handoffs.
+
+### Inputs
+
+- GitHub Issue #1, `SORA: Initial spawn and story-first development handoff`.
+- `docs/SORA_PROJECT_CONSTITUTION.md`.
+- Current `docs/` governance file inventory.
+- Existing `docs/global handoff.md`.
+
+### Result
+
+Created:
+
+```text
+docs/SORA_ISSUE_1_TECHNICAL_SPEC.md
+```
+
+The specification defines:
+
+- Issue #1 scope and exact spawn coordinate `541,17,-98`;
+- canonical story source `sora_story/main story_elementary_1.docx`;
+- protected-path constraints;
+- first-entry/idempotent initialization semantics;
+- recommended Sora-owned implementation boundary;
+- persistent state requirements;
+- implementation-preparation requirements for Qwen Code;
+- production implementation requirements for OpenCode;
+- acceptance criteria;
+- unresolved technical decisions that must be settled during preparation;
+- the required handoff chain.
+
+### Important limitation
+
+The GitHub text interface does not expose the internal text of the DOCX story source. Therefore the specification deliberately does **not** claim to have extracted or validated the full narrative. Narrative implementation requirements must be derived from the actual DOCX contents before implementation.
+
+### Safety decision
+
+No protected path was modified. No production source code was implemented. No lesson/educational gameplay was added.
+
+### Next owner
+
+**Hermes**
+
+### Next action
+
+Review and govern the specification, then hand the approved technical requirements to **Qwen Code** for implementation preparation. Qwen Code must inspect the actual repository implementation surface and produce a preparation package; it must not implement production code.
+
+---
+
 ## Project origin
 
 Sora's original story is stored in the `sora_story` folder.
