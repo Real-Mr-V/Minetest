@@ -2,8 +2,8 @@
 
 **Project:** Sora Educational Game  
 **Repository:** `Real-Mr-V/Minetest`  
-**Status:** Pre-development  
-**Last updated:** 2026-08-19
+**Status:** Active development under Issue #1  
+**Last updated:** 2026-08-25
 
 ## 1. Purpose
 
@@ -43,9 +43,9 @@ No AI member may override the human project owner.
 ```text
 Human
   ↓
-ChatGPT Desktop — Architecture
+ChatGPT Web — Education + Gameplay Context
   ↓
-ChatGPT Web — Education + Gameplay Design
+ChatGPT Desktop — Architecture
   ↓
 Hermes — Technical Specification / Engineering Gate
   ↓
@@ -58,11 +58,9 @@ Hermes — Engineering Review
 Human — Final Acceptance
 ```
 
-The sequence is a governance model, not permission for autonomous execution. A phase begins only after an explicit handoff and, where required, human authorization.
+The sequence is a governance model. A phase begins only after an explicit handoff and, where required, human authorization.
 
 ## 5. Separation of programming responsibilities
-
-Qwen Code and OpenCode are deliberately different roles:
 
 ```text
 Qwen Code = PREPARE
@@ -70,11 +68,7 @@ OpenCode  = IMPLEMENT
 Hermes    = GOVERN + REVIEW
 ```
 
-Qwen Code analyzes approved specifications, repository structure, files, dependencies, integration points, implementation sequence, and validation requirements.
-
-OpenCode implements the approved specification in authorized source paths. It does not independently redesign architecture, curriculum, or gameplay.
-
-If ambiguity affects architecture, Qwen Code and OpenCode must escalate to Hermes; Hermes escalates architectural matters to ChatGPT Desktop.
+Qwen Code prepares the implementation surface from an approved technical specification. OpenCode owns the production implementation. They are not parallel production programmers.
 
 ## 6. Education and gameplay ownership
 
@@ -91,7 +85,7 @@ Educational claims should be traceable to official Iranian curriculum sources wh
 
 ## 7. Architecture ownership
 
-ChatGPT Desktop owns the system architecture and technical direction.
+ChatGPT Desktop owns system architecture and technical direction.
 
 Hermes may challenge an architectural decision and request clarification, but may not silently replace the architecture.
 
@@ -116,33 +110,21 @@ Sora-owned production source must remain clearly separated from upstream Luanti 
 
 A conversation, research result, capability test, commit, document, or previous task does not automatically create a new development assignment.
 
-A development task requires an explicit handoff containing at least:
+A development task requires an explicit handoff. GitHub Issue #1 is the current explicit development order and authorizes only the scope stated in that issue.
 
-```text
-FROM:
-TO:
-FEATURE:
-PHASE:
-STATUS:
-INPUTS:
-TASK:
-CONSTRAINTS:
-EXPECTED OUTPUT:
-BLOCKERS:
-NEXT OWNER:
-```
+## 10. Current development authorization
 
-## 10. Development authorization
+Issue #1, **SORA: Initial spawn and story-first development handoff**, is the first active development order.
 
-The project is currently:
+Its priority is:
 
-```text
-PRE-DEVELOPMENT
-DEVELOPMENT AUTHORIZATION: NOT GRANTED
-ACTIVE FEATURE: NONE
-```
+1. establish the main SORA story phase;
+2. implement the specified first-entry spawn at `541, 17, -98`;
+3. do not begin educational lesson implementation before the story phase is addressed.
 
-The first planned feature is **Elementary Grade 1 Mathematics — Addition and Subtraction**, but it is not active until the human project owner explicitly authorizes it.
+The canonical story source is `sora_story/main story_elementary_1.docx`.
+
+This authorization does **not** grant permission to modify protected upstream or live-world paths without an explicit exception.
 
 ## 11. Change control
 
@@ -159,4 +141,6 @@ Any change to the team, roles, workflow, protected paths, architecture authority
 7. Review after implementation.
 8. Protected runtime and upstream boundaries.
 9. Explicit handoffs.
-10. No production development without authorization.
+10. Educational evidence before educational claims.
+11. No scope expansion without authorization.
+12. No agent claims tests or play-tests it did not actually perform.
