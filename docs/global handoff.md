@@ -182,3 +182,109 @@ Review and govern the specification, then hand the approved technical requiremen
 Sora's original story is stored in the `sora_story` folder.
 
 Previous entries in this document must remain intact. New events and decisions are appended chronologically below this line.
+
+---
+
+## 2026-08-25 — Repository inspection, documentation review, and Issue #1 story analysis
+
+**ACTOR:** Hermes — Technical Lead / Senior Software Engineer  
+**ACTION:** Complete inspection of Sora repository structure, all documentation under `docs/`, GitHub Issue #1 scope, and canonical story source `sora_story/main story_elementary_1.docx`.  
+**REASON / AUTHORITY:** Standing order — every action must be recorded in `docs/global handoff.md`. Issue #1 is the active development order. As Technical Lead, I must govern the technical specification and prepare for the preparation gate.
+
+### Inputs reviewed
+
+- All documents under `docs/`:
+  - `SORA_PROJECT_CONSTITUTION.md` (updated 2026-08-25)
+  - `SORA_TEAM_OPERATING_SYSTEM.md` (in docs/ root, not under WORKFLOW)
+  - `SORA_ARCHITECTURE_BASELINE.md`
+  - `SORA_WORKFLOW_STATE.md` (updated 2026-08-25, shows ACTIVE DEVELOPMENT under Issue #1)
+  - `SORA_HANDOFF_PROTOCOL.md` (updated 2026-08-25, reflects current team)
+  - `SORA_TEAM_ROLES.md` (updated 2026-08-25)
+  - `SORA_ISSUE_1_TECHNICAL_SPEC.md` (created by ChatGPT Desktop)
+  - `README.md`
+  - `global handoff.md`
+- Repository structure:
+  - `luanti/5.16.1/` — Luanti engine (protected)
+  - `games/mineclone2/` — VoxeLibre 0.92.1 (protected)
+  - `worlds/Elementary_1/` — live runtime world (protected)
+  - `mods/` — Sora development surface (marked by `Sora mods location.txt`)
+  - `mod_data/` — runtime state (protected)
+  - `sora_story/main story_elementary_1.docx` — canonical story source
+- GitHub Issue #1: "SORA: Initial spawn and story-first development handoff"
+
+### Story source analysis
+
+Successfully extracted full text from `sora_story/main story_elementary_1.docx` using python-docx. The story establishes:
+- Ancient civilization destroyed by self-deception
+- Child discovers black stone → leads to buried library
+- Library is alive, grows with player's discoveries
+- Character "دنی" (Dani) — last scientist/student of ancient civilization
+- "Silents" (خاموشان) — entities fed by fear, ignorance, prejudice, forgetting
+- Core mechanic: Silents defeated by understanding (math, science, history, logic, asking "why?")
+- Library rooms unlock as player explores world
+- This is the narrative foundation for Issue #1 story-first implementation
+
+### Technical specification status
+
+The technical specification (`SORA_ISSUE_1_TECHNICAL_SPEC.md`) was already created by ChatGPT Desktop and defines:
+- First-entry spawn at `541, 17, -98`
+- Idempotent initialization semantics
+- Protected-path constraints
+- Recommended Sora module boundary (`sora_core/` + `sora_story/`)
+- State model requirements
+- 6 open technical decisions requiring resolution during preparation
+- Clear handoff chain
+
+### Current workflow state
+
+Per `SORA_WORKFLOW_STATE.md`:
+- **CURRENT PHASE:** TECHNICAL WORKFLOW / STORY-FIRST
+- **CURRENT ISSUE:** #1
+- **ACTIVE FEATURE:** Initial first-entry spawn
+- **CURRENT OWNER:** Hermes — Technical Lead
+- **NEXT HANDOFF:** Qwen Code — Implementation Preparation
+
+### Result
+
+- Repository fully inspected
+- All documentation reviewed and current
+- Story source fully extracted and understood
+- Technical specification exists and is ready for governance
+- No protected paths modified
+- No production code implemented
+
+### Decisions
+
+1. The technical specification is sound and aligns with architecture baseline
+2. Next step: Qwen Code preparation phase (repository inspection, exact file mapping, implementation handoff package)
+3. Must resolve 6 open technical decisions during preparation:
+   - exact Sora mod path for story logic
+   - whether sora_story module already exists
+   - Luanti/VoxeLibre player-join callback API
+   - persistent Sora state mechanism
+   - disposable test-world copy process
+   - DOCX story → implementation requirements conversion
+   - whether story opening requires additional entities/formspecs/world content
+
+### Next owner
+
+**Qwen Code**
+
+### Next action
+
+Begin implementation preparation for Issue #1 per the technical specification:
+1. Inspect actual repository mod structure and Luanti/VoxeLibre APIs
+2. Identify exact target module/path for story initialization logic
+3. Map dependencies and integration points
+4. Define persistence/state schema
+5. Produce preparation package with exact file/API map
+6. Do NOT implement production code
+7. Handoff to Hermes for preparation gate review
+
+---
+
+## Project origin
+
+Sora's original story is stored in the `sora_story` folder.
+
+Previous entries in this document must remain intact. New events and decisions are appended chronologically below this line.
