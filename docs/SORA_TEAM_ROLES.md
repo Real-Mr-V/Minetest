@@ -3,9 +3,9 @@
 **Project:** Sora Educational Game  
 **Repository:** `Real-Mr-V/Minetest`  
 **Status:** Active team definition  
-**Last updated:** 2026-08-19
+**Last updated:** 2026-08-25
 
-## 1. Authority hierarchy
+## 1. Current authority hierarchy
 
 ```text
 HUMAN PROJECT OWNER / EXECUTIVE MANAGER
@@ -26,19 +26,17 @@ HUMAN PROJECT OWNER / EXECUTIVE MANAGER
           OpenCode — Implementation
                     │
                     ▼
-          Hermes — Engineering Gate
+          Hermes — Engineering Review
                     │
                     ▼
           HUMAN — Final Acceptance
 ```
 
-ChatGPT Web now combines the former Education Researcher and Game Design & Educational Gameplay responsibilities previously split between ChatGPT Web and Perplexity.
-
 ## 2. Current roles
 
 ### Human Project Owner / Executive Manager
 
-Final authority over scope, priorities, phase activation, architecture exceptions, protected-path changes, and product acceptance.
+Final authority over scope, priorities, phase activation, architecture exceptions, protected-path changes, releases, and product acceptance.
 
 ### ChatGPT Desktop — Chief Architect / Technical Director
 
@@ -46,36 +44,17 @@ Owns system architecture, technical boundaries, integration strategy, architectu
 
 ### ChatGPT Web — Education Researcher + Game Design & Educational Gameplay
 
-Owns:
-
-- official curriculum research;
-- textbook and teacher-guide analysis;
-- learning objectives;
-- educational constraints and traceability;
-- game mechanics;
-- educational gameplay loops;
-- player interaction;
-- progression and feedback;
-- mapping approved learning objectives into gameplay.
+Owns official curriculum research, textbook and teacher-guide analysis, learning objectives, educational constraints, gameplay mechanics, educational gameplay loops, player interaction, progression, feedback, and mapping approved learning objectives into gameplay.
 
 ChatGPT Web must distinguish official educational facts from design inference. It does not own production code or technical architecture.
 
 ### Hermes — Technical Lead / Senior Software Engineer
 
-Hermes replaces Claude in the engineering leadership position.
+Hermes is the single Technical Lead.
 
-Owns:
+Owns technical specifications, engineering design, dependency/integration analysis, implementation constraints, technical risk analysis, engineering standards, preparation gate, and engineering review.
 
-- technical specifications;
-- engineering design;
-- dependency and integration analysis;
-- implementation constraints;
-- technical risk analysis;
-- engineering standards;
-- implementation gate;
-- engineering review.
-
-Hermes is the technical gate between architecture and production implementation. Hermes does not replace ChatGPT Desktop as Chief Architect and does not possess final project authority.
+Hermes does not replace ChatGPT Desktop as Chief Architect and does not possess final project authority.
 
 ### Qwen Code — Implementation Preparation Engineer
 
@@ -88,9 +67,10 @@ Responsibilities:
 - convert approved specifications into implementation-ready tasks;
 - identify dependencies and risks;
 - prepare implementation sequence;
-- prepare validation checklist.
+- prepare validation checklist;
+- prepare scaffolding only where explicitly authorized.
 
-Qwen Code must remain inside the approved architecture and technical specification.
+Qwen Code must remain inside the approved architecture and technical specification. It does not own production implementation.
 
 ### OpenCode — Production Implementation Engineer
 
@@ -101,7 +81,7 @@ Responsibilities:
 - implement approved specifications;
 - modify authorized source paths;
 - perform appropriate local validation;
-- report changes and results.
+- report exact changes and results.
 
 OpenCode must not independently redefine curriculum, gameplay, or architecture.
 
@@ -117,27 +97,44 @@ Hermes    = TECHNICAL GOVERNANCE + REVIEW
 
 No feature should be assigned simultaneously to Qwen Code and OpenCode as independent implementation tasks.
 
-If an implementation ambiguity appears:
-
-```text
-Qwen Code → Hermes / ChatGPT Desktop
-OpenCode  → Hermes
-```
-
-The implementing agent must not resolve an architectural ambiguity by inventing a new design.
-
 ## 4. Removed members
 
 ### Claude — REMOVED
 
-Claude no longer holds any Sora team responsibility. References to Claude as an active team member are obsolete.
+Claude no longer holds any Sora team responsibility.
 
 ### Perplexity — REMOVED
 
-Perplexity no longer holds any Sora team responsibility. Its Game Design & Educational Gameplay responsibilities are now owned by ChatGPT Web.
+Perplexity no longer holds any Sora team responsibility. Its Game Design & Educational Gameplay responsibilities are owned by ChatGPT Web.
 
-## 5. No-authority-by-default rule
+## 5. Current active assignment
 
-Being listed as a team member does not grant permission to begin work.
+GitHub Issue #1 is the current development order:
 
-An explicit task and workflow handoff are required. The current project remains in pre-development standby until the human project owner authorizes the first feature.
+**SORA: Initial spawn and story-first development handoff**
+
+The immediate implementation chain is:
+
+```text
+Issue #1
+  ↓
+Hermes — technical specification
+  ↓
+Qwen Code — preparation
+  ↓
+Hermes — gate
+  ↓
+OpenCode — implementation
+  ↓
+Hermes — review
+  ↓
+Human — acceptance
+```
+
+The first-entry spawn requirement is `541, 17, -98`. The main story phase must be addressed before educational lesson implementation.
+
+## 6. No-authority-by-default rule
+
+Being listed as a team member does not grant permission to begin unrelated work.
+
+The current Issue #1 authorization is limited to its stated scope. Any new feature requires an explicit task/handoff.
