@@ -2,7 +2,7 @@
 
 **Project:** Sora Educational Game  
 **Status:** Active workflow rule  
-**Last updated:** 2026-08-25
+**Last updated:** 2026-08-26
 
 ## Purpose
 
@@ -19,11 +19,7 @@ ChatGPT Web — Education Research + Game Design
       ↓
 ChatGPT Desktop — Architecture
       ↓
-Hermes — Technical Specification
-      ↓
-Qwen Code — Implementation Preparation
-      ↓
-Hermes — Technical Gate
+Hermes — Technical Specification + Implementation Preparation + Engineering Gate
       ↓
 OpenCode — Production Implementation
       ↓
@@ -32,7 +28,7 @@ Hermes — Engineering Review
 Human — Final Acceptance
 ```
 
-ChatGPT Web owns both education research and educational gameplay design because Perplexity is no longer a team member. Claude is no longer a team member; Hermes owns the Technical Lead function.
+ChatGPT Web owns both education research and educational gameplay design because Perplexity is no longer a team member. Claude is no longer a team member; Hermes owns the Technical Lead function. Qwen Code is no longer a team member; Hermes now owns implementation preparation as well as technical specification and engineering governance.
 
 A stage may be skipped only when the Human Project Owner explicitly approves the exception and the reason is recorded.
 
@@ -62,17 +58,15 @@ EXACT NEXT ACTION:
 
 ## Engineering separation
 
-### Qwen Code
+### Hermes
 
-Prepares. It investigates the repository and creates the implementation-ready surface and handoff package from an approved technical specification. It is not the production implementation owner.
+Hermes governs engineering end-to-end before and after implementation. It converts approved architecture into technical specifications, investigates implementation requirements, prepares the implementation-ready package for OpenCode, resolves engineering ambiguity, controls the implementation gate, and reviews the resulting implementation.
+
+Hermes is **not** the production implementation owner.
 
 ### OpenCode
 
-Implements. It executes the approved implementation package in authorized source paths. It does not act as an independent architect.
-
-### Hermes
-
-Governs engineering. It converts architecture into technical specifications, resolves engineering ambiguity, controls the preparation gate, and reviews implementation.
+OpenCode is the sole production implementation owner. It executes the approved implementation package in authorized source paths. It does not act as an independent architect and must escalate architectural or specification conflicts to Hermes.
 
 ### ChatGPT Desktop
 
@@ -94,7 +88,7 @@ Gameplay ambiguity
 Architectural ambiguity
     → ChatGPT Desktop
 
-Technical specification ambiguity
+Technical specification / preparation ambiguity
     → Hermes
 
 Implementation ambiguity
