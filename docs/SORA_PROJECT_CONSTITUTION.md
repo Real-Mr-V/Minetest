@@ -3,7 +3,7 @@
 **Project:** Sora Educational Game  
 **Repository:** `Real-Mr-V/Minetest`  
 **Status:** Active development under Issue #1  
-**Last updated:** 2026-08-25
+**Last updated:** 2026-08-26
 
 ## 1. Purpose
 
@@ -32,11 +32,10 @@ No AI member may override the human project owner.
 | Human | Project Owner / Executive Manager | Final project authority and acceptance |
 | ChatGPT Desktop | Chief Architect / Technical Director | Architecture and technical direction |
 | ChatGPT Web | Education Researcher + Game Design & Educational Gameplay | Curriculum, educational design, gameplay design |
-| Hermes | Technical Lead / Senior Software Engineer | Technical specification, engineering governance and review |
-| Qwen Code | Implementation Preparation Engineer | Implementation preparation; not production ownership |
+| Hermes | Technical Lead / Senior Software Engineer | Technical specification, engineering governance, implementation preparation, and review |
 | OpenCode | Production Implementation Engineer | Authorized production implementation |
 
-**Claude and Perplexity are removed members and have no current authority or assignment.**
+**Claude, Perplexity, and Qwen Code are removed members and have no current authority or assignment.**
 
 ## 4. Authority chain
 
@@ -47,9 +46,7 @@ ChatGPT Web — Education + Gameplay Context
   ↓
 ChatGPT Desktop — Architecture
   ↓
-Hermes — Technical Specification / Engineering Gate
-  ↓
-Qwen Code — Implementation Preparation
+Hermes — Technical Specification / Engineering Gate / Preparation
   ↓
 OpenCode — Production Implementation
   ↓
@@ -63,12 +60,11 @@ The sequence is a governance model. A phase begins only after an explicit handof
 ## 5. Separation of programming responsibilities
 
 ```text
-Qwen Code = PREPARE
+Hermes    = SPECIFY + PREPARE + GOVERN + REVIEW
 OpenCode  = IMPLEMENT
-Hermes    = GOVERN + REVIEW
 ```
 
-Qwen Code prepares the implementation surface from an approved technical specification. OpenCode owns the production implementation. They are not parallel production programmers.
+There is now one production implementation owner. Hermes prepares an implementation-ready package from the approved architecture/specification and governs the engineering gate. OpenCode owns production implementation. They are not parallel production programmers.
 
 ## 6. Education and gameplay ownership
 
