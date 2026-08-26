@@ -4,7 +4,7 @@
 **Repository:** `Real-Mr-V/Minetest`  
 **Branch:** `main`  
 **Status:** ACTIVE DEVELOPMENT — ISSUE #1  
-**Last updated:** 2026-08-25
+**Last updated:** 2026-08-26
 
 ## 1. Authoritative current state
 
@@ -16,10 +16,9 @@ Current team:
 - ChatGPT Desktop — Chief Architect / Technical Director
 - ChatGPT Web — Education Researcher + Game Design & Educational Gameplay
 - Hermes — Technical Lead / Senior Software Engineer
-- Qwen Code — Implementation Preparation Engineer
 - OpenCode — Production Implementation Engineer
 
-Claude and Perplexity are removed and must not receive assignments.
+Claude, Perplexity, and Qwen Code are removed and must not receive assignments.
 
 ## 2. Active development order
 
@@ -41,9 +40,7 @@ ChatGPT Web — Education + Gameplay Context
         ↓
 ChatGPT Desktop — Architecture
         ↓
-Hermes — Technical Specification
-        ↓
-Qwen Code — Implementation Preparation
+Hermes — Technical Specification + Implementation Preparation
         ↓
 Hermes — Technical Gate
         ↓
@@ -63,8 +60,10 @@ CURRENT PHASE:    TECHNICAL WORKFLOW / STORY-FIRST
 CURRENT ISSUE:    #1
 ACTIVE FEATURE:   Initial first-entry spawn
 CURRENT OWNER:    Hermes — Technical Lead
-NEXT HANDOFF:     Qwen Code — Implementation Preparation
+NEXT HANDOFF:     OpenCode — Production Implementation
 ```
+
+Hermes must complete implementation preparation and the technical gate before OpenCode receives the production implementation handoff.
 
 ## 5. Responsibility boundaries
 
@@ -78,23 +77,19 @@ Education research and educational gameplay design. For Issue #1 it supplies the
 Architecture, technical direction, system boundaries, integration strategy, and architecture decisions.
 
 ### Hermes
-Technical specification, engineering constraints, dependency analysis, preparation gate, and engineering review.
-
-### Qwen Code
-Implementation preparation only: repository inspection, exact file/integration mapping, prerequisites, scaffolding where explicitly authorized, and implementation handoff package.
+Technical specification, engineering constraints, dependency analysis, implementation preparation, preparation gate, and engineering review.
 
 ### OpenCode
-Production implementation only, after Hermes marks preparation `READY`.
+Sole production implementation owner, after Hermes marks preparation `READY`.
 
-## 6. Qwen Code / OpenCode separation
+## 6. Programming separation
 
 ```text
-Qwen Code = PREPARE
+Hermes    = SPECIFY + PREPARE + GOVERN + REVIEW
 OpenCode  = IMPLEMENT
-Hermes    = GOVERN + REVIEW
 ```
 
-They are not parallel programmers.
+There is one production programmer. Hermes does not become a parallel production programmer merely because it prepares implementation.
 
 ## 7. Protected repository boundaries
 
