@@ -2,10 +2,11 @@
 
 **Issue:** #1 — SORA: Initial spawn and story-first development handoff  
 **Status:** Specification draft / implementation not yet authorized by this document alone  
-**Date:** 2026-08-25  
+**Date:** 2026-08-26  
 **Owner:** Human Project Owner / Executive Manager  
 **Technical direction:** ChatGPT Desktop  
-**Engineering governance:** Hermes  
+**Engineering governance and preparation:** Hermes  
+**Production implementation:** OpenCode  
 
 ## 1. Scope
 
@@ -94,7 +95,7 @@ sora_core/          # shared Sora services, if already established
 sora_story/         # story initialization and story-state logic
 ```
 
-Do not create a new namespace blindly if an existing Sora-owned module contract already defines the correct location. Qwen Code must inspect the current repository and use the established architecture rather than duplicating modules.
+Do not create a new namespace blindly if an existing Sora-owned module contract already defines the correct location. Hermes must inspect the current repository and use the established architecture rather than duplicating modules.
 
 ## 7. State model
 
@@ -121,7 +122,9 @@ The first-entry initialization must be idempotent:
 
 ## 9. Implementation preparation requirements
 
-Qwen Code must prepare, but not own, production implementation. Its preparation package should contain:
+Hermes now owns implementation preparation because Qwen Code has been removed from the team.
+
+Hermes's preparation package must contain:
 
 1. exact target Sora module/path;
 2. dependency declarations;
@@ -133,9 +136,11 @@ Qwen Code must prepare, but not own, production implementation. Its preparation 
 8. files OpenCode is expected to create or modify;
 9. explicit protected paths that must remain untouched.
 
+Hermes must not directly become the production implementation owner merely because it prepares the work.
+
 ## 10. Production implementation requirements
 
-OpenCode is the production implementation owner after the preparation gate.
+OpenCode is the sole production implementation owner after the preparation gate.
 
 OpenCode must:
 
@@ -191,13 +196,11 @@ These are implementation-preparation questions, not permission to expand Issue #
 ```text
 Human Project Owner
         ↓
+ChatGPT Web — education/gameplay input when required
+        ↓
 ChatGPT Desktop — architecture/specification direction
         ↓
-Hermes — technical specification governance
-        ↓
-Qwen Code — implementation preparation
-        ↓
-Hermes — preparation gate
+Hermes — technical specification + implementation preparation + gate
         ↓
 OpenCode — production implementation
         ↓
