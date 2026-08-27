@@ -509,3 +509,60 @@ Full AC-1 verification (fresh player spawns at exact coordinates) requires a liv
 
 ### Next action
 Hermes performs engineering review of the implementation and test results. If approved, Human performs final acceptance.
+
+
+---
+
+## 2026-08-26 — Hermes TASK 002 cutscene implementation preparation (technical gate)
+
+**ACTOR:** Hermes — Technical Lead / Senior Software Engineer  
+**ACTION:** Reviewed the newly committed TASK 002 handoff (`docs/workflow/SORA_TASK_002_CUTSCENE_HANDOFF.md`), requested by the Human project owner to build a cutscene. Produced an implementation-ready preparation package for the first-entry pre-history cutscene.
+
+**REASON / AUTHORITY:** Human directive to build a cutscene. Issue #1 and TASK 002 are active story-first development. Standing rule that every action is recorded in `docs/global handoff.md`. Qwen Code is removed; Hermes owns technical specification + implementation preparation; OpenCode implements.
+
+### Inputs reviewed
+
+- `docs/workflow/SORA_TASK_002_CUTSCENE_HANDOFF.md` (new task handoff)
+- `docs/global handoff.md` (latest entries — Issue #1 implemented and tested by OpenCode)
+- `mods/sora_story/init.lua` and `mods/sora_core/init.lua` (Issue #1 production code)
+- `mods/audios/pre-history.ogg` (the cutscene audio asset)
+- Luanti 5.16.1 `doc/lua_api.md` (camera + sound + timing APIs, verified)
+
+### Verified technical facts
+
+- `pre-history.ogg` duration = 21.315875 seconds (measured with ffprobe; MPEG layer III, 128 kbps, 44.1 kHz, mono).
+- First-entry is already handled by Issue #1's `core.register_on_newplayer` in `mods/sora_story/init.lua`.
+- Camera upward sweep requires a per-tick loop: `core.register_globalstep` + `player:set_look_vertical` (negative = up) over the measured duration. No native camera-animate API in Luanti 5.16.1.
+- Optional player lock via `player:set_physics_override`; restore after.
+- Audio via `core.sound_play({name=..},{to_player=name})` and `core.sound_stop`.
+- Asset-path note: `pre-history.ogg` is in `mods/audios/`, not a mod `sounds/` folder; `sound_play("pre-history")` needs the file referenceable (recommend `mods/sora_story/sounds/pre-history.ogg` or verified registration).
+
+### Result
+
+Created `docs/workflow/SORA_TASK_002_CUTSCENE_PREPARATION.md` — implementation-ready package with requirement summary, verified duration, camera-sweep approach (globalstep + set_look_vertical), optional physics lock, sound playback/stop, state/persistence reuse of Issue #1 flags, OpenCode checklist, acceptance checks T-AC-1..T-AC-8, protected paths, and handoff chain.
+
+### Files affected
+
+- `docs/workflow/SORA_TASK_002_CUTSCENE_PREPARATION.md` (new)
+- `docs/global handoff.md` (this entry)
+
+### Protected paths
+
+No changes to `luanti/`, `games/mineclone2/`, `worlds/Elementary_1/`, `mod_data/`.
+
+### Blockers
+
+None. Headless environment cannot visually confirm the camera sweep (T-AC-3); that remains Human visual verification per `SORA_WORKFLOW_STATE.md` section 9.
+
+### Decisions
+
+- Cutscene state is in-memory only (not stored), leveraging Issue #1's persisted first-entry flag for single-run single-run behavior.
+- Debug re-play supported via existing `/sora_story_reset` command.
+
+### Next owner
+
+**OpenCode** — Production Implementation Engineer
+
+### Next action
+
+OpenCode implements the TASK 002 cutscene per the preparation package (audio asset path, on_newplayer cutscene trigger, upward camera sweep, physics/control restore), verifies in the disposable test world, then returns for Hermes engineering review.
