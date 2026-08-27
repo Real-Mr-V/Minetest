@@ -566,3 +566,74 @@ None. Headless environment cannot visually confirm the camera sweep (T-AC-3); th
 ### Next action
 
 OpenCode implements the TASK 002 cutscene per the preparation package (audio asset path, on_newplayer cutscene trigger, upward camera sweep, physics/control restore), verifies in the disposable test world, then returns for Hermes engineering review.
+
+---
+
+## 2026-08-27 — OpenCode production implementation for TASK 002 (first-entry pre-history cutscene)
+
+**ACTOR:** OpenCode — Production Implementation Engineer  
+**ACTION:** Implemented the first-entry pre-history cutscene for TASK 002 per the Hermes preparation package (`docs/workflow/SORA_TASK_002_CUTSCENE_PREPARATION.md`).  
+**REASON / AUTHORITY:** `SORA_WORKFLOW_STATE.md` shows `CURRENT ISSUE: #1 / TASK 002`, `ACTIVE FEATURE: First-entry spawn + pre-history cutscene`, `PHASE STATUS: READY_FOR_IMPLEMENTATION`. The preparation package was complete with all technical decisions resolved.
+
+### Inputs reviewed
+- `docs/workflow/SORA_TASK_002_CUTSCENE_PREPARATION.md` (implementation-ready package)
+- `docs/workflow/SORA_TASK_002_CUTSCENE_HANDOFF.md`
+- `mods/sora_story/init.lua` (Issue #1 production code)
+- `mods/audios/pre-history.ogg` (357702 bytes, 21.315875 s duration verified)
+- Luanti 5.16.1 API: `core.register_globalstep`, `player:set_look_vertical`, `player:set_physics_override`, `core.sound_play`, `core.sound_stop`, `core.get_us_time`
+
+### Implementation
+Updated **`mods/sora_story/init.lua`** with cutscene logic:
+
+1. **Cutscene constants**: `CUTSCENE_DURATION = 21.315875`, `CUTSCENE_AUDIO_PATH` (direct path to `mods/audios/pre-history.ogg`), `CUTSCENE_SWEEP_DEGREES = 60`
+2. **In-memory cutscene state**: `active`, `player_name`, `start_time`, `start_pitch`, `end_pitch`, `sound_handle`, `orig_physics`
+3. **`play_cutscene(player)` function**:
+   - Locks player physics: `set_physics_override({speed=0, jump=0, gravity=0})`
+   - Plays audio via direct file path: `core.sound_play({name=CUTSCENE_AUDIO_PATH, gain=1.0, loop=false}, {to_player=name})`
+   - Captures current pitch, computes end pitch (upward 60°)
+   - Activates cutscene state
+4. **`core.register_globalstep`** driver:
+   - Runs every frame while `cutscene_state.active`
+   - Uses `core.get_us_time()` for drift-free timing
+   - Eases `set_look_vertical` from start to end pitch over duration
+   - On completion: stops audio, restores physics, clears state
+5. **Integration with Issue #1**: `init_story` calls `play_cutscene(player)` AFTER setting the persisted first-entry flag (atomic trigger)
+6. **Debug commands**: `/sora_story_status` (now shows cutscene_active), `/sora_story_reset` (re-enables cutscene), `/sora_story_replay_cutscene` (replay without flag reset)
+
+### Files affected
+- `mods/sora_story/init.lua` (updated with cutscene logic)
+- `docs/global handoff.md` (this entry)
+
+### Protected paths
+No changes to `luanti/`, `games/mineclone2/`, `worlds/Elementary_1/`, `mod_data/`.
+
+### Acceptance checks (mapped to TASK 002 T-AC-1..T-AC-8)
+- T-AC-1 (first-entry only): **Implemented** — gated on persisted flag set in Issue #1
+- T-AC-2 (full audio): **Implemented** — direct path to `pre-history.ogg` (~21.3 s)
+- T-AC-3 (camera sweep): **Implemented in code** — upward sweep via `set_look_vertical` (Human visual check required)
+- T-AC-4 (player locked): **Implemented** — `set_physics_override(speed=0,jump=0,gravity=0)`
+- T-AC-5 (control restored): **Implemented** — restores captured physics on completion
+- T-AC-6 (no re-trigger): **Implemented** — in-memory state + persisted flag prevent re-trigger
+- T-AC-7 (reset re-enables): **Implemented** — `/sora_story_reset` clears persisted flag
+- T-AC-8 (isolation): **Verified** — no protected path modified
+
+### Test verification
+- Server start with mods enabled: **PASS** — Luanti 5.16.1 server starts, loads VoxeLibre 0.92.1, no Lua errors
+- Mod storage updated: **PASS** — `mod_storage.sqlite` reflects Sora state
+
+### Known limitation
+Full visual verification of T-AC-3 (camera sweep) and T-AC-4/5 (player lock/restore) requires a live client connection, which was not performed in this headless environment. The server-side logic is implemented and syntactically correct.
+
+### Decisions
+- Used direct audio file path (`mods/audios/pre-history.ogg`) rather than sound registration (simpler, avoids registration issues)
+- Cutscene state is in-memory only; persisted first-entry flag handles cross-session suppression
+- Added `/sora_story_replay_cutscene` debug command for testing without flag reset
+
+### Blockers
+None for implementation. Visual verification (T-AC-3) pending Human review.
+
+### Next owner
+**Hermes** — Technical Lead / Senior Software Engineer
+
+### Next action
+Hermes performs engineering review of the implementation and test results. Then Human visual verification of the cutscene in the test world, followed by final acceptance.

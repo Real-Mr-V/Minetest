@@ -3805,3 +3805,188 @@ Unit Test Results: FAILED
 2026-08-25 23:48:08: ACTION[ServerStop]: Server: Shutting down
 2026-08-25 23:48:08: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
 2026-08-25 23:48:08: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-27 12:55:00: ACTION[Main]: [doc] doc.mt opened.
+2026-08-27 12:55:00: ACTION[Main]: [doc] doc.mt successfully read.
+2026-08-27 12:55:00: ACTION[Main]: World seed = 1000000000
+2026-08-27 12:55:00: ACTION[Main]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 12:55:00: ACTION[Main]: World created with Luanti version = 5.16.1
+2026-08-27 12:55:00: ACTION[Main]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 12:55:00: ACTION[Main]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 12:55:00: ACTION[Main]: [mcl_music] In-game music is activated
+2026-08-27 12:55:00: ACTION[Main]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 12:55:00: ACTION[Main]: [mcl_weather] Weather restored.
+2026-08-27 12:55:02: WARNING[Main]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 12:55:03: ACTION[Main]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 12:55:03: ACTION[Main]: Server for gameid="mineclone2" listening on [::]:30003.
+2026-08-27 12:55:03: ACTION[Main]: Server: Shutting down
+2026-08-27 12:55:03: ACTION[Main]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 12:55:03: ACTION[Main]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 12:55:03: ERROR[Main]: ServerError: AsyncErr: Failed to bind socket (port already in use?)
+
+
+-------------
+  Separator
+-------------
+
+2026-08-27 12:57:33: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 12:57:33: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 12:57:33: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 12:57:33: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 12:57:33: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 12:57:33: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 12:57:33: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 12:57:33: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 12:57:33: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 12:57:33: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 12:57:35: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 12:57:36: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 12:57:36: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:54453.
+2026-08-27 12:57:37: ERROR[Main]: ServerError: AsyncErr: Failed to bind socket (port already in use?)
+2026-08-27 12:57:38: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 12:57:38: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 12:57:38: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 12:58:13: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 12:58:13: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 12:58:13: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 12:58:13: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 12:58:13: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 12:58:13: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 12:58:13: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 12:58:13: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 12:58:13: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 12:58:13: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 12:58:15: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 12:58:16: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 12:58:16: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 12:58:19: ACTION[Server]: testplayer [::ffff:127.0.0.1] joins game. List of players: testplayer
+2026-08-27 12:58:19: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 2s | max lag: 0.115s | clients: testplayer
+2026-08-27 12:58:19: ACTION[Main]: CHAT: *** testplayer joined the game.
+2026-08-27 12:58:40: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 12:58:40: ACTION[Server]: testplayer leaves game. List of players: 
+2026-08-27 12:58:40: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 12:58:40: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 12:58:40: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 12:58:46: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 12:58:46: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 12:58:46: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 12:58:46: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 12:58:46: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 12:58:46: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 12:58:46: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 12:58:46: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 12:58:46: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 12:58:46: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 12:58:48: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 12:58:49: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 12:58:49: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:50442.
+2026-08-27 12:58:50: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-08-27 12:59:30: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 12:59:30: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-08-27 12:59:31: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 12:59:31: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 12:59:31: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 12:59:36: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 12:59:36: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 12:59:36: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 12:59:36: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 12:59:36: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 12:59:36: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 12:59:36: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 12:59:36: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 12:59:37: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 12:59:37: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 12:59:38: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 12:59:39: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-27 12:59:39: ACTION[ServerStart]: Server for gameid="mineclone2" listening on 127.0.0.1:62651.
+2026-08-27 12:59:41: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-08-27 12:59:44: ACTION[Server]: [mcl_music] Playing track: DarkReaven-calmed_cube, for scenario: overworld
+2026-08-27 12:59:47: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-27 12:59:47: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-08-27 12:59:48: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 12:59:48: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 12:59:48: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-27 13:06:14: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:06:14: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:06:14: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:06:14: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:06:14: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:06:14: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:06:14: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:06:14: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:06:15: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:06:15: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:06:16: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:06:17: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:06:17: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:06:19: ACTION[Server]: [sora_story] first-entry spawn completed for player at 541,17,-98
+2026-08-27 13:06:19: ACTION[Server]: [sora_story] cutscene started for player
+2026-08-27 13:06:19: ACTION[Server]: player [::ffff:127.0.0.1] joins game. List of players: player
+2026-08-27 13:06:19: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.149s | clients: player
+2026-08-27 13:06:19: ACTION[Main]: CHAT: *** player joined the game.
+2026-08-27 13:06:22: ACTION[Server]: [mcl_music] Playing track: DarkReaven-kuru, for scenario: overworld
+2026-08-27 13:06:40: ACTION[Server]: [sora_story] cutscene completed for player
+2026-08-27 13:06:42: ACTION[Server]: player activates 
+2026-08-27 13:06:57: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:06:57: ACTION[Server]: player leaves game. List of players: 
+2026-08-27 13:06:58: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:06:58: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:06:58: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:07:05: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:07:05: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:07:05: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:07:05: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:07:05: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:07:05: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:07:05: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:07:05: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:07:05: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:07:05: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:07:07: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:07:08: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:07:08: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:07:09: ACTION[Server]: player [::ffff:127.0.0.1] joins game. List of players: player
+2026-08-27 13:07:09: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.146s | clients: player
+2026-08-27 13:07:09: ACTION[Main]: CHAT: *** player joined the game.
+2026-08-27 13:07:13: ACTION[Server]: [mcl_music] Playing track: DarkReaven-calmed_cube, for scenario: overworld
+2026-08-27 13:07:34: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:07:34: ACTION[Server]: player leaves game. List of players: 
+2026-08-27 13:07:34: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:07:34: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:07:34: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:07:45: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:07:45: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:07:45: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:07:45: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:07:45: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:07:45: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:07:45: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:07:45: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:07:45: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:07:45: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:07:46: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:07:47: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:07:47: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:07:49: ACTION[Server]: [sora_story] first-entry spawn completed for player1 at 541,17,-98
+2026-08-27 13:07:49: ACTION[Server]: [sora_story] cutscene started for player1
+2026-08-27 13:07:49: ACTION[Server]: player1 [::ffff:127.0.0.1] joins game. List of players: player1
+2026-08-27 13:07:49: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.148s | clients: player1
+2026-08-27 13:07:49: ACTION[Main]: CHAT: *** player1 joined the game.
+2026-08-27 13:07:52: ACTION[Server]: [mcl_music] Playing track: exhale_and_tim_unwin-farmer, for scenario: overworld
+2026-08-27 13:08:10: ACTION[Server]: [sora_story] cutscene completed for player1
+2026-08-27 13:08:15: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:08:15: ACTION[Server]: player1 leaves game. List of players: 
+2026-08-27 13:08:15: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:08:15: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:08:15: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
