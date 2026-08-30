@@ -5284,3 +5284,142 @@ Unit Test Results: FAILED
 2026-08-30 10:33:44: ACTION[ServerStop]: Server: Shutting down
 2026-08-30 10:33:44: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
 2026-08-30 10:33:44: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-30 11:53:33: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-30 11:53:33: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-30 11:53:33: ACTION[ServerStart]: World seed = 1000000000
+2026-08-30 11:53:33: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-30 11:53:33: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-30 11:53:33: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-30 11:53:33: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-30 11:53:33: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-30 11:53:33: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-30 11:53:33: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-30 11:53:37: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-30 11:53:39: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-30 11:53:39: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-30 11:53:43: ACTION[Server]: player [::ffff:127.0.0.1] joins game. List of players: player
+2026-08-30 11:53:43: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 3s | max lag: 0.14s | clients: player
+2026-08-30 11:53:43: ACTION[Main]: CHAT: *** player joined the game.
+2026-08-30 11:53:44: ACTION[Server]: [mcl_music] Playing track: DarkReaven-magic_of_the_forest, for scenario: overworld
+2026-08-30 11:54:22: ACTION[Server]: player places node mcl_core:coarse_dirt at (570,14,-93)
+2026-08-30 11:54:23: ACTION[Server]: player places node mcl_core:coarse_dirt at (571,14,-94)
+2026-08-30 11:54:26: ACTION[Server]: player right-clicks object 48: LuaEntitySAO "mobs_mc:pig" at (568,14,-92)
+2026-08-30 11:54:28: ACTION[Server]: player places node mcl_core:coarse_dirt at (569,14,-92)
+2026-08-30 11:54:31: ACTION[Server]: player places node mcl_core:coarse_dirt at (568,14,-92)
+2026-08-30 11:54:33: ACTION[Server]: player places node mcl_core:coarse_dirt at (570,14,-92)
+2026-08-30 11:54:34: ACTION[Server]: player places node mcl_core:coarse_dirt at (571,14,-93)
+2026-08-30 11:54:35: ACTION[Server]: player places node mcl_core:coarse_dirt at (571,14,-92)
+2026-08-30 11:54:40: ACTION[Server]: player places node mcl_core:coarse_dirt at (573,14,-95)
+2026-08-30 11:54:42: ACTION[Server]: player places node mcl_core:coarse_dirt at (572,14,-94)
+2026-08-30 11:54:46: ACTION[Server]: player places node mcl_core:coarse_dirt at (573,15,-95)
+2026-08-30 11:54:47: ACTION[Server]: player places node mcl_core:coarse_dirt at (572,16,-95)
+2026-08-30 11:54:52: ACTION[Server]: player digs mcl_flowers:peony_top at (572,15,-95)
+2026-08-30 11:54:52: ACTION[Server]: player digs mcl_core:coarse_dirt at (572,16,-95)
+2026-08-30 11:54:55: ACTION[Server]: player digs mcl_core:coarse_dirt at (573,15,-95)
+2026-08-30 11:54:56: ACTION[Server]: player places node mcl_core:coarse_dirt at (572,14,-95)
+2026-08-30 11:54:58: ACTION[Server]: player places node mcl_core:coarse_dirt at (573,14,-96)
+2026-08-30 11:55:01: ACTION[Server]: player places node mcl_core:coarse_dirt at (572,14,-93)
+2026-08-30 11:55:03: ACTION[Server]: player places node mcl_core:coarse_dirt at (572,14,-92)
+2026-08-30 11:55:08: ACTION[Server]: player places node mcl_core:coarse_dirt at (573,14,-94)
+2026-08-30 11:55:12: ACTION[Server]: player places node mcl_core:coarse_dirt at (573,14,-92)
+2026-08-30 11:55:13: ACTION[Server]: player places node mcl_core:coarse_dirt at (573,14,-93)
+2026-08-30 11:55:26: ACTION[Server]: player digs mcl_core:dirt_with_grass at (559,15,-94)
+2026-08-30 11:55:27: ACTION[Server]: player digs mcl_core:dirt_with_grass at (558,15,-94)
+2026-08-30 11:55:28: ACTION[Server]: player digs mcl_core:dirt_with_grass at (557,15,-94)
+2026-08-30 11:55:29: ACTION[Server]: player digs mcl_core:dirt_with_grass at (556,15,-94)
+2026-08-30 11:55:30: ACTION[Server]: player digs mcl_core:dirt_with_grass at (555,15,-94)
+2026-08-30 11:55:47: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (553,18,-96)
+2026-08-30 11:55:51: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (553,18,-91)
+2026-08-30 11:56:18: ACTION[Server]: player digs mcl_core:tree at (574,15,-98)
+2026-08-30 11:56:18: ACTION[Server]: player digs mcl_core:tree at (574,16,-98)
+2026-08-30 11:56:19: ACTION[Server]: player digs mcl_core:leaves at (574,17,-97)
+2026-08-30 11:56:19: ACTION[Server]: player digs mcl_core:tree at (574,17,-98)
+2026-08-30 11:56:20: ACTION[Server]: player digs mcl_core:leaves at (573,17,-97)
+2026-08-30 11:56:20: ACTION[Server]: player digs mcl_core:leaves at (573,17,-98)
+2026-08-30 11:56:20: ACTION[Server]: player digs mcl_core:leaves at (573,18,-98)
+2026-08-30 11:56:21: ACTION[Server]: player digs mcl_core:tree at (574,18,-98)
+2026-08-30 11:56:21: ACTION[Server]: player digs mcl_core:leaves at (574,19,-98)
+2026-08-30 11:56:21: ACTION[Server]: player digs mcl_core:leaves at (574,19,-99)
+2026-08-30 11:56:21: ACTION[Server]: player digs mcl_core:leaves at (574,18,-97)
+2026-08-30 11:56:22: ACTION[Server]: player digs mcl_core:leaves at (574,19,-97)
+2026-08-30 11:56:22: ACTION[Server]: player digs mcl_core:leaves at (574,20,-97)
+2026-08-30 11:56:22: ACTION[Server]: player digs mcl_core:leaves at (573,18,-97)
+2026-08-30 11:56:22: ACTION[Server]: player digs mcl_core:leaves at (573,19,-97)
+2026-08-30 11:56:23: ACTION[Server]: player digs mcl_core:leaves at (573,18,-96)
+2026-08-30 11:56:24: ACTION[Server]: player digs mcl_core:leaves at (574,17,-96)
+2026-08-30 11:56:24: ACTION[Server]: player digs mcl_core:leaves at (574,18,-96)
+2026-08-30 11:56:25: ACTION[Server]: player digs mcl_core:leaves at (575,17,-97)
+2026-08-30 11:56:25: ACTION[Server]: player digs mcl_core:leaves at (575,17,-96)
+2026-08-30 11:56:25: ACTION[Server]: player digs mcl_core:leaves at (576,18,-97)
+2026-08-30 11:56:26: ACTION[Server]: player digs mcl_core:leaves at (575,18,-97)
+2026-08-30 11:56:26: ACTION[Server]: player digs mcl_core:leaves at (575,19,-97)
+2026-08-30 11:56:27: ACTION[Server]: player digs mcl_core:leaves at (575,18,-96)
+2026-08-30 11:56:28: ACTION[Server]: player digs mcl_core:leaves at (575,17,-98)
+2026-08-30 11:56:28: ACTION[Server]: player digs mcl_core:leaves at (575,18,-98)
+2026-08-30 11:56:28: ACTION[Server]: player digs mcl_core:leaves at (575,18,-99)
+2026-08-30 11:56:29: ACTION[Server]: player digs mcl_core:leaves at (573,17,-99)
+2026-08-30 11:56:30: ACTION[Server]: player digs mcl_core:leaves at (572,17,-97)
+2026-08-30 11:56:30: ACTION[Server]: player digs mcl_core:leaves at (572,18,-97)
+2026-08-30 11:56:30: ACTION[Server]: player digs mcl_core:leaves at (572,18,-98)
+2026-08-30 11:56:31: ACTION[Server]: player digs mcl_core:leaves at (572,17,-98)
+2026-08-30 11:56:31: ACTION[Server]: player digs mcl_core:leaves at (572,17,-99)
+2026-08-30 11:56:31: ACTION[Server]: player digs mcl_core:leaves at (572,18,-99)
+2026-08-30 11:56:32: ACTION[Server]: player digs mcl_core:leaves at (573,18,-99)
+2026-08-30 11:56:32: ACTION[Server]: player digs mcl_core:leaves at (573,19,-99)
+2026-08-30 11:56:32: ACTION[Server]: player digs mcl_core:leaves at (573,17,-100)
+2026-08-30 11:56:33: ACTION[Server]: player digs mcl_core:leaves at (573,18,-100)
+2026-08-30 11:56:34: ACTION[Server]: player digs mcl_core:leaves at (574,17,-99)
+2026-08-30 11:56:34: ACTION[Server]: player digs mcl_core:leaves at (574,17,-100)
+2026-08-30 11:56:34: ACTION[Server]: player digs mcl_core:leaves at (574,18,-100)
+2026-08-30 11:56:35: ACTION[Server]: player digs mcl_core:leaves at (574,18,-99)
+2026-08-30 11:56:35: ACTION[Server]: player digs mcl_core:leaves at (574,20,-99)
+2026-08-30 11:56:36: ACTION[Server]: player digs mcl_core:leaves at (574,20,-98)
+2026-08-30 11:56:36: ACTION[Server]: player digs mcl_core:leaves at (573,19,-98)
+2026-08-30 11:56:37: ACTION[Server]: player digs mcl_core:leaves at (573,20,-98)
+2026-08-30 11:56:37: ACTION[Server]: player digs mcl_core:leaves at (575,19,-98)
+2026-08-30 11:56:38: ACTION[Server]: player digs mcl_core:leaves at (575,20,-98)
+2026-08-30 11:56:38: ACTION[Server]: player digs mcl_core:leaves at (575,19,-99)
+2026-08-30 11:56:39: ACTION[Server]: player digs mcl_core:leaves at (575,18,-100)
+2026-08-30 11:56:39: ACTION[Server]: player digs mcl_core:leaves at (578,18,-101)
+2026-08-30 11:56:39: ACTION[Server]: player digs mcl_core:leaves at (579,19,-101)
+2026-08-30 11:56:40: ACTION[Server]: player digs mcl_core:leaves at (579,18,-101)
+2026-08-30 11:56:41: ACTION[Server]: player digs mcl_core:leaves at (575,17,-99)
+2026-08-30 11:56:41: ACTION[Server]: player digs mcl_core:leaves at (576,17,-98)
+2026-08-30 11:56:42: ACTION[Server]: player digs mcl_core:leaves at (576,17,-99)
+2026-08-30 11:56:42: ACTION[Server]: player digs mcl_core:leaves at (576,18,-99)
+2026-08-30 11:56:42: ACTION[Server]: player digs mcl_core:leaves at (576,18,-98)
+2026-08-30 11:57:02: ACTION[Server]: player places node mcl_core:coarse_dirt at (574,14,-96)
+2026-08-30 11:57:04: ACTION[Server]: player places node mcl_core:coarse_dirt at (574,14,-95)
+2026-08-30 11:57:04: ACTION[Server]: player places node mcl_core:coarse_dirt at (574,14,-94)
+2026-08-30 11:57:06: ACTION[Server]: player places node mcl_core:coarse_dirt at (574,14,-92)
+2026-08-30 11:57:07: ACTION[Server]: player places node mcl_core:coarse_dirt at (575,14,-93)
+2026-08-30 11:57:08: ACTION[Server]: player places node mcl_core:coarse_dirt at (574,14,-93)
+2026-08-30 11:57:10: ACTION[Server]: player places node mcl_core:coarse_dirt at (575,14,-92)
+2026-08-30 11:57:11: ACTION[Server]: player places node mcl_core:coarse_dirt at (575,14,-94)
+2026-08-30 11:57:11: ACTION[Server]: player places node mcl_core:coarse_dirt at (575,14,-96)
+2026-08-30 11:57:12: ACTION[Server]: player places node mcl_core:coarse_dirt at (575,14,-95)
+2026-08-30 11:57:14: ACTION[Server]: player places node mcl_core:coarse_dirt at (575,14,-97)
+2026-08-30 11:57:16: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-97)
+2026-08-30 11:57:18: ACTION[Server]: player digs mcl_flowers:oxeye_daisy at (577,14,-96)
+2026-08-30 11:57:19: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-96)
+2026-08-30 11:57:19: WARNING[Server]: ServerEnvironment::deactivateFarObjects(): id=959 m_static_exists=true but static data doesn't actually exist in (41,-2,-7)
+2026-08-30 11:57:19: WARNING[Server]: StaticObjectList::remove(): id=959 not found
+2026-08-30 11:57:20: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-95)
+2026-08-30 11:57:21: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-94)
+2026-08-30 11:57:23: ACTION[Server]: player digs mcl_flowers:allium at (576,14,-93)
+2026-08-30 11:57:24: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-93)
+2026-08-30 11:57:25: ACTION[Server]: player digs mcl_flowers:tulip_pink at (576,14,-92)
+2026-08-30 11:57:26: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-92)
+2026-08-30 11:57:31: ACTION[Server]: player digs mcl_flowers:poppy at (577,14,-98)
+2026-08-30 11:57:31: ACTION[Server]: player places node mcl_core:coarse_dirt at (576,14,-98)
+2026-08-30 12:00:56: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-30 12:00:56: ACTION[Server]: player leaves game. List of players: 
+2026-08-30 12:00:56: ACTION[ServerStop]: Server: Shutting down
+2026-08-30 12:00:56: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-30 12:00:56: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
