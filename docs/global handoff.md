@@ -637,3 +637,37 @@ None for implementation. Visual verification (T-AC-3) pending Human review.
 
 ### Next action
 Hermes performs engineering review of the implementation and test results. Then Human visual verification of the cutscene in the test world, followed by final acceptance.
+
+
+---
+
+## 2026-08-27 — Hermes fixes TASK 002 cutscene (audio path + skyward camera)
+
+**ACTOR:** Hermes — Technical Lead / Senior Software Engineer  
+**ACTION:** Fixed two bugs in OpenCode's cutscene implementation for TASK 002:
+
+1. **Audio not playing** — OpenCode used a filesystem path (`core.get_modpath("sora_story") .. "/../audios/pre-history.ogg"`) as the sound name. Luanti `sound_play` resolves sound names by searching registered sound groups (auto-loaded from each mod's `sounds/` dir), not arbitrary filesystem paths. Fixed by:
+   - Copying `pre-history.ogg` from `mods/audios/` into `mods/sora_story/sounds/pre-history.ogg` (Luanti auto-discovers `.ogg`/`.wav` files in `<mod>/sounds/`).
+   - Changing the sound name from the filesystem path to `"pre-history"` (file basename minus extension).
+
+2. **Camera must detach from player and go skyward** — OpenCode's implementation only tilted the player's look pitch upward. The user wants the camera to actually rise into the sky. Fixed by:
+   - Storing the player's original position (`orig_pos`) before the cutscene starts.
+   - During the cutscene, smoothly raising the player's Y coordinate by `CUTSCENE_RISE_HEIGHT` (80 blocks) over the audio duration using `player:set_pos()`.
+   - On cutscene end, restoring the player to the exact original position and original look pitch.
+   - The `set_look_vertical` upward sweep is preserved as an additional cinematic effect.
+
+### Files affected
+- `mods/sora_story/sounds/pre-history.ogg` (copied from mods/audios/)
+- `mods/sora_story/init.lua` (rewritten with fixes)
+- `docs/global handoff.md` (this entry)
+
+### Protected paths
+No changes to `luanti/`, `games/mineclone2/`, `worlds/Elementary_1/`, `mod_data/`.
+
+### Next owner
+**Human Project Owner** — for final gameplay acceptance testing.
+
+### Next action
+Deploy the updated `mods/sora_story/init.lua` and `mods/sora_story/sounds/pre-history.ogg` to the test world or live Element_1 world. Launch Luanti and verify:
+- First-entry cutscene plays: audio heard, camera rises skyward, control restored after ~21s.
+- Subsequent joins do not replay the cutscene.

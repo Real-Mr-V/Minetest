@@ -7,3 +7,5 @@ player_backend = sqlite3
 gameid = mineclone2
 world_name = Elementary_1
 server_announce = false
+load_mod_sora_story = mods/sora_story
+load_mod_sora_core = mods/sora_core

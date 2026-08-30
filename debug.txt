@@ -3990,3 +3990,1297 @@ Unit Test Results: FAILED
 2026-08-27 13:08:15: ACTION[ServerStop]: Server: Shutting down
 2026-08-27 13:08:15: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
 2026-08-27 13:08:15: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+======== Testing module TestVoxelManipulator
+[PASS] testBasic - 0ms
+[PASS] testEmerge - 0ms
+[PASS] testBlitBack - 1ms
+[PASS] testBlitBack2 - 0ms
+======== Module TestVoxelManipulator passed (0 failures / 4 tests) - 1ms
+======== Testing module TestVoxelArea
+[PASS] test_addarea - 0ms
+[PASS] test_pad - 0ms
+[PASS] test_extent - 0ms
+[PASS] test_volume - 0ms
+[PASS] test_contains_voxelarea - 0ms
+[PASS] test_contains_point - 0ms
+[PASS] test_contains_i - 0ms
+[PASS] test_equal - 0ms
+[PASS] test_plus - 0ms
+[PASS] test_minor - 0ms
+[PASS] test_diff - 0ms
+[PASS] test_intersect - 0ms
+[PASS] test_index_xyz_all_pos - 0ms
+[PASS] test_index_xyz_x_neg - 0ms
+[PASS] test_index_xyz_y_neg - 0ms
+[PASS] test_index_xyz_z_neg - 0ms
+[PASS] test_index_xyz_xy_neg - 0ms
+[PASS] test_index_xyz_xz_neg - 0ms
+[PASS] test_index_xyz_yz_neg - 0ms
+[PASS] test_index_xyz_all_neg - 0ms
+[PASS] test_index_v3s16_all_pos - 0ms
+[PASS] test_index_v3s16_x_neg - 0ms
+[PASS] test_index_v3s16_y_neg - 0ms
+[PASS] test_index_v3s16_z_neg - 0ms
+[PASS] test_index_v3s16_xy_neg - 0ms
+[PASS] test_index_v3s16_xz_neg - 0ms
+[PASS] test_index_v3s16_yz_neg - 0ms
+[PASS] test_index_v3s16_all_neg - 0ms
+[PASS] test_add_x - 0ms
+[PASS] test_add_y - 0ms
+[PASS] test_add_z - 0ms
+[PASS] test_add_p - 0ms
+======== Module TestVoxelArea passed (0 failures / 32 tests) - 0ms
+======== Testing module TestVoxelAlgorithms
+[PASS] testVoxelLineIterator - 1ms
+[PASS] testLighting - 18ms
+======== Module TestVoxelAlgorithms passed (0 failures / 2 tests) - 19ms
+======== Testing module TestUtilities
+[PASS] testAngleWrapAround - 0ms
+[PASS] testWrapDegrees_0_360_v3f - 1438ms
+[PASS] testLowercase - 0ms
+[PASS] testTrim - 0ms
+[PASS] testIsYes - 0ms
+[PASS] testRemoveStringEnd - 0ms
+[PASS] testUrlEncode - 0ms
+[PASS] testUrlDecode - 0ms
+[PASS] testPadString - 0ms
+[PASS] testStartsWith - 0ms
+[PASS] testStrEqual - 0ms
+[PASS] testStrToIntConversion - 0ms
+[PASS] testStringReplace - 0ms
+[PASS] testStringAllowed - 0ms
+[PASS] testAsciiPrintableHelper - 0ms
+[PASS] testUTF8 - 0ms
+[PASS] testRemoveEscapes - 0ms
+[PASS] testWrapRows - 0ms
+[PASS] testEnrichedString - 0ms
+[PASS] testIsNumber - 0ms
+[PASS] testIsPowerOfTwo - 0ms
+[PASS] testMyround - 0ms
+[PASS] testStringJoin - 0ms
+[PASS] testEulerConversion - 0ms
+[PASS] testBase64 - 0ms
+[PASS] testSanitizeDirName - 0ms
+[PASS] testIsBlockInSight - 0ms
+[PASS] testColorizeURL - 0ms
+[PASS] testSanitizeUntrusted - 0ms
+[PASS] testReadSeed - 0ms
+[PASS] testMyDoubleStringConversions - 0ms
+[PASS] testGetMemorySize - 0ms
+======== Module TestUtilities passed (0 failures / 32 tests) - 1439ms
+======== Testing module TestThreading
+[PASS] testStartStopWait - 391ms
+[PASS] testAtomicSemaphoreThread - 11ms
+[PASS] testTLS - 21ms
+======== Module TestThreading passed (0 failures / 3 tests) - 424ms
+======== Testing module TestSocket
+[PASS] testIPv4Socket - 53ms
+Caught unhandled exception: Failed to bind socket
+[FAIL] testIPv6Socket - 0ms
+======== Module TestSocket failed (1 failures / 2 tests) - 53ms
+======== Testing module TestSettings
+2026-08-27 13:26:27: ERROR[Main]: Invalid setting name "Zoop = Poop
+2026-08-27 13:26:27: ERROR[Main]: some_other_setting"
+2026-08-27 13:26:27: ERROR[Main]: Invalid character sequence '"""' found in setting value!
+2026-08-27 13:26:27: ERROR[Main]: Invalid character sequence '"""' found in setting value!
+[PASS] testAllSettings - 3ms
+[PASS] testDefaults - 0ms
+[PASS] testFlagDesc - 0ms
+======== Module TestSettings passed (0 failures / 3 tests) - 3ms
+======== Testing module TestServerModManager
+2026-08-27 13:26:27: WARNING[Main]: Can't find game devtest, skipping this module.
+======== Module TestServerModManager passed (0 failures / 0 tests) - 0ms
+======== Testing module TestServerShutdownState
+[PASS] testInit - 0ms
+[PASS] testReset - 0ms
+[PASS] testTrigger - 0ms
+2026-08-27 13:26:27: ACTION[Main]: Server: Shutting down
+[PASS] testTick - 504ms
+======== Module TestServerShutdownState passed (0 failures / 4 tests) - 504ms
+======== Testing module TestSerialization
+[PASS] testSerializeString - 0ms
+[PASS] testDeSerializeString - 0ms
+[PASS] testSerializeLongString - 0ms
+[PASS] testDeSerializeLongString - 0ms
+[PASS] testSerializeJsonString - 0ms
+[PASS] testStreamRead - 0ms
+[PASS] testStreamWrite - 0ms
+[PASS] testFloatFormat - 0ms
+======== Module TestSerialization passed (0 failures / 8 tests) - 0ms
+======== Testing module TestScriptApi
+[PASS] testVectorMetatable - 0ms
+[PASS] testVectorRead - 0ms
+[PASS] testVectorReadErr - 0ms
+2026-08-27 13:26:28: WARNING[Main]: Invalid vector coordinate x (value is nil). (at ?:?)
+2026-08-27 13:26:28: WARNING[Main]: Invalid vector coordinate y (value is nil). (at ?:?)
+2026-08-27 13:26:28: WARNING[Main]: Invalid vector coordinate z (value is nil). (at ?:?)
+[PASS] testVectorReadMix - 0ms
+[PASS] testVectorReadFloat - 0ms
+[PASS] testReadParamFloat - 0ms
+======== Module TestScriptApi passed (0 failures / 6 tests) - 2ms
+======== Testing module TestSchematic
+[PASS] testMtsSerializeDeserialize - 2ms
+[PASS] testLuaTableSerialize - 0ms
+[PASS] testFileSerializeDeserialize - 6ms
+======== Module TestSchematic passed (0 failures / 3 tests) - 8ms
+======== Testing module TestSAO
+2026-08-27 13:26:28: ERROR[Main]: Failed to open "C:\Users\MR_V\AppData\Local\Temp\\MT_a14120\map_meta.txt": The system cannot find the file specified.
+[PASS] testStaticSave - 0ms
+[PASS] testNotSaved - 0ms
+[PASS] testActivate - 0ms
+[PASS] testStaticToFalse - 0ms
+[PASS] testStaticToTrue - 0ms
+2026-08-27 13:26:28: ACTION[Main]: Server: Shutting down
+======== Module TestSAO passed (0 failures / 5 tests) - 506ms
+======== Testing module TestRandom
+[PASS] testPseudoRandom - 0ms
+[PASS] testPseudoRandomRange - 0ms
+[PASS] testPcgRandom - 0ms
+[PASS] testPcgRandomRange - 1ms
+[PASS] testPcgRandomBytes - 0ms
+[PASS] testPcgRandomNormalDist - 1ms
+======== Module TestRandom passed (0 failures / 6 tests) - 2ms
+======== Testing module TestProfiler
+[PASS] testProfilerAverage - 0ms
+======== Module TestProfiler passed (0 failures / 1 tests) - 0ms
+======== Testing module TestObjDef
+[PASS] testHandles - 0ms
+[PASS] testAddGetSetClear - 0ms
+[PASS] testClone - 0ms
+======== Module TestObjDef passed (0 failures / 3 tests) - 0ms
+======== Testing module TestNoise
+[PASS] testNoise2dAtOriginWithZeroSeed - 0ms
+[PASS] testNoise2dWithMaxSeed - 0ms
+[PASS] testNoise2dWithFunPrimes - 0ms
+[PASS] testNoise2dPoint - 0ms
+[PASS] testNoise2dBulk - 0ms
+[PASS] testNoise3dAtOriginWithZeroSeed - 0ms
+[PASS] testNoise3dWithMaxSeed - 0ms
+[PASS] testNoise3dWithFunPrimes - 0ms
+[PASS] testNoise3dPoint - 0ms
+[PASS] testNoise3dBulk - 0ms
+[PASS] testNoiseInvalidParams - 0ms
+======== Module TestNoise passed (0 failures / 11 tests) - 0ms
+======== Testing module TestNodeResolver
+2026-08-27 13:26:28: ERROR[Main]: NodeResolver: failed to resolve node name 'default:warf'.
+2026-08-27 13:26:28: ERROR[Main]: NodeResolver: failed to resolve node name 'default:bloop'.
+2026-08-27 13:26:28: ERROR[Main]: NodeResolver: failed to resolve node name 'default:gobbledygook'.
+2026-08-27 13:26:28: ERROR[Main]: NodeResolver: no more nodes in list
+[PASS] testNodeResolving - 0ms
+2026-08-27 13:26:28: ERROR[Main]: NodeResolver: failed to resolve node name 'default:abloobloobloo'.
+[PASS] testPendingResolveCancellation - 0ms
+======== Module TestNodeResolver passed (0 failures / 2 tests) - 0ms
+======== Testing module TestMoveAction
+[PASS] testMove - 0ms
+[PASS] testMoveFillStack - 0ms
+[PASS] testMoveSomewhere - 0ms
+[PASS] testMoveSomewherePartial - 0ms
+[PASS] testMoveUnallowed - 0ms
+[PASS] testMovePartial - 0ms
+[PASS] testSwap - 0ms
+[PASS] testSwapFromUnallowed - 0ms
+[PASS] testSwapToUnallowed - 0ms
+[PASS] testCallbacks - 1ms
+[PASS] testCallbacksSwap - 0ms
+[PASS] testDrop - 0ms
+[PASS] testDropOne - 0ms
+[PASS] testDropUnallowed - 0ms
+2026-08-27 13:26:28: ACTION[Main]: Server: Shutting down
+======== Module TestMoveAction passed (0 failures / 14 tests) - 506ms
+======== Testing module TestModStorageDatabase
+-------- Dummy database (same object only)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 0ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 0ms
+[PASS] testRecallChanged - 0ms
+[PASS] testListMods - 0ms
+[PASS] testRemove - 0ms
+[PASS] testRecallFail - 0ms
+-------- Files database (same object)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 0ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 0ms
+[PASS] testRecallChanged - 0ms
+[PASS] testListMods - 0ms
+[PASS] testRemove - 0ms
+[PASS] testRecallFail - 0ms
+-------- Files database (new objects)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 0ms
+[PASS] testRecall - 3ms
+[PASS] testChange - 0ms
+[PASS] testRecallChanged - 2ms
+[PASS] testListMods - 0ms
+[PASS] testRemove - 1ms
+[PASS] testRecallFail - 5ms
+-------- SQLite3 database (same object)
+[PASS] testRecallFail - 4ms
+[PASS] testCreate - 2ms
+[PASS] testRecall - 1ms
+[PASS] testChange - 2ms
+[PASS] testRecallChanged - 0ms
+[PASS] testListMods - 5ms
+[PASS] testRemove - 5ms
+[PASS] testRecallFail - 0ms
+-------- SQLite3 database (new objects)
+[PASS] testRecallFail - 5ms
+[PASS] testCreate - 1ms
+[PASS] testRecall - 2ms
+[PASS] testChange - 1ms
+[PASS] testRecallChanged - 2ms
+[PASS] testListMods - 1ms
+[PASS] testRemove - 3ms
+[PASS] testRecallFail - 3ms
+======== Module TestModStorageDatabase passed (0 failures / 40 tests) - 50ms
+======== Testing module TestModChannels
+[PASS] testJoinChannel - 0ms
+[PASS] testLeaveChannel - 0ms
+[PASS] testSendMessageToChannel - 0ms
+======== Module TestModChannels passed (0 failures / 3 tests) - 0ms
+======== Testing module TestMeshCompare
+[PASS] testTriangle - 0ms
+[PASS] testQuad - 0ms
+======== Module TestMeshCompare passed (0 failures / 2 tests) - 0ms
+======== Testing module TestMapNode
+[PASS] testNodeProperties - 0ms
+======== Module TestMapNode passed (0 failures / 1 tests) - 0ms
+======== Testing module TestMapgen
+2026-08-27 13:26:29: ACTION[Main]: Server: Shutting down
+[PASS] testBiomeGen - 504ms
+[PASS] testMapgenEdges - 0ms
+======== Module TestMapgen passed (0 failures / 2 tests) - 504ms
+======== Testing module TestMapDatabase
+[PASS] testPositionEncoding - 0ms
+-------- Dummy
+[PASS] testSave - 0ms
+[PASS] testLoad - 0ms
+[PASS] testList - 0ms
+[PASS] testRemove - 0ms
+[PASS] testList - 0ms
+-------- SQLite3
+[PASS] testSave - 6ms
+[PASS] testLoad - 4ms
+[PASS] testList - 0ms
+[PASS] testRemove - 0ms
+[PASS] testList - 3ms
+-------- LevelDB
+[PASS] testSave - 13ms
+[PASS] testLoad - 7ms
+[PASS] testList - 7ms
+[PASS] testRemove - 7ms
+[PASS] testList - 8ms
+======== Module TestMapDatabase passed (0 failures / 16 tests) - 56ms
+======== Testing module TestMapBlock
+[PASS] testSaveLoad - 0ms
+[PASS] testSaveLoadLowest - 1ms
+[PASS] testSave29 - 0ms
+[PASS] testLoad29 - 0ms
+[PASS] testLoad20 - 1ms
+[PASS] testLoadNonStd - 0ms
+[PASS] testMonoblock - 0ms
+======== Module TestMapBlock passed (0 failures / 7 tests) - 2ms
+======== Testing module TestMapSettingsManager
+[PASS] testMapSettingsManager - 6ms
+[PASS] testMapMetaSaveLoad - 9ms
+2026-08-27 13:26:29: ERROR[Main]: Failed to open "woobawooba/fgdfg/map_meta.txt": The system cannot find the path specified.
+2026-08-27 13:26:29: ERROR[Main]: loadMapMeta: Format error. '[end_of_params]' missing?
+[PASS] testMapMetaFailures - 1ms
+[PASS] testChunks - 0ms
+======== Module TestMapSettingsManager passed (0 failures / 4 tests) - 16ms
+======== Testing module TestMap
+[PASS] testMaxMapgenLimit - 0ms
+[PASS] testForEachNodeInArea - 2ms
+[PASS] testForEachNodeInAreaBlank - 0ms
+[PASS] testForEachNodeInAreaEmpty - 0ms
+======== Module TestMap passed (0 failures / 4 tests) - 2ms
+======== Testing module TestLua
+Test assertion failed: did_destruct
+    at test_lua.cpp:85
+[FAIL] testLuaDestructors - 1ms
+[PASS] testCxxExceptions - 0ms
+======== Module TestLua failed (1 failures / 2 tests) - 1ms
+======== Testing module TestLogging
+[PASS] testNullChecks - 0ms
+[PASS] testBitCheck - 0ms
+======== Module TestLogging passed (0 failures / 2 tests) - 0ms
+======== Testing module TestLBMManager
+[PASS] testNew - 0ms
+[PASS] testExisting - 0ms
+[PASS] testDiscard - 0ms
+======== Module TestLBMManager passed (0 failures / 3 tests) - 0ms
+======== Testing module TestKeycode
+======== Module TestKeycode passed (0 failures / 0 tests) - 0ms
+======== Testing module TestIrrPtr
+[PASS] testRefCounting - 0ms
+[PASS] testSelfAssignment - 0ms
+[PASS] testNullHandling - 0ms
+======== Module TestIrrPtr passed (0 failures / 3 tests) - 0ms
+======== Testing module TestInventory
+[PASS] testSerializeDeserialize - 0ms
+======== Module TestInventory passed (0 failures / 1 tests) - 1ms
+======== Testing module TestGettext
+[PASS] testFmtgettext - 0ms
+======== Module TestGettext passed (0 failures / 1 tests) - 0ms
+======== Testing module TestGameUI
+[PASS] testInit - 0ms
+[PASS] testInfoText - 0ms
+[PASS] testStatusText - 0ms
+======== Module TestGameUI passed (0 failures / 3 tests) - 0ms
+======== Testing module TestFileSys
+[PASS] testIsDirDelimiter - 0ms
+[PASS] testPathStartsWith - 0ms
+[PASS] testRemoveLastPathComponent - 0ms
+[PASS] testRemoveLastPathComponentWithTrailingDelimiter - 0ms
+[PASS] testRemoveRelativePathComponent - 0ms
+[PASS] testAbsolutePath - 1ms
+[PASS] testSafeWriteToFile - 5ms
+2026-08-27 13:26:29: ERROR[Main]: copying C:\Users\MR_V\AppData\Local\Temp\\MT_a14120\src to somewhere failed: The system cannot find the file specified.
+[PASS] testCopyFileContents - 2ms
+2026-08-27 13:26:29: WARNING[Main]: Failed to open "C:\Users\MR_V\AppData\Local\Temp\\MT_a14120\2EF49538.tmp": The system cannot find the file specified.
+[PASS] testNonExist - 0ms
+[PASS] testRecursiveDelete - 2ms
+[PASS] testGetRecursiveSubPaths - 3ms
+======== Module TestFileSys passed (0 failures / 11 tests) - 13ms
+======== Testing module TestEventManager
+[PASS] testRegister - 0ms
+[PASS] testDeregister - 0ms
+[PASS] testRealEvent - 0ms
+[PASS] testRealEventAfterDereg - 0ms
+======== Module TestEventManager passed (0 failures / 4 tests) - 0ms
+======== Testing module TestDataStructures
+-------- ModifySafeMap
+[PASS] testMap1 - 0ms
+[PASS] testMap2 - 0ms
+[PASS] testMap3 - 0ms
+[PASS] testMap4 - 0ms
+[PASS] testMap5 - 0ms
+======== Module TestDataStructures passed (0 failures / 5 tests) - 0ms
+======== Testing module TestCraft
+[PASS] testShapeless - 0ms
+======== Module TestCraft passed (0 failures / 1 tests) - 0ms
+======== Testing module TestMapblockMeshGenerator
+[PASS] testSimpleNode - 1ms
+[PASS] testSurroundedNode - 0ms
+[PASS] testInterliquidSame - 0ms
+[PASS] testInterliquidDifferent - 0ms
+======== Module TestMapblockMeshGenerator passed (0 failures / 4 tests) - 1ms
+======== Testing module TestConnection
+2026-08-27 13:26:29: WARNING[Main]: testNetworkPacketSerialize may fail on this platform.
+[PASS] testNetworkPacketSerialize - 0ms
+[PASS] testHelpers - 0ms
+[PASS] testConnectSendReceive - 1616ms
+======== Module TestConnection passed (0 failures / 3 tests) - 1616ms
+======== Testing module TestCompression
+[PASS] testRLECompression - 0ms
+[PASS] testZlibCompression - 0ms
+[PASS] testZlibLargeData - 1ms
+[PASS] testZstdLargeData - 2ms
+[PASS] testZlibLimit - 1ms
+======== Module TestCompression passed (0 failures / 5 tests) - 4ms
+======== Testing module TestCollision
+[PASS] testAxisAlignedCollision - 1ms
+[PASS] testCollisionMoveSimple - 0ms
+======== Module TestCollision passed (0 failures / 2 tests) - 1ms
+======== Testing module TestClientActiveObjectMgr
+[PASS] testGetActiveSelectableObjects - 0ms
+======== Module TestClientActiveObjectMgr passed (0 failures / 1 tests) - 0ms
+======== Testing module TestBan
+[PASS] testCreate - 6ms
+[PASS] testAdd - 3ms
+[PASS] testRemove - 1ms
+[PASS] testModificationFlag - 3ms
+[PASS] testGetBanName - 2ms
+[PASS] testGetBanDescription - 1ms
+======== Module TestBan passed (0 failures / 6 tests) - 18ms
+======== Testing module TestAuthDatabase
+-------- Files database (same object)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 2ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 2ms
+[PASS] testRecallChanged - 0ms
+[PASS] testChangePrivileges - 1ms
+[PASS] testRecallChangedPrivileges - 0ms
+[PASS] testListNames - 2ms
+[PASS] testDelete - 2ms
+[PASS] testRecallFail - 0ms
+-------- Files database (new objects)
+[PASS] testRecallFail - 0ms
+[PASS] testCreate - 2ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 2ms
+[PASS] testRecallChanged - 0ms
+[PASS] testChangePrivileges - 2ms
+[PASS] testRecallChangedPrivileges - 0ms
+[PASS] testListNames - 1ms
+[PASS] testDelete - 2ms
+[PASS] testRecallFail - 1ms
+-------- SQLite3 database (same object)
+[PASS] testRecallFail - 5ms
+[PASS] testCreate - 3ms
+[PASS] testRecall - 1ms
+[PASS] testChange - 2ms
+[PASS] testRecallChanged - 0ms
+[PASS] testChangePrivileges - 3ms
+[PASS] testRecallChangedPrivileges - 0ms
+[PASS] testListNames - 3ms
+[PASS] testDelete - 2ms
+[PASS] testRecallFail - 0ms
+-------- SQLite3 database (new objects)
+[PASS] testRecallFail - 6ms
+[PASS] testCreate - 3ms
+[PASS] testRecall - 0ms
+[PASS] testChange - 4ms
+[PASS] testRecallChanged - 1ms
+[PASS] testChangePrivileges - 3ms
+[PASS] testRecallChangedPrivileges - 1ms
+[PASS] testListNames - 3ms
+[PASS] testDelete - 3ms
+[PASS] testRecallFail - 1ms
+======== Module TestAuthDatabase passed (0 failures / 40 tests) - 64ms
+======== Testing module TestAreaStore
+[PASS] testVectorStore - 0ms
+[PASS] testSerialization - 0ms
+======== Module TestAreaStore passed (0 failures / 2 tests) - 0ms
+======== Testing module TestAddress
+[PASS] testBasic - 0ms
+[PASS] testIsLocalhost - 0ms
+[PASS] testResolve - 4ms
+[PASS] testSerializeString - 0ms
+======== Module TestAddress passed (0 failures / 4 tests) - 4ms
+======== Testing module TestActiveObject
+[PASS] testAOAttributes - 0ms
+======== Module TestActiveObject passed (0 failures / 1 tests) - 0ms
+Catch test results: 
+Randomness seeded to: 2883728380
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ is a Catch2 v3.6.0 host application.
+Run with -? for options
+-------------------------------------------------------------------------------
+test translations
+  PO file parser
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:85
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:18: SKIPPED:
+explicitly with message:
+  devtest not found
+-------------------------------------------------------------------------------
+test translations
+  MO file parser
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:103
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/test_translations.cpp:18: SKIPPED:
+explicitly with message:
+  devtest not found
+-------------------------------------------------------------------------------
+x
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/client/test_irr_x_mesh_loader.cpp:21
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/client/test_irr_x_mesh_loader.cpp:26: SKIPPED:
+-------------------------------------------------------------------------------
+gltf
+-------------------------------------------------------------------------------
+/home/runner/work/luanti/luanti/src/test/client/test_irr_gltf_mesh_loader.cpp:21
+...............................................................................
+/home/runner/work/luanti/luanti/src/test/client/test_irr_gltf_mesh_loader.cpp:26: SKIPPED:
+===============================================================================
+test cases:      9 |      6 passed | 3 skipped
+assertions: 164808 | 164808 passed
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Unit Test Results: FAILED
+    2 / 50 failed modules (2 / 325 failed individual tests).
+    Testing took 6018ms total.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+-------------
+  Separator
+-------------
+
+2026-08-27 13:29:00: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:29:00: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:29:00: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:29:00: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:29:00: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:29:00: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:29:00: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:29:00: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:29:00: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:29:00: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:29:02: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:29:02: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:29:02: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:29:04: ACTION[Server]: player [::ffff:127.0.0.1] joins game. List of players: player
+2026-08-27 13:29:04: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.156s | clients: player
+2026-08-27 13:29:04: ACTION[Main]: CHAT: *** player joined the game.
+2026-08-27 13:29:07: ACTION[Server]: [mcl_music] Playing track: Herowl-Home_in_the_Wilderness, for scenario: overworld
+2026-08-27 13:29:25: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:29:25: ACTION[Server]: player leaves game. List of players: 
+2026-08-27 13:29:26: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:29:26: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:29:26: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:29:31: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:29:31: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:29:31: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:29:31: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:29:31: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:29:31: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:29:31: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:29:31: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:29:31: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:29:31: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:29:33: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:29:34: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:29:34: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:29:35: ACTION[Server]: player1 [::ffff:127.0.0.1] joins game. List of players: player1
+2026-08-27 13:29:35: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.151s | clients: player1
+2026-08-27 13:29:35: ACTION[Main]: CHAT: *** player1 joined the game.
+2026-08-27 13:29:39: ACTION[Server]: [mcl_music] Playing track: DarkReaven-slow_piano_cubico, for scenario: overworld
+2026-08-27 13:29:47: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:29:47: ACTION[Server]: player1 leaves game. List of players: 
+2026-08-27 13:29:47: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:29:47: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:29:47: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:29:58: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:29:58: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:29:58: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:29:58: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:29:58: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:29:58: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:29:58: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:29:58: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:29:58: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:29:58: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:30:00: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:30:01: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:30:01: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:30:02: ACTION[Server]: [sora_story] first-entry spawn completed for player2 at 541,17,-98
+2026-08-27 13:30:02: ACTION[Server]: [sora_story] cutscene started for player2
+2026-08-27 13:30:02: ACTION[Server]: player2 [::ffff:127.0.0.1] joins game. List of players: player2
+2026-08-27 13:30:02: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.151s | clients: player2
+2026-08-27 13:30:02: ACTION[Main]: CHAT: *** player2 joined the game.
+2026-08-27 13:30:02: WARNING[OpenALSoundManager]: Audio: Error opening pre-history.ogg for decoding
+2026-08-27 13:30:06: ACTION[Server]: [mcl_music] Playing track: exhale_and_tim_unwin-lonely_blossom, for scenario: overworld
+2026-08-27 13:30:24: ACTION[Server]: [sora_story] cutscene completed for player2
+2026-08-27 13:30:43: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:30:43: ACTION[Server]: player2 leaves game. List of players: 
+2026-08-27 13:30:43: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:30:43: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:30:43: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-27 13:48:39: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:48:39: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:48:39: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:48:39: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:48:39: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:48:39: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:48:39: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:48:39: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:48:39: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:48:39: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:48:41: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:48:42: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test]
+2026-08-27 13:48:42: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:48:44: ACTION[Server]: [sora_story] first-entry spawn completed for a at 541,17,-98
+2026-08-27 13:48:44: ACTION[Server]: [sora_story] cutscene started for a
+2026-08-27 13:48:44: ACTION[Server]: a [::ffff:127.0.0.1] joins game. List of players: a
+2026-08-27 13:48:44: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.171s | clients: a
+2026-08-27 13:48:44: ACTION[Main]: CHAT: *** a joined the game.
+2026-08-27 13:48:47: ACTION[Server]: [mcl_music] Playing track: DarkReaven-nostalgic_block, for scenario: overworld
+2026-08-27 13:49:05: ACTION[Server]: [sora_story] cutscene completed for a
+2026-08-27 13:49:25: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+2026-08-27 13:49:25: ACTION[Server]: a leaves game. List of players: 
+2026-08-27 13:49:25: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:49:25: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:49:25: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1_test/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-27 13:53:10: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:53:10: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:53:10: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:53:10: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:53:10: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:53:10: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:53:10: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:53:10: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:53:11: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:53:11: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:53:12: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:53:13: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-27 13:53:13: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:53:15: ACTION[Server]: a [::ffff:127.0.0.1] joins game. List of players: a
+2026-08-27 13:53:15: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.172s | clients: a
+2026-08-27 13:53:15: ACTION[Main]: CHAT: *** a joined the game.
+2026-08-27 13:53:18: ACTION[Server]: [mcl_music] Playing track: DarkReaven-nostalgic_block, for scenario: overworld
+2026-08-27 13:53:34: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-27 13:53:34: ACTION[Server]: a leaves game. List of players: 
+2026-08-27 13:53:34: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:53:34: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:53:34: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-27 13:53:53: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-27 13:53:53: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-27 13:53:53: ACTION[ServerStart]: World seed = 1000000000
+2026-08-27 13:53:53: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-27 13:53:53: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-27 13:53:53: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-27 13:53:53: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-27 13:53:53: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-27 13:53:53: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-27 13:53:53: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-27 13:53:54: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-27 13:53:55: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-27 13:53:55: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-27 13:53:57: ACTION[Server]: [sora_story] first-entry spawn completed for b at 541,17,-98
+2026-08-27 13:53:57: ACTION[Server]: [sora_story] cutscene started for b
+2026-08-27 13:53:57: ACTION[Server]: b [::ffff:127.0.0.1] joins game. List of players: b
+2026-08-27 13:53:57: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 1s | max lag: 0.157s | clients: b
+2026-08-27 13:53:57: ACTION[Main]: CHAT: *** b joined the game.
+2026-08-27 13:54:00: ACTION[Server]: [mcl_music] Playing track: DarkReaven-cube_waltz_2, for scenario: overworld
+2026-08-27 13:54:18: ACTION[Server]: [sora_story] cutscene completed for b
+2026-08-27 13:54:27: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-27 13:54:27: ACTION[Server]: b leaves game. List of players: 
+2026-08-27 13:54:27: WARNING[Server]: ServerEnvironment::deactivateFarObjects(): id=153 m_static_exists=true but static data doesn't actually exist in (38,-2,-6)
+2026-08-27 13:54:27: WARNING[Server]: StaticObjectList::remove(): id=153 not found
+2026-08-27 13:54:27: WARNING[Server]: ServerEnvironment::deactivateFarObjects(): id=154 m_static_exists=true but static data doesn't actually exist in (38,-2,-6)
+2026-08-27 13:54:27: WARNING[Server]: StaticObjectList::remove(): id=154 not found
+2026-08-27 13:54:28: ACTION[ServerStop]: Server: Shutting down
+2026-08-27 13:54:28: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-27 13:54:28: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+
+
+-------------
+  Separator
+-------------
+
+2026-08-30 09:41:44: ACTION[ServerStart]: [doc] doc.mt opened.
+2026-08-30 09:41:44: ACTION[ServerStart]: [doc] doc.mt successfully read.
+2026-08-30 09:41:44: ACTION[ServerStart]: World seed = 1000000000
+2026-08-30 09:41:44: ACTION[ServerStart]: VoxeLibre mapgen version = 0.92.1 initial version = 0.92.1
+2026-08-30 09:41:44: ACTION[ServerStart]: World created with Luanti version = 5.16.1
+2026-08-30 09:41:44: ACTION[ServerStart]: [mcl_init] increased LuaJIT parameters. LuaJIT version: LuaJIT 2.1.1772619647 with flags SSE3
+2026-08-30 09:41:44: ACTION[ServerStart]: [vl_cavesounds] Cave sounds are activated
+2026-08-30 09:41:44: ACTION[ServerStart]: [mcl_music] In-game music is activated
+2026-08-30 09:41:44: ACTION[ServerStart]: [mcl_weather] load_weather() changed the weather from clear to clear
+2026-08-30 09:41:44: ACTION[ServerStart]: [mcl_weather] Weather restored.
+2026-08-30 09:41:49: WARNING[ServerStart]: Decoration registered after mapgen core initialization: mcl_structures:mineshaft
+2026-08-30 09:41:53: ACTION[ServerStart]: World at [C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1]
+2026-08-30 09:41:53: ACTION[ServerStart]: Server for gameid="mineclone2" listening on [::]:30000.
+2026-08-30 09:41:58: ACTION[Server]: [sora_story] first-entry spawn completed for player at 541,17,-98
+2026-08-30 09:41:58: ACTION[Server]: [sora_story] cutscene started for player
+2026-08-30 09:41:58: ACTION[Server]: player [::ffff:127.0.0.1] joins game. List of players: player
+2026-08-30 09:41:59: ACTION[Main]: CHAT: # Server: version: 5.16.1 | game: VoxeLibre | uptime: 5s | max lag: 0.107s | clients: player
+2026-08-30 09:41:59: ACTION[Main]: CHAT: *** player joined the game.
+2026-08-30 09:42:03: ACTION[Server]: [mcl_music] Playing track: Herowl-Home_in_the_Wilderness, for scenario: overworld
+2026-08-30 09:42:20: ACTION[Server]: [sora_story] cutscene completed for player
+2026-08-30 09:42:43: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 09:45:51: ACTION[Server]: player has gotten award mcl:sweetDreams
+2026-08-30 09:45:51: ACTION[Main]: CHAT: New respawn position set!
+2026-08-30 09:45:51: ACTION[Main]: CHAT: player has made the advancement [Sweet Dreams]
+2026-08-30 09:45:56: ACTION[Server]: [mcl_weather] sleep() changed the weather from clear to clear
+2026-08-30 09:45:59: ACTION[Server]: [mcl_music] Playing track: diminixed-nevergrowup04, for scenario: overworld
+2026-08-30 09:46:32: ACTION[Server]: player digs mcl_core:tree at (567,15,-94)
+2026-08-30 09:46:33: ACTION[Server]: player digs mcl_core:tree at (565,15,-94)
+2026-08-30 09:46:33: ACTION[Server]: player digs mcl_core:tree at (564,15,-94)
+2026-08-30 09:46:33: ACTION[Server]: player digs mcl_core:tree at (563,15,-94)
+2026-08-30 09:46:33: ACTION[Server]: player digs mcl_core:tree at (562,15,-94)
+2026-08-30 09:46:34: ACTION[Server]: player digs mcl_core:tree at (561,15,-94)
+2026-08-30 09:46:34: ACTION[Server]: player digs mcl_core:tree at (560,15,-94)
+2026-08-30 09:46:43: ACTION[Server]: player digs mcl_core:vine at (563,15,-93)
+2026-08-30 09:46:44: ACTION[Server]: player digs mcl_core:vine at (561,15,-93)
+2026-08-30 09:46:59: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (559,16,-94)
+2026-08-30 09:47:18: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (560,15,-94)
+2026-08-30 09:47:22: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (561,15,-95)
+2026-08-30 09:47:30: ACTION[Server]: player digs mcl_cherry_blossom:cherrysapling at (561,15,-95)
+2026-08-30 09:47:33: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (563,15,-96)
+2026-08-30 09:47:36: ACTION[Server]: player digs mcl_cherry_blossom:cherrysapling at (560,15,-94)
+2026-08-30 09:47:37: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (561,15,-95)
+2026-08-30 09:47:40: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (565,15,-96)
+2026-08-30 09:47:47: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (568,15,-96)
+2026-08-30 09:47:54: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (562,15,-90)
+2026-08-30 09:47:57: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (558,15,-90)
+2026-08-30 09:48:07: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (567,15,-92)
+2026-08-30 09:48:11: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (564,15,-92)
+2026-08-30 09:48:12: ACTION[Server]: player digs mcl_cherry_blossom:cherrysapling at (562,15,-90)
+2026-08-30 09:48:14: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (561,15,-92)
+2026-08-30 09:48:19: ACTION[Server]: player digs mcl_cherry_blossom:cherrysapling at (559,16,-94)
+2026-08-30 09:48:25: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (559,16,-95)
+2026-08-30 09:48:29: ACTION[Server]: player digs mcl_flowers:dandelion at (557,16,-95)
+2026-08-30 09:48:31: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (557,16,-95)
+2026-08-30 09:48:34: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (556,16,-92)
+2026-08-30 09:48:48: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (553,16,-95)
+2026-08-30 09:48:52: ACTION[Server]: player places node mcl_cherry_blossom:cherrysapling at (553,16,-92)
+2026-08-30 09:49:57: ACTION[Emerge-0]: [mcl_structures] pillager_outpost placed at (316,25,-312)
+2026-08-30 09:49:57: ACTION[Emerge-0]: [mcl_structures] mineshaft placed at (340,25,-315)
+2026-08-30 09:51:54: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 09:51:54: ACTION[Server]: [mcl_music] Playing track: DarkReaven-beat_at_nightfall, for scenario: mining
+2026-08-30 09:52:40: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 09:52:47: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:zombie" at (508,1,-149) (id=1466, hp=20), damage=0
+2026-08-30 09:53:25: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:witch" at (537,-16,-143) (id=1541, hp=26), damage=0
+2026-08-30 09:54:34: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:skeleton" at (535,-22,-150) (id=1698, hp=20), damage=0
+2026-08-30 09:55:53: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (560,18,-93)
+2026-08-30 09:56:02: ACTION[Server]: player digs mcl_flowers:tulip_orange at (560,16,-95)
+2026-08-30 09:56:03: ACTION[Server]: player digs mcl_core:dirt_with_grass at (560,15,-95)
+2026-08-30 09:56:06: ACTION[Server]: player digs mcl_core:dirt_with_grass at (557,15,-92)
+2026-08-30 09:56:07: ACTION[Server]: player digs mcl_core:dirt_with_grass at (556,15,-92)
+2026-08-30 09:56:07: ACTION[Server]: player digs mcl_core:dirt_with_grass at (555,15,-92)
+2026-08-30 09:56:08: ACTION[Server]: player digs mcl_core:dirt_with_grass at (556,15,-91)
+2026-08-30 09:56:08: ACTION[Server]: player digs mcl_core:dirt_with_grass at (555,15,-91)
+2026-08-30 09:56:09: ACTION[Server]: player digs mcl_flowers:peony at (557,15,-91)
+2026-08-30 09:56:12: ACTION[Server]: player digs mcl_core:dirt_with_grass at (556,15,-93)
+2026-08-30 09:56:12: ACTION[Server]: player digs mcl_core:dirt_with_grass at (555,15,-93)
+2026-08-30 09:56:13: ACTION[Server]: player digs mcl_core:dirt_with_grass at (557,15,-93)
+2026-08-30 09:56:15: ACTION[Server]: player digs mcl_core:dirt_with_grass at (558,15,-93)
+2026-08-30 09:56:26: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (560,17,-93)
+2026-08-30 09:56:34: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (563,17,-94)
+2026-08-30 09:56:35: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (564,17,-94)
+2026-08-30 09:56:35: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (564,17,-93)
+2026-08-30 09:56:36: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (565,17,-93)
+2026-08-30 09:56:37: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (566,17,-94)
+2026-08-30 09:56:38: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (567,17,-95)
+2026-08-30 09:56:40: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (565,17,-92)
+2026-08-30 09:56:41: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (563,17,-92)
+2026-08-30 09:57:41: ACTION[Server]: [mcl_weather] sleep() changed the weather from clear to clear
+2026-08-30 09:57:45: ACTION[Server]: [mcl_music] Playing track: Jester-Hailing_Forest, for scenario: overworld
+2026-08-30 09:57:50: ACTION[Server]: [mcl_music] Playing track: DarkReaven-slow_in_cubic_mode, for scenario: overworld
+2026-08-30 09:58:05: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 09:58:42: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (552,18,-94)
+2026-08-30 09:58:43: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (552,18,-90)
+2026-08-30 09:58:49: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (559,18,-94)
+2026-08-30 09:58:50: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (560,18,-94)
+2026-08-30 09:58:51: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (560,18,-93)
+2026-08-30 09:58:52: ACTION[Server]: player digs mcl_cherry_blossom:cherrytree at (561,18,-93)
+2026-08-30 09:58:53: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (562,18,-93)
+2026-08-30 09:58:53: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (561,18,-94)
+2026-08-30 09:58:54: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (562,18,-94)
+2026-08-30 09:58:54: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (563,18,-94)
+2026-08-30 09:58:54: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (563,18,-93)
+2026-08-30 09:58:55: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (564,18,-94)
+2026-08-30 09:58:55: ACTION[Server]: player digs mcl_cherry_blossom:cherrytree at (565,18,-94)
+2026-08-30 09:58:55: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (564,18,-93)
+2026-08-30 09:58:55: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (565,18,-93)
+2026-08-30 09:58:56: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (566,18,-94)
+2026-08-30 09:58:56: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (567,18,-94)
+2026-08-30 09:58:56: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (566,18,-93)
+2026-08-30 09:58:57: ACTION[Server]: player digs mcl_cherry_blossom:cherrytree at (567,18,-93)
+2026-08-30 09:58:59: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (558,18,-92)
+2026-08-30 09:59:00: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (559,18,-92)
+2026-08-30 09:59:03: ACTION[Server]: player digs mcl_cherry_blossom:cherrytree at (560,18,-92)
+2026-08-30 09:59:10: ACTION[Server]: player digs mcl_core:dirt_with_grass at (547,17,-94)
+2026-08-30 09:59:11: ACTION[Server]: player digs mcl_core:dirt_with_grass at (547,17,-93)
+2026-08-30 09:59:11: ACTION[Server]: player digs mcl_core:dirt_with_grass at (546,17,-93)
+2026-08-30 09:59:13: ACTION[Server]: player digs mcl_core:dirt_with_grass at (546,17,-94)
+2026-08-30 09:59:29: ACTION[Server]: player places node mcl_torches:torch_wall at (552,18,-95)
+2026-08-30 09:59:33: ACTION[Server]: player places node mcl_torches:torch_wall at (552,18,-92)
+2026-08-30 09:59:48: ACTION[Server]: player digs mcl_cherry_blossom:cherryleaves at (559,18,-94)
+2026-08-30 10:02:28: ACTION[Server]: player digs mcl_core:stone at (519,19,-151)
+2026-08-30 10:02:28: ACTION[Server]: player has gotten award mcl:stoneAge
+2026-08-30 10:02:28: ACTION[Main]: CHAT: player has made the advancement [Stone Age]
+2026-08-30 10:02:29: ACTION[Server]: player digs mcl_core:stone at (519,20,-152)
+2026-08-30 10:02:29: ACTION[Server]: player digs mcl_core:stone at (519,20,-153)
+2026-08-30 10:02:33: ACTION[Server]: player digs mcl_core:stone at (520,20,-152)
+2026-08-30 10:02:33: ACTION[Server]: player digs mcl_core:diorite at (521,20,-152)
+2026-08-30 10:02:34: ACTION[Server]: player digs mcl_core:stone at (520,19,-151)
+2026-08-30 10:02:35: ACTION[Server]: player digs mcl_core:stone at (521,19,-151)
+2026-08-30 10:02:36: ACTION[Server]: player digs mcl_core:diorite at (522,19,-151)
+2026-08-30 10:02:38: ACTION[Server]: player digs mcl_core:dirt at (517,19,-152)
+2026-08-30 10:02:38: ACTION[Server]: player digs mcl_core:dirt at (517,19,-153)
+2026-08-30 10:02:39: ACTION[Server]: player digs mcl_core:stone at (517,19,-154)
+2026-08-30 10:02:40: ACTION[Server]: player digs mcl_core:stone at (518,19,-152)
+2026-08-30 10:02:40: ACTION[Server]: player digs mcl_core:stone at (518,19,-153)
+2026-08-30 10:02:40: ACTION[Server]: player digs mcl_core:stone at (518,20,-153)
+2026-08-30 10:02:41: ACTION[Server]: player digs mcl_core:stone at (518,20,-154)
+2026-08-30 10:02:41: ACTION[Server]: player digs mcl_core:stone at (519,19,-152)
+2026-08-30 10:02:41: ACTION[Server]: player digs mcl_core:stone at (519,19,-153)
+2026-08-30 10:02:42: ACTION[Server]: player digs mcl_core:stone at (519,19,-154)
+2026-08-30 10:02:42: ACTION[Server]: player digs mcl_core:stone at (520,19,-152)
+2026-08-30 10:02:42: ACTION[Server]: player digs mcl_core:stone at (521,19,-152)
+2026-08-30 10:03:11: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (509,14,-154)
+2026-08-30 10:03:14: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (511,13,-151)
+2026-08-30 10:03:17: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (511,8,-149)
+2026-08-30 10:03:24: ACTION[Server]: player digs mcl_core:stone at (510,11,-156)
+2026-08-30 10:03:24: ACTION[Server]: player digs mcl_core:stone at (511,11,-156)
+2026-08-30 10:03:26: ACTION[Server]: player digs mcl_core:stone at (512,11,-156)
+2026-08-30 10:03:29: ACTION[Server]: player digs mcl_core:andesite at (510,13,-157)
+2026-08-30 10:03:30: ACTION[Server]: player digs mcl_core:stone at (510,12,-157)
+2026-08-30 10:03:31: ACTION[Server]: player digs mcl_core:stone at (511,12,-157)
+2026-08-30 10:03:32: ACTION[Server]: player digs mcl_core:stone at (512,12,-157)
+2026-08-30 10:03:34: ACTION[Server]: player digs mcl_core:gravel at (513,14,-157)
+2026-08-30 10:03:35: ACTION[Server]: player digs mcl_core:stone at (512,13,-158)
+2026-08-30 10:03:36: ACTION[Server]: player digs mcl_core:andesite at (511,13,-158)
+2026-08-30 10:03:37: ACTION[Server]: player digs mcl_core:stone at (511,14,-158)
+2026-08-30 10:03:37: ACTION[Server]: player digs mcl_core:stone at (512,14,-158)
+2026-08-30 10:03:44: ACTION[Server]: player digs mcl_core:stone at (513,14,-158)
+2026-08-30 10:03:45: ACTION[Server]: player digs mcl_core:stone at (513,15,-158)
+2026-08-30 10:03:51: ACTION[Server]: player digs mcl_core:gravel at (513,13,-156)
+2026-08-30 10:03:54: ACTION[Server]: player digs mcl_core:gravel at (513,13,-157)
+2026-08-30 10:03:59: ACTION[Server]: player digs mcl_core:stone at (513,13,-158)
+2026-08-30 10:04:01: ACTION[Server]: player digs mcl_core:stone at (514,14,-158)
+2026-08-30 10:04:01: ACTION[Server]: player digs mcl_core:stone at (514,14,-157)
+2026-08-30 10:04:01: ACTION[Server]: player digs mcl_core:gravel at (514,14,-156)
+2026-08-30 10:04:01: ACTION[Server]: player digs mcl_core:gravel at (514,14,-155)
+2026-08-30 10:04:03: ACTION[Server]: player digs mcl_core:gravel at (514,14,-156)
+2026-08-30 10:04:03: ACTION[Server]: player digs mcl_core:gravel at (514,14,-155)
+2026-08-30 10:04:03: ACTION[Server]: player digs mcl_core:gravel at (514,14,-154)
+2026-08-30 10:04:03: ACTION[Server]: player digs mcl_core:stone at (514,14,-153)
+2026-08-30 10:04:06: ACTION[Server]: player digs mcl_core:stone at (514,15,-157)
+2026-08-30 10:04:07: ACTION[Server]: player digs mcl_core:stone at (515,15,-157)
+2026-08-30 10:04:07: ACTION[Server]: player digs mcl_core:stone at (514,15,-158)
+2026-08-30 10:04:08: ACTION[Server]: player digs mcl_core:stone at (515,15,-155)
+2026-08-30 10:04:09: ACTION[Server]: player digs mcl_core:stone at (514,15,-153)
+2026-08-30 10:04:09: ACTION[Server]: player digs mcl_core:gravel at (514,14,-154)
+2026-08-30 10:04:11: ACTION[Server]: player digs mcl_core:stone at (514,16,-153)
+2026-08-30 10:04:12: ACTION[Server]: player digs mcl_core:stone at (514,16,-155)
+2026-08-30 10:04:12: ACTION[Server]: player digs mcl_core:stone at (514,16,-156)
+2026-08-30 10:04:13: ACTION[Server]: player digs mcl_core:stone at (514,16,-157)
+2026-08-30 10:04:13: ACTION[Server]: player digs mcl_core:stone at (514,16,-158)
+2026-08-30 10:04:13: ACTION[Server]: player digs mcl_core:stone at (515,17,-158)
+2026-08-30 10:05:22: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (510,17,-158)
+2026-08-30 10:05:27: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (511,19,-152)
+2026-08-30 10:05:39: ACTION[Server]: player places node mcl_core:diorite at (515,15,-157)
+2026-08-30 10:05:40: ACTION[Server]: player places node mcl_core:diorite at (515,15,-155)
+2026-08-30 10:05:43: ACTION[Server]: player digs mcl_core:stone at (515,16,-157)
+2026-08-30 10:05:44: ACTION[Server]: player digs mcl_core:stone at (515,17,-157)
+2026-08-30 10:05:44: ACTION[Server]: player digs mcl_core:stone at (515,16,-158)
+2026-08-30 10:05:44: ACTION[Server]: player digs mcl_core:stone at (516,17,-158)
+2026-08-30 10:05:44: ACTION[Server]: player digs mcl_core:stone at (515,16,-156)
+2026-08-30 10:05:45: ACTION[Server]: player digs mcl_core:stone at (515,17,-156)
+2026-08-30 10:05:45: ACTION[Server]: player digs mcl_core:stone at (515,16,-155)
+2026-08-30 10:05:45: ACTION[Server]: player digs mcl_core:stone at (515,16,-154)
+2026-08-30 10:05:46: ACTION[Server]: player digs mcl_core:stone at (515,17,-153)
+2026-08-30 10:05:46: ACTION[Server]: player digs mcl_core:stone at (515,17,-155)
+2026-08-30 10:05:46: ACTION[Server]: player digs mcl_core:stone at (515,17,-154)
+2026-08-30 10:05:47: ACTION[Server]: player digs mcl_core:stone at (515,17,-152)
+2026-08-30 10:05:48: ACTION[Server]: player digs mcl_core:stone at (515,16,-153)
+2026-08-30 10:05:48: ACTION[Server]: player digs mcl_core:stone at (515,16,-152)
+2026-08-30 10:05:50: ACTION[Server]: player digs mcl_core:stone at (515,15,-158)
+2026-08-30 10:05:51: ACTION[Server]: player digs mcl_core:diorite at (515,15,-157)
+2026-08-30 10:05:52: ACTION[Server]: player digs mcl_core:diorite at (515,15,-155)
+2026-08-30 10:05:52: ACTION[Server]: player digs mcl_core:stone at (515,15,-154)
+2026-08-30 10:05:52: ACTION[Server]: player digs mcl_core:stone at (515,15,-156)
+2026-08-30 10:05:53: ACTION[Server]: player digs mcl_core:stone at (515,15,-153)
+2026-08-30 10:05:54: ACTION[Server]: player digs mcl_core:stone at (515,15,-152)
+2026-08-30 10:05:57: ACTION[Server]: player digs mcl_core:stone at (516,16,-158)
+2026-08-30 10:05:57: ACTION[Server]: player digs mcl_core:stone at (516,17,-157)
+2026-08-30 10:05:57: ACTION[Server]: player digs mcl_core:stone at (516,17,-156)
+2026-08-30 10:05:58: ACTION[Server]: player digs mcl_core:stone at (516,17,-155)
+2026-08-30 10:05:58: ACTION[Server]: player digs mcl_core:stone at (516,16,-155)
+2026-08-30 10:05:59: ACTION[Server]: player digs mcl_core:stone at (516,16,-157)
+2026-08-30 10:05:59: ACTION[Server]: player digs mcl_core:stone at (516,16,-156)
+2026-08-30 10:05:59: ACTION[Server]: player digs mcl_core:stone at (516,16,-154)
+2026-08-30 10:05:59: ACTION[Server]: player digs mcl_core:stone at (516,17,-154)
+2026-08-30 10:06:00: ACTION[Server]: player digs mcl_core:stone at (516,17,-153)
+2026-08-30 10:06:01: ACTION[Server]: player digs mcl_core:stone at (516,17,-152)
+2026-08-30 10:06:01: ACTION[Server]: player digs mcl_core:stone at (516,18,-155)
+2026-08-30 10:06:02: ACTION[Server]: player digs mcl_core:stone at (516,18,-154)
+2026-08-30 10:06:02: ACTION[Server]: player digs mcl_core:stone at (516,18,-153)
+2026-08-30 10:06:03: ACTION[Server]: player digs mcl_core:stone at (516,18,-152)
+2026-08-30 10:06:04: ACTION[Server]: player digs mcl_core:stone at (516,18,-156)
+2026-08-30 10:06:04: ACTION[Server]: player digs mcl_core:stone at (516,18,-157)
+2026-08-30 10:06:05: ACTION[Server]: player digs mcl_core:stone at (516,18,-158)
+2026-08-30 10:06:05: ACTION[Server]: player digs mcl_core:stone at (516,18,-159)
+2026-08-30 10:06:06: ACTION[Server]: player digs mcl_core:stone at (516,19,-159)
+2026-08-30 10:06:09: ACTION[Server]: player digs mcl_core:stone at (517,18,-159)
+2026-08-30 10:06:10: ACTION[Server]: player digs mcl_core:stone at (517,19,-159)
+2026-08-30 10:06:10: ACTION[Server]: player digs mcl_core:dirt_with_grass at (517,20,-159)
+2026-08-30 10:06:11: ACTION[Server]: player digs mcl_core:stone at (517,18,-158)
+2026-08-30 10:06:11: ACTION[Server]: player digs mcl_core:stone at (517,19,-158)
+2026-08-30 10:06:12: ACTION[Server]: player digs mcl_core:stone at (517,18,-157)
+2026-08-30 10:06:12: ACTION[Server]: player digs mcl_core:stone at (517,19,-157)
+2026-08-30 10:06:13: ACTION[Server]: player digs mcl_core:stone at (517,19,-156)
+2026-08-30 10:06:13: ACTION[Server]: player digs mcl_core:stone at (517,18,-156)
+2026-08-30 10:06:13: ACTION[Server]: player digs mcl_core:stone at (517,19,-155)
+2026-08-30 10:06:14: ACTION[Server]: player digs mcl_core:stone at (517,18,-155)
+2026-08-30 10:06:14: ACTION[Server]: player digs mcl_core:stone at (517,18,-154)
+2026-08-30 10:06:15: ACTION[Server]: player digs mcl_core:stone at (517,18,-153)
+2026-08-30 10:06:15: ACTION[Server]: player digs mcl_core:stone at (517,18,-152)
+2026-08-30 10:06:16: ACTION[Server]: player digs mcl_core:stone at (516,16,-153)
+2026-08-30 10:06:17: ACTION[Server]: player digs mcl_core:stone at (516,16,-152)
+2026-08-30 10:06:20: ACTION[Server]: player digs mcl_core:stone at (517,17,-157)
+2026-08-30 10:06:20: ACTION[Server]: player digs mcl_core:stone at (517,17,-158)
+2026-08-30 10:06:21: ACTION[Server]: player digs mcl_core:stone at (517,17,-156)
+2026-08-30 10:06:21: ACTION[Server]: player digs mcl_core:stone at (517,17,-155)
+2026-08-30 10:06:22: ACTION[Server]: player digs mcl_core:stone at (517,17,-154)
+2026-08-30 10:06:22: ACTION[Server]: player digs mcl_core:stone at (517,17,-153)
+2026-08-30 10:06:23: ACTION[Server]: player digs mcl_core:stone at (517,17,-152)
+2026-08-30 10:06:23: ACTION[Server]: player digs mcl_core:stone at (517,17,-151)
+2026-08-30 10:06:24: ACTION[Server]: player digs mcl_core:stone at (517,18,-151)
+2026-08-30 10:06:25: ACTION[Server]: player digs mcl_core:stone at (517,18,-150)
+2026-08-30 10:06:25: ACTION[Server]: player digs mcl_core:stone at (516,18,-150)
+2026-08-30 10:06:26: ACTION[Server]: player digs mcl_core:stone at (515,18,-150)
+2026-08-30 10:06:32: ACTION[Server]: player digs mcl_core:stone at (517,17,-150)
+2026-08-30 10:06:33: ACTION[Server]: player digs mcl_core:stone at (516,17,-151)
+2026-08-30 10:06:33: ACTION[Server]: player digs mcl_core:stone at (516,17,-150)
+2026-08-30 10:06:37: ACTION[Server]: player digs mcl_core:stone at (518,18,-150)
+2026-08-30 10:06:38: ACTION[Server]: player digs mcl_core:stone at (518,18,-151)
+2026-08-30 10:06:38: ACTION[Server]: player digs mcl_core:stone at (518,18,-152)
+2026-08-30 10:06:38: ACTION[Server]: player digs mcl_core:stone at (519,19,-155)
+2026-08-30 10:06:39: ACTION[Server]: player digs mcl_core:stone at (519,18,-152)
+2026-08-30 10:06:42: ACTION[Server]: player places node mcl_core:diorite at (519,18,-152)
+2026-08-30 10:06:44: ACTION[Server]: player digs mcl_core:stone at (518,18,-153)
+2026-08-30 10:06:57: ACTION[Server]: player places node mcl_core:diorite at (512,6,-153)
+2026-08-30 10:07:10: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (508,7,-151)
+2026-08-30 10:07:12: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (516,6,-150)
+2026-08-30 10:07:16: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (506,4,-149)
+2026-08-30 10:07:19: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (516,0,-149)
+2026-08-30 10:07:27: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 10:07:27: ACTION[Server]: [mcl_music] Playing track: DarkReaven-deep_mining, for scenario: mining
+2026-08-30 10:07:57: ACTION[Server]: player digs mcl_core:dirt at (511,-1,-150)
+2026-08-30 10:07:57: ACTION[Server]: player digs mcl_core:dirt at (510,-1,-150)
+2026-08-30 10:07:58: ACTION[Server]: player digs mcl_core:granite at (509,-1,-150)
+2026-08-30 10:07:58: ACTION[Server]: player digs mcl_core:granite at (509,0,-150)
+2026-08-30 10:07:58: ACTION[Server]: player digs mcl_core:dirt at (510,0,-150)
+2026-08-30 10:07:59: ACTION[Server]: player digs mcl_core:dirt at (511,0,-150)
+2026-08-30 10:07:59: ACTION[Server]: player digs mcl_core:dirt at (511,0,-151)
+2026-08-30 10:08:01: ACTION[Server]: player digs mcl_core:granite at (511,-2,-150)
+2026-08-30 10:08:02: ACTION[Server]: player digs mcl_core:granite at (510,-2,-150)
+2026-08-30 10:08:02: ACTION[Server]: player digs mcl_core:granite at (509,-2,-150)
+2026-08-30 10:08:02: ACTION[Server]: player digs mcl_core:granite at (509,-2,-149)
+2026-08-30 10:08:04: ACTION[Server]: player digs mcl_core:dirt at (510,0,-151)
+2026-08-30 10:08:05: ACTION[Server]: player digs mcl_core:dirt at (511,1,-151)
+2026-08-30 10:08:05: ACTION[Server]: player digs mcl_core:dirt at (512,0,-151)
+2026-08-30 10:08:05: ACTION[Server]: player digs mcl_core:dirt at (512,1,-151)
+2026-08-30 10:08:06: ACTION[Server]: player digs mcl_core:dirt at (510,1,-151)
+2026-08-30 10:08:06: ACTION[Server]: player digs mcl_core:dirt at (510,1,-150)
+2026-08-30 10:08:07: ACTION[Server]: player digs mcl_core:granite at (509,1,-150)
+2026-08-30 10:08:08: ACTION[Server]: player digs mcl_core:granite at (509,2,-150)
+2026-08-30 10:08:14: ACTION[Server]: player places node mcl_core:granite at (511,-2,-150)
+2026-08-30 10:08:14: ACTION[Server]: player places node mcl_core:granite at (511,-1,-150)
+2026-08-30 10:08:15: ACTION[Server]: player places node mcl_core:granite at (511,0,-150)
+2026-08-30 10:08:15: ACTION[Server]: player places node mcl_core:granite at (511,1,-150)
+2026-08-30 10:08:16: ACTION[Server]: player places node mcl_core:granite at (511,2,-150)
+2026-08-30 10:08:17: ACTION[Server]: player places node mcl_core:granite at (511,3,-150)
+2026-08-30 10:08:17: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 10:08:17: ACTION[Server]: player places node mcl_core:granite at (511,4,-150)
+2026-08-30 10:08:33: ACTION[Server]: player digs mcl_core:stone at (509,7,-153)
+2026-08-30 10:08:34: ACTION[Server]: player digs mcl_core:stone at (508,8,-153)
+2026-08-30 10:08:35: ACTION[Server]: player digs mcl_core:stone at (508,7,-153)
+2026-08-30 10:08:35: ACTION[Server]: player digs mcl_core:stone at (510,8,-154)
+2026-08-30 10:08:37: ACTION[Server]: player digs mcl_core:stone at (509,9,-154)
+2026-08-30 10:08:41: ACTION[Server]: player digs mcl_core:stone at (510,9,-155)
+2026-08-30 10:08:42: ACTION[Server]: player digs mcl_core:stone at (511,9,-155)
+2026-08-30 10:08:43: ACTION[Server]: player digs mcl_core:stone at (512,9,-155)
+2026-08-30 10:08:45: ACTION[Server]: player digs mcl_core:stone at (512,10,-156)
+2026-08-30 10:08:46: ACTION[Server]: player digs mcl_core:stone at (511,10,-156)
+2026-08-30 10:08:47: ACTION[Server]: player digs mcl_core:stone at (510,10,-156)
+2026-08-30 10:08:50: ACTION[Server]: player digs mcl_core:stone at (510,11,-157)
+2026-08-30 10:08:51: ACTION[Server]: player digs mcl_core:stone at (511,11,-157)
+2026-08-30 10:08:51: ACTION[Server]: player digs mcl_core:stone at (512,11,-157)
+2026-08-30 10:08:54: ACTION[Server]: player digs mcl_core:stone at (512,12,-158)
+2026-08-30 10:08:55: ACTION[Server]: player digs mcl_core:stone at (511,12,-158)
+2026-08-30 10:09:22: ACTION[Server]: player digs mcl_core:granite at (511,4,-150)
+2026-08-30 10:09:24: ACTION[Server]: player places node mcl_core:granite at (511,3,-151)
+2026-08-30 10:09:25: ACTION[Server]: player places node mcl_core:granite at (512,0,-151)
+2026-08-30 10:09:26: ACTION[Server]: player places node mcl_core:granite at (512,1,-151)
+2026-08-30 10:09:30: ACTION[Server]: player digs mcl_core:stone at (513,3,-152)
+2026-08-30 10:09:31: ACTION[Server]: player digs mcl_core:stone at (512,3,-152)
+2026-08-30 10:09:31: ACTION[Server]: player digs mcl_core:stone at (512,4,-153)
+2026-08-30 10:09:33: ACTION[Server]: player places node mcl_core:granite at (512,4,-153)
+2026-08-30 10:09:35: ACTION[Server]: player digs mcl_core:stone at (511,4,-152)
+2026-08-30 10:09:38: ACTION[Server]: player digs mcl_core:stone at (510,5,-152)
+2026-08-30 10:09:48: ACTION[Server]: player places node mcl_core:granite at (509,-2,-150)
+2026-08-30 10:09:49: ACTION[Server]: player places node mcl_core:granite at (509,-1,-150)
+2026-08-30 10:09:50: ACTION[Server]: player places node mcl_core:granite at (509,0,-150)
+2026-08-30 10:09:51: ACTION[Server]: player places node mcl_core:granite at (510,-2,-150)
+2026-08-30 10:09:51: ACTION[Server]: player places node mcl_core:granite at (510,-1,-150)
+2026-08-30 10:09:51: ACTION[Server]: player places node mcl_core:granite at (510,0,-150)
+2026-08-30 10:09:52: ACTION[Server]: player places node mcl_core:granite at (510,1,-150)
+2026-08-30 10:09:52: ACTION[Server]: player places node mcl_core:granite at (510,2,-150)
+2026-08-30 10:09:53: ACTION[Server]: player places node mcl_core:granite at (510,3,-150)
+2026-08-30 10:09:56: ACTION[Server]: player places node mcl_core:granite at (509,1,-150)
+2026-08-30 10:09:57: ACTION[Server]: player places node mcl_core:granite at (509,2,-150)
+2026-08-30 10:09:58: ACTION[Server]: player places node mcl_core:granite at (509,3,-150)
+2026-08-30 10:10:12: ACTION[Server]: player digs mcl_core:granite at (511,3,-150)
+2026-08-30 10:10:13: ACTION[Server]: player digs mcl_core:granite at (510,3,-150)
+2026-08-30 10:10:14: ACTION[Server]: player digs mcl_core:granite at (509,3,-150)
+2026-08-30 10:10:16: ACTION[Server]: player digs mcl_core:granite at (508,3,-150)
+2026-08-30 10:10:19: ACTION[Server]: player places node mcl_core:granite at (508,1,-149)
+2026-08-30 10:10:21: ACTION[Server]: player places node mcl_core:granite at (509,-2,-149)
+2026-08-30 10:10:24: ACTION[Server]: player places node mcl_core:granite at (509,-1,-149)
+2026-08-30 10:10:24: ACTION[Server]: player places node mcl_core:granite at (509,0,-149)
+2026-08-30 10:10:25: ACTION[Server]: player places node mcl_core:granite at (509,1,-149)
+2026-08-30 10:10:26: ACTION[Server]: player places node mcl_core:granite at (510,-3,-149)
+2026-08-30 10:10:27: ACTION[Server]: player places node mcl_core:granite at (510,-2,-149)
+2026-08-30 10:10:27: ACTION[Server]: player places node mcl_core:granite at (510,-1,-149)
+2026-08-30 10:10:28: ACTION[Server]: player places node mcl_core:granite at (510,0,-149)
+2026-08-30 10:10:31: ACTION[Server]: player places node mcl_core:granite at (511,-3,-149)
+2026-08-30 10:10:31: ACTION[Server]: player places node mcl_core:granite at (511,-2,-149)
+2026-08-30 10:10:31: ACTION[Server]: player places node mcl_core:granite at (511,-1,-149)
+2026-08-30 10:10:32: ACTION[Server]: player places node mcl_core:granite at (511,0,-149)
+2026-08-30 10:10:39: ACTION[Server]: player places node mcl_core:granite at (514,-4,-150)
+2026-08-30 10:10:40: ACTION[Server]: player places node mcl_core:granite at (513,-4,-150)
+2026-08-30 10:10:41: ACTION[Server]: player places node mcl_core:granite at (512,-3,-150)
+2026-08-30 10:10:42: ACTION[Server]: player places node mcl_core:granite at (512,-2,-150)
+2026-08-30 10:10:43: ACTION[Server]: player places node mcl_core:granite at (512,-1,-150)
+2026-08-30 10:10:46: ACTION[Server]: player places node mcl_core:granite at (513,-3,-150)
+2026-08-30 10:10:47: ACTION[Server]: player places node mcl_core:granite at (513,-2,-150)
+2026-08-30 10:10:48: ACTION[Server]: player places node mcl_core:granite at (513,-1,-150)
+2026-08-30 10:10:49: ACTION[Server]: player digs mcl_core:granite at (513,-1,-150)
+2026-08-30 10:11:09: ACTION[Server]: player places node mcl_core:granite at (512,0,-150)
+2026-08-30 10:11:10: ACTION[Server]: player places node mcl_core:granite at (513,-1,-150)
+2026-08-30 10:11:19: ACTION[Server]: player places node mcl_core:granite at (507,-2,-148)
+2026-08-30 10:11:20: ACTION[Server]: player places node mcl_core:granite at (507,-1,-148)
+2026-08-30 10:11:33: ACTION[Server]: player places node mcl_core:granite at (511,-1,-148)
+2026-08-30 10:11:35: ACTION[Server]: player places node mcl_core:granite at (510,-1,-148)
+2026-08-30 10:11:35: ACTION[Server]: player places node mcl_core:granite at (509,-1,-148)
+2026-08-30 10:11:37: ACTION[Server]: player places node mcl_core:granite at (508,-1,-148)
+2026-08-30 10:11:43: ACTION[Server]: player places node mcl_core:granite at (513,-2,-149)
+2026-08-30 10:11:44: ACTION[Server]: player places node mcl_core:granite at (512,-2,-149)
+2026-08-30 10:12:10: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (506,3,-146)
+2026-08-30 10:12:17: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (512,-1,-146)
+2026-08-30 10:12:20: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (519,-3,-153)
+2026-08-30 10:12:42: ACTION[Server]: [mcl_music] Playing track: Jester-0dd-BL0ck, for scenario: mining
+2026-08-30 10:12:55: ACTION[Server]: player places node mcl_core:diorite at (508,-3,-148)
+2026-08-30 10:12:56: ACTION[Server]: player places node mcl_core:diorite at (507,-3,-147)
+2026-08-30 10:12:59: ACTION[Server]: player places node mcl_core:diorite at (498,0,-146)
+2026-08-30 10:12:59: ACTION[Server]: player places node mcl_core:diorite at (498,0,-145)
+2026-08-30 10:12:59: ACTION[Server]: player places node mcl_core:diorite at (499,0,-146)
+2026-08-30 10:13:00: ACTION[Server]: player places node mcl_core:diorite at (500,0,-146)
+2026-08-30 10:13:00: ACTION[Server]: player places node mcl_core:diorite at (499,0,-145)
+2026-08-30 10:13:00: ACTION[Server]: player places node mcl_core:diorite at (500,0,-145)
+2026-08-30 10:13:00: ACTION[Server]: player places node mcl_core:diorite at (501,0,-145)
+2026-08-30 10:13:01: ACTION[Server]: player places node mcl_core:diorite at (500,0,-143)
+2026-08-30 10:13:01: ACTION[Server]: player places node mcl_core:diorite at (501,0,-143)
+2026-08-30 10:13:01: ACTION[Server]: player places node mcl_core:diorite at (502,0,-143)
+2026-08-30 10:13:02: ACTION[Server]: player places node mcl_core:diorite at (503,0,-143)
+2026-08-30 10:13:02: ACTION[Server]: player places node mcl_core:diorite at (501,0,-144)
+2026-08-30 10:13:03: ACTION[Server]: player places node mcl_core:diorite at (502,0,-144)
+2026-08-30 10:13:03: ACTION[Server]: player places node mcl_core:diorite at (501,1,-145)
+2026-08-30 10:13:04: ACTION[Server]: player places node mcl_core:diorite at (501,1,-146)
+2026-08-30 10:13:04: ACTION[Server]: player places node mcl_core:diorite at (501,0,-146)
+2026-08-30 10:13:05: ACTION[Server]: player places node mcl_core:diorite at (502,0,-145)
+2026-08-30 10:13:05: ACTION[Server]: player places node mcl_core:diorite at (503,1,-144)
+2026-08-30 10:13:06: ACTION[Server]: player places node mcl_core:diorite at (502,1,-145)
+2026-08-30 10:13:06: ACTION[Server]: player places node mcl_core:diorite at (502,1,-146)
+2026-08-30 10:13:07: ACTION[Server]: player places node mcl_core:diorite at (503,1,-145)
+2026-08-30 10:13:08: ACTION[Server]: player places node mcl_core:diorite at (503,0,-144)
+2026-08-30 10:13:09: ACTION[Server]: player places node mcl_core:diorite at (503,0,-145)
+2026-08-30 10:13:09: ACTION[Server]: player places node mcl_core:diorite at (502,0,-146)
+2026-08-30 10:13:10: ACTION[Server]: player places node mcl_core:diorite at (502,-1,-146)
+2026-08-30 10:13:11: ACTION[Server]: player places node mcl_core:diorite at (500,-1,-145)
+2026-08-30 10:13:11: ACTION[Server]: player places node mcl_core:diorite at (501,-1,-144)
+2026-08-30 10:13:11: ACTION[Server]: player places node mcl_core:diorite at (502,-1,-144)
+2026-08-30 10:13:12: ACTION[Server]: player places node mcl_core:diorite at (503,-1,-144)
+2026-08-30 10:13:12: ACTION[Server]: player places node mcl_core:diorite at (501,-1,-145)
+2026-08-30 10:13:12: ACTION[Server]: player places node mcl_core:diorite at (502,-1,-145)
+2026-08-30 10:13:13: ACTION[Server]: player places node mcl_core:diorite at (503,-1,-145)
+2026-08-30 10:13:14: ACTION[Server]: player places node mcl_core:diorite at (503,-1,-146)
+2026-08-30 10:13:14: ACTION[Server]: player places node mcl_core:diorite at (503,0,-146)
+2026-08-30 10:13:15: ACTION[Server]: player places node mcl_core:diorite at (503,1,-146)
+2026-08-30 10:13:23: ACTION[Server]: player digs mcl_blackstone:soul_torch_wall at (512,-1,-146)
+2026-08-30 10:13:30: ACTION[Server]: player places node mcl_core:diorite at (508,-2,-148)
+2026-08-30 10:13:31: ACTION[Server]: player places node mcl_core:diorite at (505,-2,-147)
+2026-08-30 10:13:33: ACTION[Server]: player places node mcl_core:diorite at (506,-2,-147)
+2026-08-30 10:13:33: ACTION[Server]: player places node mcl_core:diorite at (504,-2,-146)
+2026-08-30 10:13:33: ACTION[Server]: player places node mcl_core:diorite at (505,-2,-146)
+2026-08-30 10:13:34: ACTION[Server]: player places node mcl_core:diorite at (504,-2,-145)
+2026-08-30 10:13:35: ACTION[Server]: player places node mcl_core:diorite at (505,-2,-145)
+2026-08-30 10:13:35: ACTION[Server]: player places node mcl_core:diorite at (506,-2,-145)
+2026-08-30 10:13:36: ACTION[Server]: player places node mcl_core:diorite at (506,-2,-146)
+2026-08-30 10:13:37: ACTION[Server]: player places node mcl_core:diorite at (505,-1,-144)
+2026-08-30 10:13:38: ACTION[Server]: player places node mcl_core:diorite at (504,-1,-144)
+2026-08-30 10:13:38: ACTION[Server]: player places node mcl_core:diorite at (504,-1,-146)
+2026-08-30 10:13:39: ACTION[Server]: player places node mcl_core:diorite at (504,-1,-145)
+2026-08-30 10:13:40: ACTION[Server]: player places node mcl_core:diorite at (504,0,-147)
+2026-08-30 10:13:40: ACTION[Server]: player places node mcl_core:diorite at (504,0,-145)
+2026-08-30 10:13:40: ACTION[Server]: player places node mcl_core:diorite at (504,0,-144)
+2026-08-30 10:13:41: ACTION[Server]: player places node mcl_core:diorite at (504,0,-146)
+2026-08-30 10:13:41: ACTION[Server]: player places node mcl_core:diorite at (504,2,-147)
+2026-08-30 10:13:42: ACTION[Server]: player places node mcl_core:diorite at (504,1,-147)
+2026-08-30 10:13:43: ACTION[Server]: player places node mcl_core:diorite at (504,1,-146)
+2026-08-30 10:13:43: ACTION[Server]: player places node mcl_core:diorite at (504,2,-146)
+2026-08-30 10:13:44: ACTION[Server]: player places node mcl_core:diorite at (504,1,-145)
+2026-08-30 10:13:44: ACTION[Server]: player places node mcl_core:diorite at (504,1,-144)
+2026-08-30 10:13:45: ACTION[Server]: player places node mcl_core:diorite at (505,0,-144)
+2026-08-30 10:13:45: ACTION[Server]: player places node mcl_core:diorite at (506,0,-144)
+2026-08-30 10:13:46: ACTION[Server]: player places node mcl_core:diorite at (505,1,-144)
+2026-08-30 10:13:47: ACTION[Server]: player places node mcl_core:diorite at (506,-1,-144)
+2026-08-30 10:13:58: ACTION[Server]: player places node mcl_core:diorite at (508,-3,-147)
+2026-08-30 10:13:58: ACTION[Server]: player places node mcl_core:diorite at (507,-3,-146)
+2026-08-30 10:13:59: ACTION[Server]: player places node mcl_core:diorite at (508,-3,-146)
+2026-08-30 10:14:08: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (516,0,-150)
+2026-08-30 10:14:12: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (516,-1,-148)
+2026-08-30 10:14:13: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (518,-1,-151)
+2026-08-30 10:14:25: ACTION[Server]: player places node mcl_core:diorite at (509,-3,-148)
+2026-08-30 10:14:25: ACTION[Server]: player places node mcl_core:diorite at (509,-3,-147)
+2026-08-30 10:14:26: ACTION[Server]: player places node mcl_core:diorite at (509,-3,-146)
+2026-08-30 10:14:26: ACTION[Server]: [vl_cavesounds] Playing cave sound: cave2
+2026-08-30 10:14:26: ACTION[Server]: player places node mcl_core:diorite at (510,-3,-147)
+2026-08-30 10:14:27: ACTION[Server]: player places node mcl_core:diorite at (510,-3,-146)
+2026-08-30 10:14:28: ACTION[Server]: player places node mcl_core:diorite at (511,-3,-146)
+2026-08-30 10:14:29: ACTION[Server]: player places node mcl_core:diorite at (512,-3,-146)
+2026-08-30 10:14:30: ACTION[Server]: player places node mcl_core:diorite at (513,-3,-146)
+2026-08-30 10:14:30: ACTION[Server]: player places node mcl_core:diorite at (514,-3,-146)
+2026-08-30 10:14:35: ACTION[Server]: player places node mcl_core:diorite at (512,-3,-149)
+2026-08-30 10:14:36: ACTION[Server]: player places node mcl_core:diorite at (513,-3,-149)
+2026-08-30 10:14:37: ACTION[Server]: player places node mcl_core:diorite at (510,-3,-148)
+2026-08-30 10:14:39: ACTION[Server]: player places node mcl_core:diorite at (509,-2,-148)
+2026-08-30 10:14:40: ACTION[Server]: player places node mcl_core:diorite at (510,-2,-148)
+2026-08-30 10:14:42: ACTION[Server]: player places node mcl_core:diorite at (511,-2,-148)
+2026-08-30 10:15:04: ACTION[Server]: player digs mcl_core:stone at (513,0,-146)
+2026-08-30 10:15:04: ACTION[Server]: player digs mcl_core:stone at (512,0,-146)
+2026-08-30 10:15:04: ACTION[Server]: player digs mcl_core:stone at (512,0,-145)
+2026-08-30 10:15:05: ACTION[Server]: player digs mcl_core:stone at (513,-1,-146)
+2026-08-30 10:15:06: ACTION[Server]: player digs mcl_core:stone at (512,1,-146)
+2026-08-30 10:15:06: ACTION[Server]: player digs mcl_core:stone at (513,1,-146)
+2026-08-30 10:15:07: ACTION[Server]: player digs mcl_core:stone at (514,0,-147)
+2026-08-30 10:15:07: ACTION[Server]: player digs mcl_core:stone at (515,0,-147)
+2026-08-30 10:15:08: ACTION[Server]: player digs mcl_core:stone at (514,1,-147)
+2026-08-30 10:15:08: ACTION[Server]: player digs mcl_core:stone at (514,2,-147)
+2026-08-30 10:15:08: ACTION[Server]: player digs mcl_core:granite at (512,2,-146)
+2026-08-30 10:15:09: ACTION[Server]: player digs mcl_core:stone at (514,0,-146)
+2026-08-30 10:15:09: ACTION[Server]: player digs mcl_core:stone at (514,-1,-146)
+2026-08-30 10:15:10: ACTION[Server]: player digs mcl_core:stone at (514,-2,-146)
+2026-08-30 10:15:12: ACTION[Server]: player digs mcl_core:stone at (515,-1,-147)
+2026-08-30 10:15:12: ACTION[Server]: player digs mcl_core:stone at (516,-1,-147)
+2026-08-30 10:15:12: ACTION[Server]: player digs mcl_core:stone at (517,-1,-147)
+2026-08-30 10:15:14: ACTION[Server]: player places node mcl_core:diorite at (517,-1,-147)
+2026-08-30 10:15:16: ACTION[Server]: player digs mcl_core:stone at (515,1,-147)
+2026-08-30 10:15:16: ACTION[Server]: player digs mcl_core:stone at (514,1,-146)
+2026-08-30 10:15:16: ACTION[Server]: player digs mcl_core:stone at (514,1,-145)
+2026-08-30 10:15:17: ACTION[Server]: player digs mcl_core:stone at (515,-1,-146)
+2026-08-30 10:15:17: ACTION[Server]: player digs mcl_core:stone at (513,-1,-145)
+2026-08-30 10:15:18: ACTION[Server]: player digs mcl_core:stone at (515,-2,-146)
+2026-08-30 10:15:18: ACTION[Server]: player digs mcl_core:stone at (513,-2,-145)
+2026-08-30 10:15:19: ACTION[Server]: player digs mcl_core:stone at (512,-1,-145)
+2026-08-30 10:15:20: ACTION[Server]: player digs mcl_core:stone at (512,-2,-145)
+2026-08-30 10:15:20: ACTION[Server]: player digs mcl_core:granite at (511,-2,-145)
+2026-08-30 10:15:20: ACTION[Server]: player digs mcl_core:granite at (511,-1,-145)
+2026-08-30 10:15:21: ACTION[Server]: player digs mcl_core:granite at (511,0,-145)
+2026-08-30 10:15:21: ACTION[Server]: player digs mcl_core:granite at (510,-1,-145)
+2026-08-30 10:15:22: ACTION[Server]: player digs mcl_core:stone at (509,-1,-144)
+2026-08-30 10:15:22: ACTION[Server]: player digs mcl_core:granite at (510,0,-145)
+2026-08-30 10:15:30: ACTION[Server]: player places node mcl_core:diorite at (511,-4,-148)
+2026-08-30 10:15:32: ACTION[Server]: player places node mcl_core:diorite at (510,-4,-147)
+2026-08-30 10:15:32: ACTION[Server]: player places node mcl_core:diorite at (511,-4,-147)
+2026-08-30 10:15:33: ACTION[Server]: player places node mcl_core:diorite at (511,-3,-148)
+2026-08-30 10:15:34: ACTION[Server]: player places node mcl_core:diorite at (511,-3,-147)
+2026-08-30 10:15:36: ACTION[Server]: player places node mcl_core:diorite at (512,-4,-149)
+2026-08-30 10:15:36: ACTION[Server]: player places node mcl_core:diorite at (513,-4,-149)
+2026-08-30 10:15:37: ACTION[Server]: player places node mcl_core:diorite at (512,-4,-148)
+2026-08-30 10:15:37: ACTION[Server]: player places node mcl_core:diorite at (512,-4,-147)
+2026-08-30 10:15:38: ACTION[Server]: player places node mcl_core:diorite at (513,-4,-148)
+2026-08-30 10:15:39: ACTION[Server]: player places node mcl_core:diorite at (513,-4,-147)
+2026-08-30 10:15:46: ACTION[Server]: player digs mcl_core:diorite at (512,-3,-146)
+2026-08-30 10:15:48: ACTION[Server]: player digs mcl_core:stone at (512,-3,-145)
+2026-08-30 10:15:48: ACTION[Server]: player digs mcl_core:diorite at (513,-3,-146)
+2026-08-30 10:15:48: ACTION[Server]: player digs mcl_core:stone at (513,-3,-145)
+2026-08-30 10:15:49: ACTION[Server]: player digs mcl_core:diorite at (514,-3,-146)
+2026-08-30 10:15:51: ACTION[Server]: player digs mcl_core:stone at (515,-3,-146)
+2026-08-30 10:16:08: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 10:17:30: ACTION[Server]: player places node mcl_core:diorite at (513,7,-153)
+2026-08-30 10:17:32: ACTION[Server]: player places node mcl_core:diorite at (513,11,-154)
+2026-08-30 10:17:43: ACTION[Server]: [mcl_music] Playing track: DarkReaven-starry_sky_at_winter, for scenario: overworld
+2026-08-30 10:17:47: ACTION[Server]: player places node mcl_core:diorite at (513,12,-155)
+2026-08-30 10:17:48: ACTION[Server]: player places node mcl_core:diorite at (513,12,-153)
+2026-08-30 10:17:50: ACTION[Server]: player places node mcl_core:diorite at (513,12,-154)
+2026-08-30 10:17:51: ACTION[Server]: player digs mcl_core:diorite at (513,12,-153)
+2026-08-30 10:18:48: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 10:19:07: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (523,-6,-147)
+2026-08-30 10:19:13: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (523,-8,-155)
+2026-08-30 10:19:35: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (526,-14,-155)
+2026-08-30 10:19:49: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:zombie" at (527,-16,-155) (id=3878, hp=20), damage=0
+2026-08-30 10:19:49: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:skeleton" at (527,-16,-155) (id=3265, hp=20), damage=0
+2026-08-30 10:20:13: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (526,-7,-151)
+2026-08-30 10:20:17: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (527,-8,-147)
+2026-08-30 10:20:26: ACTION[Server]: player digs mcl_core:stone at (525,-12,-148)
+2026-08-30 10:20:26: ACTION[Server]: player digs mcl_core:stone at (526,-12,-147)
+2026-08-30 10:20:27: ACTION[Server]: player digs mcl_core:stone at (525,-11,-147)
+2026-08-30 10:20:30: ACTION[Server]: player digs mcl_core:stone at (525,-12,-147)
+2026-08-30 10:20:33: ACTION[Server]: player digs mcl_core:stone at (524,-11,-148)
+2026-08-30 10:20:34: ACTION[Server]: player digs mcl_core:diorite at (523,-10,-148)
+2026-08-30 10:20:35: ACTION[Server]: player digs mcl_core:diorite at (522,-9,-148)
+2026-08-30 10:20:35: ACTION[Server]: player digs mcl_core:diorite at (521,-8,-148)
+2026-08-30 10:20:35: ACTION[Server]: player digs mcl_core:diorite at (520,-7,-148)
+2026-08-30 10:20:49: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (528,-12,-146)
+2026-08-30 10:20:53: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (532,-13,-148)
+2026-08-30 10:22:09: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (532,-13,-144)
+2026-08-30 10:22:10: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (536,-13,-144)
+2026-08-30 10:22:20: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:witch" at (531,-18,-147) (id=3870, hp=26), damage=0
+2026-08-30 10:22:21: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:witch" at (530,-16,-147) (id=2918, hp=26), damage=0
+2026-08-30 10:22:29: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (537,-13,-144)
+2026-08-30 10:22:36: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:spider" at (535,-18,-146) (id=4321, hp=16), damage=0
+2026-08-30 10:22:38: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:skeleton" at (535,-22,-150) (id=4494, hp=20), damage=0
+2026-08-30 10:22:40: ACTION[Server]: player player (id=1, hp=20) punched LuaEntitySAO "mobs_mc:skeleton" at (534,-22,-150) (id=4346, hp=20), damage=0
+2026-08-30 10:22:44: ACTION[Server]: [mcl_music] Playing track: DarkReaven-watchful, for scenario: mining
+2026-08-30 10:22:47: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (533,-19,-150)
+2026-08-30 10:22:49: ACTION[Server]: player places node mcl_blackstone:soul_torch_wall at (532,-19,-152)
+2026-08-30 10:23:08: ACTION[Server]: player digs mcl_core:andesite at (536,-14,-146)
+2026-08-30 10:23:13: ACTION[Server]: player digs mcl_core:andesite at (536,-13,-146)
+2026-08-30 10:23:13: ACTION[Server]: player digs mcl_core:andesite at (537,-13,-146)
+2026-08-30 10:23:14: ACTION[Server]: player digs mcl_core:andesite at (538,-13,-146)
+2026-08-30 10:23:14: ACTION[Server]: player digs mcl_core:stone at (539,-13,-146)
+2026-08-30 10:23:23: ACTION[Server]: player places node mcl_core:diorite at (533,-13,-147)
+2026-08-30 10:23:50: ACTION[Server]: player places node mcl_torches:torch_wall at (540,-14,-144)
+2026-08-30 10:23:54: ACTION[Server]: player places node mcl_torches:torch_wall at (539,-14,-146)
+2026-08-30 10:23:57: ACTION[Server]: player places node mcl_torches:torch_wall at (542,-14,-147)
+2026-08-30 10:24:37: ACTION[Server]: [vl_cavesounds] Playing cave sound: cave4
+2026-08-30 10:24:39: ACTION[Server]: player places node mcl_core:diorite at (526,-16,-151)
+2026-08-30 10:24:46: ACTION[Server]: player digs mcl_core:diorite at (526,-16,-151)
+2026-08-30 10:26:59: ACTION[Server]: player digs mcl_core:stone at (528,-16,-157)
+2026-08-30 10:27:06: ACTION[Server]: player digs mcl_core:stone at (525,-16,-151)
+2026-08-30 10:27:07: ACTION[Server]: player digs mcl_core:stone at (525,-17,-151)
+2026-08-30 10:27:12: ACTION[Server]: player places node mcl_core:diorite at (526,-16,-151)
+2026-08-30 10:27:56: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-159)
+2026-08-30 10:27:57: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-158)
+2026-08-30 10:28:00: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-157)
+2026-08-30 10:28:01: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-156)
+2026-08-30 10:28:01: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-155)
+2026-08-30 10:28:01: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-154)
+2026-08-30 10:28:02: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-153)
+2026-08-30 10:28:04: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-159)
+2026-08-30 10:28:04: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-158)
+2026-08-30 10:28:05: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-157)
+2026-08-30 10:28:05: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-156)
+2026-08-30 10:28:05: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-155)
+2026-08-30 10:28:05: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-154)
+2026-08-30 10:28:06: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-153)
+2026-08-30 10:28:09: ACTION[Server]: player places node mcl_core:diorite at (531,-20,-152)
+2026-08-30 10:28:11: ACTION[Server]: player places node mcl_core:diorite at (532,-20,-152)
+2026-08-30 10:28:12: ACTION[Server]: player places node mcl_core:diorite at (533,-20,-152)
+2026-08-30 10:28:14: ACTION[Server]: player activates mcl_core:diorite
+2026-08-30 10:28:14: ACTION[Server]: player activates mcl_core:diorite
+2026-08-30 10:28:15: ACTION[Server]: player activates mcl_core:diorite
+2026-08-30 10:28:15: ACTION[Server]: player activates mcl_core:diorite
+2026-08-30 10:28:15: ACTION[Server]: player activates mcl_core:diorite
+2026-08-30 10:29:00: ACTION[Server]: player places node mcl_core:diorite at (507,-2,-147)
+2026-08-30 10:29:00: ACTION[Server]: player places node mcl_core:diorite at (507,-2,-146)
+2026-08-30 10:29:01: ACTION[Server]: player places node mcl_core:diorite at (507,-2,-145)
+2026-08-30 10:29:01: ACTION[Server]: player places node mcl_core:diorite at (508,-2,-145)
+2026-08-30 10:29:02: ACTION[Server]: player places node mcl_core:diorite at (508,-2,-146)
+2026-08-30 10:29:02: ACTION[Server]: player places node mcl_core:diorite at (508,-2,-147)
+2026-08-30 10:29:04: ACTION[Server]: player places node mcl_core:diorite at (509,-2,-145)
+2026-08-30 10:29:05: ACTION[Server]: player places node mcl_core:diorite at (509,-2,-146)
+2026-08-30 10:29:05: ACTION[Server]: player places node mcl_core:diorite at (509,-2,-147)
+2026-08-30 10:29:07: ACTION[Server]: player places node mcl_core:diorite at (510,-2,-147)
+2026-08-30 10:29:08: ACTION[Server]: player places node mcl_core:diorite at (510,-2,-146)
+2026-08-30 10:29:09: ACTION[Server]: player places node mcl_core:diorite at (510,-2,-145)
+2026-08-30 10:29:14: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 10:32:41: ACTION[Server]: [mcl_weather] sleep() changed the weather from clear to clear
+2026-08-30 10:32:45: ACTION[Server]: [mcl_music] Playing track: DarkReaven-calmed_cube_in_space, for scenario: overworld
+2026-08-30 10:32:50: ACTION[Server]: [mcl_music] Playing track: DarkReaven-cube_waltz, for scenario: overworld
+2026-08-30 10:33:05: ACTION[Server]: [mcl_music] Stopping music
+2026-08-30 10:33:43: ACTION[Server]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
+2026-08-30 10:33:43: ACTION[Server]: player leaves game. List of players: 
+2026-08-30 10:33:44: ACTION[ServerStop]: Server: Shutting down
+2026-08-30 10:33:44: ACTION[ServerStop]: [doc] Server shuts down. Player data is about to be saved.
+2026-08-30 10:33:44: ACTION[ServerStop]: [doc] Wrote player data into C:\Users\MR_V\AppData\Roaming\Minetest\worlds\Elementary_1/doc.mt.
