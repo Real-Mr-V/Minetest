@@ -7,7 +7,7 @@
 ## Objective
 When a player enters SORA for the first time, start the opening pre-history cutscene. During the cutscene, play `pre-history.ogg` and move the camera upward at a medium, continuous speed. When the audio ends, return to normal gameplay state and immediately play `befor_black_stone.ogg`.
 
-After that sequence, the player encounters the story's black stone. The block must be named `sora_intro_black_stone`. When the player strikes it, play `black_stone.ogg`; after that audio finishes, a luminous block appears and guides the player toward `524,18,-148`.
+After that sequence, the player encounters the story's black stone. The block must be named `sora_intro_black_stone`. The black stone must be placed at `574,18,-148`. When the player strikes it, play `black_stone.ogg`; after that audio finishes, a luminous block appears and guides the player toward `524,18,-148`.
 
 ## Product context
 The main SORA story is the current development priority. Educational lessons are explicitly deferred until the main story phase is addressed.
@@ -20,6 +20,10 @@ Current story document:
 
 ## First-entry spawn
 `541,17,-98`
+
+## Black stone location
+The authoritative player-provided placement for the SORA story black stone is:
+`574,18,-148`
 
 ## Authoritative audio asset locations
 All SORA audio assets are located under:
@@ -47,7 +51,7 @@ This image is the intended visual source for the SORA story's black stone. The t
 3. Play `pre-history.ogg` while the camera moves upward at medium speed.
 4. When `pre-history.ogg` ends, end the cutscene and restore normal camera/player state.
 5. Immediately after that opening sequence, play `befor_black_stone.ogg`.
-6. Provide the story black-stone block named exactly `sora_intro_black_stone`.
+6. Provide the story black-stone block named exactly `sora_intro_black_stone` at `574,18,-148`.
 7. Use the supplied `black_stone.png` as its intended visual texture.
 8. When the player strikes the black stone, play `black_stone.ogg`.
 9. Do not reveal/activate the luminous guidance block until `black_stone.ogg` has finished.
@@ -60,7 +64,6 @@ This image is the intended visual source for the SORA story's black stone. The t
 - Exact camera-control mechanism must be defined by the architecture/technical lane.
 - Exact definition and persistence of first-entry completion must be specified technically.
 - Exact behavior of the luminous guide (placement, duration, indicator behavior, and player guidance presentation) must be defined by gameplay design and then architecture/technical specification.
-- Exact placement of the black stone in the world must follow the canonical story and approved gameplay design; this task does not invent a coordinate for the stone.
 - The supplied PNG is 300x300; implementation must determine proper texture handling without silently changing the intended visual.
 
 ## Scope boundary
@@ -71,7 +74,7 @@ This task is for the main story opening sequence only. It does not authorize les
 - `pre-history.ogg` plays during the upward camera movement.
 - Normal gameplay camera/control is restored when the opening audio/cutscene finishes.
 - `befor_black_stone.ogg` plays after that opening sequence.
-- `sora_intro_black_stone` exists with the supplied black-stone visual.
+- `sora_intro_black_stone` exists at `574,18,-148` with the supplied black-stone visual.
 - Striking the stone starts `black_stone.ogg`.
 - The luminous guide does not appear before `black_stone.ogg` finishes.
 - The luminous guide appears afterward and directs the player to `524,18,-148`.
