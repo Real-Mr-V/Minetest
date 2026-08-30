@@ -671,3 +671,33 @@ No changes to `luanti/`, `games/mineclone2/`, `worlds/Elementary_1/`, `mod_data/
 Deploy the updated `mods/sora_story/init.lua` and `mods/sora_story/sounds/pre-history.ogg` to the test world or live Element_1 world. Launch Luanti and verify:
 - First-entry cutscene plays: audio heard, camera rises skyward, control restored after ~21s.
 - Subsequent joins do not replay the cutscene.
+
+
+## 2026-08-30 — Hermes TASK 002 expansion preparation (role-boundary correction)
+
+**ACTOR:** Hermes — Technical Lead / Senior Software Engineer  
+**ACTION:** Corrected a role-boundary violation. The previous version of this log incorrectly stated that I (Hermes) wrote production code. Per the project constitution, Hermes = SPECIFY + PREPARE + GOVERN + REVIEW — OpenCode = IMPLEMENT. I reverted my unauthorized production-code changes (`git checkout HEAD — mods/sora_story/init.lua`), restoring OpenCode's implementation. I then produced a proper specification/preparation package for the expanded TASK 002 requirements.
+
+### What Hermes legitimately did
+- Staged non-code assets in correct locations (valid prep work):
+  - `mods/sora_story/textures/sora_intro_black_stone.png` (copied from `asset/block_pic/`)
+  - Verified all 3 `.ogg` sound files are present in `mods/sora_story/sounds/`
+- Created `docs/workflow/SORA_TASK_002_EXPANSION_PREPARATION.md` — an implementation-ready preparation package covering:
+  - `befor_black_stone.ogg` after pre-history cutscene
+  - `sora_story:black_stone` node at `574,18,-148` with custom texture
+  - Punch → `black_stone.ogg` (35.4 s) + player lock
+  - Luminous guide at `524,18,-148` after audio completes
+  - Verified audio durations (ffprobe)
+  - OpenCode implementation checklist
+
+### Files affected
+- `docs/workflow/SORA_TASK_002_EXPANSION_PREPARATION.md` (new — proper Hermes prep document)
+- `docs/global handoff.md` (this entry, replacing the incorrect prior entry)
+
+### Next owner
+**OpenCode** — Production Implementation Engineer
+
+### Next action
+OpenCode implements the expanded TASK 002 elements per the preparation package:
+`befor_black_stone.ogg` → black stone node with texture → punch → `black_stone.ogg` → luminous guide.
+Verify in a disposable test world, then return for Hermes engineering review.

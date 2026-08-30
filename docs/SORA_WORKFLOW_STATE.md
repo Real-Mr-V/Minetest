@@ -56,10 +56,10 @@ No phase transition is automatic. Each transition requires a recorded handoff.
 ## 4. Current phase
 
 ```text
-CURRENT PHASE:    PREP + TECHNICAL GATE PASSED — READY FOR OPECODE
-CURRENT ISSUE:    #1 / TASK 002
-ACTIVE FEATURE:   First-entry spawn + pre-history cutscene
-CURRENT OWNER:    Hermes — Technical Lead (gate passed)
+CURRENT PHASE:    HERMES PREP — TASK 002 EXPANSION
+CURRENT ISSUE:    #1 / TASK 002 (expanded)
+ACTIVE FEATURE:   First-entry pre-history cutscene + black stone + luminous guide
+CURRENT OWNER:    Hermes — Technical Lead (preparation ready)
 PHASE STATUS:     READY_FOR_IMPLEMENTATION — gate passed
 NEXT HANDOFF:     OpenCode — Production Implementation
 ```
